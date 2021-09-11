@@ -1,0 +1,1123 @@
+year,bay,site,julian,temperature,cod.age.0,pollock.age.0
+2006,Cook Bay,Bare North,194,NA,0,0
+2006,Cook Bay,Bare North,199,NA,0,0
+2006,Cook Bay,Eelgrass North,194,NA,8,0
+2006,Cook Bay,Eelgrass North,199,NA,64,0
+2006,Cook Bay,Eelgrass South,194,NA,194,2
+2006,Cook Bay,Eelgrass South,199,NA,280,10
+2006,Cook Bay,Eelgrass West,199,NA,180,10
+2006,Cook Bay,Laminaria East,194,NA,132,0
+2006,Cook Bay,Laminaria East,199,NA,230,10
+2006,Cook Bay,Laminaria South,194,NA,40,4
+2006,Cook Bay,Laminaria South,199,NA,120,0
+2006,Cook Bay,Middle Cove,194,NA,0,2
+2006,Cook Bay,Middle Cove,199,NA,16,0
+2006,Anton Larson Bay,Back Bay eelgrass,196,12.3,18,0
+2006,Anton Larson Bay,Back Bay eelgrass,197,11.4,21,0
+2006,Anton Larson Bay,Back Bay eelgrass,198,NA,38,0
+2006,Anton Larson Bay,Cobble point,196,NA,2,0
+2006,Anton Larson Bay,Cobble point,197,11.7,2,0
+2006,Anton Larson Bay,Cobble point,198,NA,2,0
+2006,Anton Larson Bay,Eelgrass patches,196,14.8,30,5
+2006,Anton Larson Bay,Eelgrass patches,198,NA,90,0
+2006,Anton Larson Bay,Eelgrass point,195,NA,76,5
+2006,Anton Larson Bay,Eelgrass point,196,NA,6,0
+2006,Anton Larson Bay,Eelgrass point,197,11.9,82,0
+2006,Anton Larson Bay,Eelgrass point,198,10.7,0,0
+2006,Anton Larson Bay,Laminaria #2,196,10.9,189,0
+2006,Anton Larson Bay,Laminaria #2,197,11.7,534,56
+2006,Anton Larson Bay,Laminaria #2,198,10.4,0,0
+2006,Anton Larson Bay,Laminaria Point,196,NA,254,38
+2006,Anton Larson Bay,Laminaria Point,197,11.8,134,4
+2006,Anton Larson Bay,Laminaria Point,198,11.2,57,0
+2006,Anton Larson Bay,White rock,195,NA,0,0
+2006,Anton Larson Bay,White rock,196,14.1,0,0
+2006,Anton Larson Bay,White rock,197,14.1,0,0
+2006,Anton Larson Bay,White rock,198,10.9,0,0
+2006,Anton Larson Bay,Wooden boat,195,NA,662,45
+2006,Anton Larson Bay,Wooden boat,196,13.0,68,7
+2006,Anton Larson Bay,Wooden boat,197,11.0,1128,140
+2006,Cook Bay,Bare North,237,11.1,40,0
+2006,Cook Bay,Bare North,239,NA,25,0
+2006,Cook Bay,Bare North,240,NA,12,0
+2006,Cook Bay,Eelgrass North,237,10.7,112,0
+2006,Cook Bay,Eelgrass North,239,NA,81,0
+2006,Cook Bay,Eelgrass North,240,NA,165,0
+2006,Cook Bay,Eelgrass South,237,10.4,495,3
+2006,Cook Bay,Eelgrass South,239,NA,210,0
+2006,Cook Bay,Eelgrass South,240,NA,150,0
+2006,Cook Bay,Eelgrass West,237,10.6,97,2
+2006,Cook Bay,Eelgrass West,239,NA,84,0
+2006,Cook Bay,Eelgrass West,240,NA,122,0
+2006,Cook Bay,Laminaria East,237,NA,302,0
+2006,Cook Bay,Laminaria East,239,NA,160,0
+2006,Cook Bay,Laminaria East,240,10.8,108,0
+2006,Cook Bay,Laminaria North,237,10.7,74,0
+2006,Cook Bay,Laminaria North,239,NA,122,0
+2006,Cook Bay,Laminaria North,240,NA,120,0
+2006,Cook Bay,Laminaria South,237,10.4,149,2
+2006,Cook Bay,Laminaria South,239,NA,54,0
+2006,Cook Bay,Laminaria South,240,11.7,112,0
+2006,Cook Bay,Middle Cove,237,10.5,55,0
+2006,Cook Bay,Middle Cove,239,NA,48,0
+2006,Cook Bay,Middle Cove,240,NA,80,0
+2006,Anton Larson Bay,Back Bay eelgrass,231,11.8,45,0
+2006,Anton Larson Bay,Back Bay eelgrass,232,12.1,16,0
+2006,Anton Larson Bay,Back Bay eelgrass,233,12.4,30,0
+2006,Anton Larson Bay,Cobble point,231,11.4,10,0
+2006,Anton Larson Bay,Cobble point,232,11.1,7,0
+2006,Anton Larson Bay,Cobble point,233,11.2,1,0
+2006,Anton Larson Bay,Eelgrass patches,231,NA,29,0
+2006,Anton Larson Bay,Eelgrass patches,232,10.5,25,0
+2006,Anton Larson Bay,Eelgrass patches,233,10.7,2,0
+2006,Anton Larson Bay,Eelgrass point,231,10.6,62,10
+2006,Anton Larson Bay,Eelgrass point,232,10.4,9,3
+2006,Anton Larson Bay,Eelgrass point,233,11.1,10,6
+2006,Anton Larson Bay,Laminaria #2,231,10.4,55,0
+2006,Anton Larson Bay,Laminaria #2,232,12.0,43,0
+2006,Anton Larson Bay,Laminaria #2,233,11.6,72,0
+2006,Anton Larson Bay,Laminaria Point,231,10.8,94,3
+2006,Anton Larson Bay,Laminaria Point,232,10.8,34,0
+2006,Anton Larson Bay,Laminaria Point,233,11.1,28,0
+2006,Anton Larson Bay,White rock,231,11.2,0,0
+2006,Anton Larson Bay,White rock,232,11.6,0,0
+2006,Anton Larson Bay,White rock,233,11.8,3,0
+2006,Anton Larson Bay,Wooden boat,231,10.7,11,0
+2006,Anton Larson Bay,Wooden boat,232,12.2,224,0
+2006,Anton Larson Bay,Wooden boat,233,11.2,28,0
+2007,Cook Bay,Bare North,205,9.8,0,0
+2007,Cook Bay,Bare North,207,9.7,0,0
+2007,Cook Bay,Eelgrass North,205,9.6,8,0
+2007,Cook Bay,Eelgrass North,207,9.9,2,0
+2007,Cook Bay,Eelgrass South,205,10.5,0,0
+2007,Cook Bay,Eelgrass South,207,10.1,9,0
+2007,Cook Bay,Eelgrass West,205,10.0,27,0
+2007,Cook Bay,Eelgrass West,207,9.7,1,0
+2007,Cook Bay,Laminaria East,205,9.9,8,0
+2007,Cook Bay,Laminaria East,207,10.0,8,0
+2007,Cook Bay,Laminaria North,205,9.6,1,0
+2007,Cook Bay,Laminaria North,207,9.7,1,0
+2007,Cook Bay,Laminaria South,205,10.4,0,0
+2007,Cook Bay,Laminaria South,207,10.1,0,0
+2007,Cook Bay,Middle Cove,205,9.9,1,0
+2007,Cook Bay,Middle Cove,207,9.9,6,0
+2007,Anton Larson Bay,Back Bay eelgrass,201,NA,0,0
+2007,Anton Larson Bay,Back Bay eelgrass,202,12.0,0,0
+2007,Anton Larson Bay,Cobble point,201,NA,0,0
+2007,Anton Larson Bay,Eelgrass patches,201,NA,8,0
+2007,Anton Larson Bay,Eelgrass patches,202,9.7,39,2
+2007,Anton Larson Bay,Eelgrass point,201,NA,82,0
+2007,Anton Larson Bay,Eelgrass point,202,9.3,57,0
+2007,Anton Larson Bay,Laminaria #2,201,NA,0,0
+2007,Anton Larson Bay,Laminaria #2,202,11.1,0,0
+2007,Anton Larson Bay,Laminaria Point,201,NA,3,0
+2007,Anton Larson Bay,Laminaria Point,202,8.3,13,0
+2007,Anton Larson Bay,White rock,201,NA,0,0
+2007,Anton Larson Bay,White rock,202,9.2,0,0
+2007,Anton Larson Bay,Wooden boat,201,NA,0,0
+2007,Anton Larson Bay,Wooden boat,202,NA,0,0
+2007,Cook Bay,Bare North,238,NA,0,0
+2007,Cook Bay,Eelgrass North,238,NA,0,0
+2007,Cook Bay,Eelgrass South,238,NA,0,0
+2007,Cook Bay,Eelgrass West,238,NA,0,0
+2007,Cook Bay,Laminaria East,238,NA,4,0
+2007,Cook Bay,Laminaria North,238,NA,0,0
+2007,Cook Bay,Laminaria South,238,NA,0,0
+2007,Cook Bay,Middle Cove,238,NA,0,0
+2007,Anton Larson Bay,Back Bay eelgrass,235,NA,2,0
+2007,Anton Larson Bay,Back Bay eelgrass,236,NA,0,0
+2007,Anton Larson Bay,Cobble point,235,NA,0,0
+2007,Anton Larson Bay,Eelgrass patches,235,NA,11,0
+2007,Anton Larson Bay,Eelgrass patches,236,NA,13,0
+2007,Anton Larson Bay,Eelgrass point,235,NA,24,0
+2007,Anton Larson Bay,Eelgrass point,236,NA,10,0
+2007,Anton Larson Bay,Laminaria #2,235,NA,0,0
+2007,Anton Larson Bay,Laminaria #2,236,NA,2,0
+2007,Anton Larson Bay,Laminaria Point,235,NA,6,0
+2007,Anton Larson Bay,Laminaria Point,236,NA,0,0
+2007,Anton Larson Bay,White rock,235,NA,0,0
+2007,Anton Larson Bay,White rock,236,NA,0,0
+2007,Anton Larson Bay,Wooden boat,235,NA,0,0
+2007,Anton Larson Bay,Wooden boat,236,NA,0,0
+2008,Cook Bay,Bare North,200,NA,0,0
+2008,Cook Bay,Bare North,201,10.5,0,0
+2008,Cook Bay,Eelgrass North,200,NA,50,1
+2008,Cook Bay,Eelgrass South,200,NA,293,4
+2008,Cook Bay,Eelgrass South,201,9.8,71,5
+2008,Cook Bay,Eelgrass West,200,NA,94,0
+2008,Cook Bay,Eelgrass West,201,12.3,22,0
+2008,Cook Bay,Laminaria East,200,NA,4,0
+2008,Cook Bay,Laminaria East,201,9.1,18,0
+2008,Cook Bay,Laminaria North,200,NA,0,0
+2008,Cook Bay,Laminaria North,201,9.8,3,0
+2008,Cook Bay,Laminaria South,200,NA,3,1
+2008,Cook Bay,Laminaria South,201,9.6,2,0
+2008,Cook Bay,Middle Cove,200,NA,0,0
+2008,Cook Bay,Middle Cove,201,9.1,0,0
+2008,Anton Larson Bay,Back Bay eelgrass,196,NA,2,0
+2008,Anton Larson Bay,Back Bay eelgrass,198,11.1,0,0
+2008,Anton Larson Bay,Cobble point,196,NA,18,2
+2008,Anton Larson Bay,Cobble point,198,NA,54,0
+2008,Anton Larson Bay,Eelgrass patches,196,NA,144,0
+2008,Anton Larson Bay,Eelgrass patches,198,NA,26,0
+2008,Anton Larson Bay,Eelgrass point,196,9.4,169,0
+2008,Anton Larson Bay,Eelgrass point,198,11.1,860,8
+2008,Anton Larson Bay,Laminaria #2,196,12.1,1,0
+2008,Anton Larson Bay,Laminaria #2,198,11.5,0,0
+2008,Anton Larson Bay,Laminaria Point,196,NA,2,0
+2008,Anton Larson Bay,Laminaria Point,198,NA,3,0
+2008,Anton Larson Bay,White rock,196,NA,0,0
+2008,Anton Larson Bay,White rock,198,11.5,0,0
+2008,Anton Larson Bay,Wooden boat,196,NA,0,0
+2008,Anton Larson Bay,Wooden boat,198,NA,0,0
+2008,Cook Bay,Bare North,239,NA,1,0
+2008,Cook Bay,Bare North,240,11.0,1,0
+2008,Cook Bay,Eelgrass North,239,NA,0,0
+2008,Cook Bay,Eelgrass North,240,NA,10,0
+2008,Cook Bay,Eelgrass South,239,NA,26,0
+2008,Cook Bay,Eelgrass South,240,10.3,30,0
+2008,Cook Bay,Eelgrass West,239,NA,17,0
+2008,Cook Bay,Eelgrass West,240,10.9,21,0
+2008,Cook Bay,Laminaria East,239,NA,6,0
+2008,Cook Bay,Laminaria East,240,10.4,7,0
+2008,Cook Bay,Laminaria North,239,NA,7,0
+2008,Cook Bay,Laminaria North,240,10.8,4,0
+2008,Cook Bay,Laminaria South,239,NA,1,0
+2008,Cook Bay,Laminaria South,240,10.4,0,0
+2008,Cook Bay,Middle Cove,239,NA,16,0
+2008,Cook Bay,Middle Cove,240,NA,22,6
+2008,Anton Larson Bay,Back Bay eelgrass,236,NA,6,0
+2008,Anton Larson Bay,Back Bay eelgrass,238,11.3,1,0
+2008,Anton Larson Bay,Cobble point,236,10.9,25,1
+2008,Anton Larson Bay,Cobble point,238,NA,1,0
+2008,Anton Larson Bay,Eelgrass patches,236,10.9,15,5
+2008,Anton Larson Bay,Eelgrass patches,238,11.7,17,9
+2008,Anton Larson Bay,Eelgrass point,236,NA,40,0
+2008,Anton Larson Bay,Eelgrass point,238,10.6,32,16
+2008,Anton Larson Bay,Laminaria #2,236,NA,0,0
+2008,Anton Larson Bay,Laminaria #2,238,10.7,0,0
+2008,Anton Larson Bay,Laminaria Point,236,NA,0,0
+2008,Anton Larson Bay,Laminaria Point,238,10.9,0,0
+2008,Anton Larson Bay,White rock,236,NA,0,0
+2008,Anton Larson Bay,White rock,238,NA,0,0
+2008,Anton Larson Bay,Wooden boat,236,NA,0,0
+2008,Anton Larson Bay,Wooden boat,238,11.2,0,0
+2009,Cook Bay,Bare North,196,12.3,1,0
+2009,Cook Bay,Bare North,196,11.7,0,0
+2009,Cook Bay,Eelgrass North,196,11.8,0,0
+2009,Cook Bay,Eelgrass North,196,12.5,0,0
+2009,Cook Bay,Eelgrass South,196,11.2,41,0
+2009,Cook Bay,Eelgrass South,196,11.6,26,1
+2009,Cook Bay,Eelgrass West,196,12.2,0,0
+2009,Cook Bay,Eelgrass West,196,11.0,0,0
+2009,Cook Bay,Laminaria East,196,11.6,1,0
+2009,Cook Bay,Laminaria East,196,11.3,1,0
+2009,Cook Bay,Laminaria North,196,11.3,0,0
+2009,Cook Bay,Laminaria North,196,12.2,0,0
+2009,Cook Bay,Laminaria South,196,12.5,0,0
+2009,Cook Bay,Laminaria South,196,13.0,0,0
+2009,Cook Bay,Middle Cove,196,12.4,1,0
+2009,Cook Bay,Middle Cove,196,11.5,0,0
+2009,Anton Larson Bay,Back Bay eelgrass,195,12.1,0,0
+2009,Anton Larson Bay,Cobble point,194,14.5,0,0
+2009,Anton Larson Bay,Cobble point,195,12.2,0,0
+2009,Anton Larson Bay,Eelgrass patches,194,14.8,10,0
+2009,Anton Larson Bay,Eelgrass patches,195,12.2,96,0
+2009,Anton Larson Bay,Eelgrass point,194,13.9,0,1
+2009,Anton Larson Bay,Eelgrass point,195,11.1,8,0
+2009,Anton Larson Bay,Laminaria #2,194,12.9,0,0
+2009,Anton Larson Bay,Laminaria #2,195,11.9,0,0
+2009,Anton Larson Bay,Laminaria Point,194,13.9,2,0
+2009,Anton Larson Bay,Laminaria Point,195,11.7,1,0
+2009,Anton Larson Bay,White rock,194,12.6,0,0
+2009,Anton Larson Bay,White rock,195,11.7,0,0
+2009,Anton Larson Bay,Wooden boat,194,11.9,0,0
+2009,Anton Larson Bay,Wooden boat,195,12.3,0,0
+2009,Cook Bay,Bare North,238,9.7,0,0
+2009,Cook Bay,Bare North,241,NA,0,0
+2009,Cook Bay,Eelgrass North,238,9.7,0,0
+2009,Cook Bay,Eelgrass North,242,NA,1,0
+2009,Cook Bay,Eelgrass South,238,10.4,75,0
+2009,Cook Bay,Eelgrass South,241,NA,1275,7
+2009,Cook Bay,Eelgrass West,238,10.0,1,0
+2009,Cook Bay,Eelgrass West,241,NA,204,5
+2009,Cook Bay,Laminaria East,238,9.8,35,1
+2009,Cook Bay,Laminaria East,241,NA,161,5
+2009,Cook Bay,Laminaria North,238,9.6,0,0
+2009,Cook Bay,Laminaria North,241,NA,1,0
+2009,Cook Bay,Laminaria South,238,10.3,0,0
+2009,Cook Bay,Laminaria South,241,NA,0,0
+2009,Cook Bay,Middle Cove,238,9.7,19,0
+2009,Cook Bay,Middle Cove,241,NA,69,0
+2009,Anton Larson Bay,Back Bay eelgrass,235,NA,0,0
+2009,Anton Larson Bay,Back Bay eelgrass,237,NA,0,0
+2009,Anton Larson Bay,Cobble point,235,10.6,0,0
+2009,Anton Larson Bay,Cobble point,236,10.2,0,0
+2009,Anton Larson Bay,Eelgrass patches,235,10.8,3,0
+2009,Anton Larson Bay,Eelgrass patches,236,10.2,16,0
+2009,Anton Larson Bay,Eelgrass point,235,10.4,0,0
+2009,Anton Larson Bay,Eelgrass point,236,10.2,1,0
+2009,Anton Larson Bay,Laminaria #2,235,10.5,0,0
+2009,Anton Larson Bay,Laminaria #2,236,11.0,0,0
+2009,Anton Larson Bay,Laminaria Point,235,9.9,0,0
+2009,Anton Larson Bay,Laminaria Point,236,9.8,0,0
+2009,Anton Larson Bay,White rock,235,10.4,19,0
+2009,Anton Larson Bay,White rock,236,10.1,0,0
+2009,Anton Larson Bay,Wooden boat,236,11.5,0,0
+2009,Anton Larson Bay,Wooden boat,237,NA,0,0
+2010,Cook Bay,Bare North,200,10.5,0,0
+2010,Cook Bay,Bare North,201,10.5,0,0
+2010,Cook Bay,Eelgrass North,200,11.3,1,0
+2010,Cook Bay,Eelgrass North,201,11.4,0,0
+2010,Cook Bay,Eelgrass South,200,11.3,155,9
+2010,Cook Bay,Eelgrass South,201,10.0,83,0
+2010,Cook Bay,Eelgrass West,200,10.8,1,0
+2010,Cook Bay,Eelgrass West,201,12.0,0,0
+2010,Cook Bay,Laminaria East,200,10.8,0,0
+2010,Cook Bay,Laminaria East,201,10.0,1,0
+2010,Cook Bay,Laminaria North,200,10.8,0,0
+2010,Cook Bay,Laminaria North,201,11.4,0,0
+2010,Cook Bay,Laminaria South,200,10.8,0,0
+2010,Cook Bay,Laminaria South,201,10.1,0,0
+2010,Cook Bay,Middle Cove,200,10.8,0,0
+2010,Cook Bay,Middle Cove,201,10.0,297,2
+2010,Anton Larson Bay,Back Bay eelgrass,195,11.9,0,0
+2010,Anton Larson Bay,Back Bay eelgrass,197,NA,0,0
+2010,Anton Larson Bay,Cobble point,195,10.4,35,1
+2010,Anton Larson Bay,Cobble point,196,NA,2,0
+2010,Anton Larson Bay,Eelgrass patches,195,10.2,2,0
+2010,Anton Larson Bay,Eelgrass patches,196,NA,10,0
+2010,Anton Larson Bay,Eelgrass point,195,10.2,0,0
+2010,Anton Larson Bay,Eelgrass point,196,NA,1,0
+2010,Anton Larson Bay,Laminaria #2,195,10.4,0,0
+2010,Anton Larson Bay,Laminaria #2,197,NA,0,0
+2010,Anton Larson Bay,Laminaria Point,195,9.3,11,0
+2010,Anton Larson Bay,Laminaria Point,196,NA,4,0
+2010,Anton Larson Bay,White rock,196,NA,12,1
+2010,Anton Larson Bay,Wooden boat,195,9.9,0,0
+2010,Anton Larson Bay,Wooden boat,197,NA,0,0
+2010,Cook Bay,Bare North,235,11.6,0,0
+2010,Cook Bay,Bare North,239,NA,0,0
+2010,Cook Bay,Eelgrass North,235,NA,0,0
+2010,Cook Bay,Eelgrass North,239,NA,0,0
+2010,Cook Bay,Eelgrass South,235,11.5,23,3
+2010,Cook Bay,Eelgrass South,239,NA,18,0
+2010,Cook Bay,Eelgrass West,235,11.9,1,0
+2010,Cook Bay,Eelgrass West,239,NA,0,1
+2010,Cook Bay,Laminaria East,235,12.0,0,0
+2010,Cook Bay,Laminaria East,239,11.2,8,0
+2010,Cook Bay,Laminaria East,239,NA,0,0
+2010,Cook Bay,Laminaria North,235,NA,0,0
+2010,Cook Bay,Laminaria North,239,NA,0,0
+2010,Cook Bay,Laminaria South,235,11.7,0,0
+2010,Cook Bay,Laminaria South,239,11.0,0,1
+2010,Cook Bay,Middle Cove,235,11.6,0,0
+2010,Anton Larson Bay,Back Bay eelgrass,236,NA,6,0
+2010,Anton Larson Bay,Back Bay eelgrass,237,12.6,0,0
+2010,Anton Larson Bay,Cobble point,236,11.2,0,0
+2010,Anton Larson Bay,Cobble point,237,10.7,2,0
+2010,Anton Larson Bay,Eelgrass patches,236,11.4,1,0
+2010,Anton Larson Bay,Eelgrass patches,237,11.8,0,0
+2010,Anton Larson Bay,Eelgrass point,236,10.6,0,0
+2010,Anton Larson Bay,Eelgrass point,237,10.5,0,0
+2010,Anton Larson Bay,Laminaria #2,236,12.8,0,0
+2010,Anton Larson Bay,Laminaria #2,237,11.6,0,0
+2010,Anton Larson Bay,Laminaria Point,236,10.3,5,0
+2010,Anton Larson Bay,Laminaria Point,237,11.6,1,0
+2010,Anton Larson Bay,White rock,195,10.4,1,0
+2010,Anton Larson Bay,White rock,236,10.5,0,0
+2010,Anton Larson Bay,White rock,237,11.2,0,0
+2010,Anton Larson Bay,Wooden boat,236,NA,0,3
+2010,Anton Larson Bay,Wooden boat,237,11.1,0,0
+2011,Cook Bay,Bare North,200,NA,0,0
+2011,Cook Bay,Eelgrass North,200,11.6,2,0
+2011,Cook Bay,Eelgrass North,201,10.6,0,0
+2011,Cook Bay,Eelgrass South,200,10.5,8,0
+2011,Cook Bay,Eelgrass South,201,NA,0,0
+2011,Cook Bay,Eelgrass West,200,10.7,38,0
+2011,Cook Bay,Eelgrass West,201,10.5,105,0
+2011,Cook Bay,Laminaria East,200,NA,2,0
+2011,Cook Bay,Laminaria East,201,NA,6,0
+2011,Cook Bay,Laminaria North,200,10.9,0,0
+2011,Cook Bay,Laminaria North,201,10.4,0,0
+2011,Cook Bay,Laminaria South,200,10.2,15,0
+2011,Cook Bay,Laminaria South,201,NA,3,0
+2011,Cook Bay,Middle Cove,200,10.3,0,0
+2011,Cook Bay,Middle Cove,201,NA,170,0
+2011,Anton Larson Bay,Back Bay eelgrass,193,NA,0,0
+2011,Anton Larson Bay,Back Bay eelgrass,194,11.6,0,0
+2011,Anton Larson Bay,Cobble point,193,NA,0,0
+2011,Anton Larson Bay,Cobble point,194,10.6,5,3
+2011,Anton Larson Bay,Eelgrass patches,193,NA,95,2
+2011,Anton Larson Bay,Eelgrass patches,194,10.4,50,30
+2011,Anton Larson Bay,Eelgrass point,193,NA,200,136
+2011,Anton Larson Bay,Eelgrass point,194,10.2,210,140
+2011,Anton Larson Bay,Laminaria #2,193,NA,0,0
+2011,Anton Larson Bay,Laminaria #2,194,11.2,0,0
+2011,Anton Larson Bay,Laminaria Point,193,NA,1,0
+2011,Anton Larson Bay,Laminaria Point,194,10.2,0,1
+2011,Anton Larson Bay,White rock,193,NA,1,0
+2011,Anton Larson Bay,White rock,194,10.6,0,0
+2011,Anton Larson Bay,Wooden boat,193,NA,0,0
+2011,Anton Larson Bay,Wooden boat,194,11.2,0,0
+2011,Cook Bay,Bare North,241,10.6,71,0
+2011,Cook Bay,Eelgrass North,241,11.3,165,0
+2011,Cook Bay,Eelgrass South,241,10.5,94,0
+2011,Cook Bay,Eelgrass West,241,11.2,84,0
+2011,Cook Bay,Laminaria East,241,10.3,173,0
+2011,Cook Bay,Laminaria North,241,10.9,5,0
+2011,Cook Bay,Laminaria South,241,10.3,45,0
+2011,Cook Bay,Middle Cove,241,10.4,0,0
+2011,Anton Larson Bay,Back Bay eelgrass,233,NA,1,0
+2011,Anton Larson Bay,Back Bay eelgrass,234,11.7,0,0
+2011,Anton Larson Bay,Cobble point,233,NA,4,0
+2011,Anton Larson Bay,Cobble point,234,11.5,3,1
+2011,Anton Larson Bay,Eelgrass patches,233,NA,0,0
+2011,Anton Larson Bay,Eelgrass patches,234,11.6,0,0
+2011,Anton Larson Bay,Eelgrass point,233,NA,9,0
+2011,Anton Larson Bay,Eelgrass point,234,11.8,0,0
+2011,Anton Larson Bay,Laminaria #2,233,NA,10,0
+2011,Anton Larson Bay,Laminaria #2,234,11.3,0,0
+2011,Anton Larson Bay,Laminaria Point,233,NA,0,0
+2011,Anton Larson Bay,Laminaria Point,234,11.8,0,0
+2011,Anton Larson Bay,White rock,233,NA,0,0
+2011,Anton Larson Bay,White rock,234,11.2,0,0
+2011,Anton Larson Bay,Wooden boat,233,NA,0,0
+2011,Anton Larson Bay,Wooden boat,234,11.4,0,0
+2012,Cook Bay,Bare North,200,10.3,21,0
+2012,Cook Bay,Eelgrass North,200,9.9,86,1
+2012,Cook Bay,Eelgrass South,200,10.1,440,0
+2012,Cook Bay,Eelgrass West,200,NA,329,4
+2012,Cook Bay,Laminaria East,200,NA,731,272
+2012,Cook Bay,Laminaria North,200,10.6,35,0
+2012,Cook Bay,Laminaria South,200,10.3,346,0
+2012,Cook Bay,Middle Cove,200,NA,958,199
+2012,Anton Larson Bay,Back Bay eelgrass,195,11.1,0,0
+2012,Anton Larson Bay,Back Bay eelgrass,196,11.8,0,0
+2012,Anton Larson Bay,Cobble point,195,9.8,482,66
+2012,Anton Larson Bay,Eelgrass patches,195,10.5,258,21
+2012,Anton Larson Bay,Eelgrass patches,195,NA,258,21
+2012,Anton Larson Bay,Eelgrass patches,197,NA,1,0
+2012,Anton Larson Bay,Eelgrass point,195,10.9,491,222
+2012,Anton Larson Bay,Eelgrass point,196,10.2,1059,169
+2012,Anton Larson Bay,Laminaria #2,195,10.7,455,4
+2012,Anton Larson Bay,Laminaria #2,196,NA,340,0
+2012,Anton Larson Bay,Laminaria Point,195,10.1,238,56
+2012,Anton Larson Bay,Laminaria Point,196,10.6,322,13
+2012,Anton Larson Bay,White rock,195,9.2,3,1
+2012,Anton Larson Bay,White rock,196,11.6,4,0
+2012,Anton Larson Bay,Wooden boat,195,10.5,0,0
+2012,Anton Larson Bay,Wooden boat,196,11.3,0,0
+2012,Cook Bay,Bare North,242,10.7,36,0
+2012,Cook Bay,Eelgrass North,242,10.8,8,0
+2012,Cook Bay,Eelgrass South,242,10.2,183,0
+2012,Cook Bay,Eelgrass West,242,10.5,44,0
+2012,Cook Bay,Laminaria East,242,10.3,61,0
+2012,Cook Bay,Laminaria North,242,10.7,34,0
+2012,Cook Bay,Laminaria South,242,10.2,30,0
+2012,Cook Bay,Middle Cove,242,10.5,121,0
+2012,Anton Larson Bay,Back Bay eelgrass,236,NA,35,0
+2012,Anton Larson Bay,Back Bay eelgrass,237,10.4,45,0
+2012,Anton Larson Bay,Cobble point,236,NA,7,0
+2012,Anton Larson Bay,Cobble point,237,9.8,17,0
+2012,Anton Larson Bay,Eelgrass patches,236,NA,57,0
+2012,Anton Larson Bay,Eelgrass patches,237,9.7,10,0
+2012,Anton Larson Bay,Eelgrass point,236,NA,10,0
+2012,Anton Larson Bay,Eelgrass point,237,9.9,13,2
+2012,Anton Larson Bay,Laminaria #2,236,NA,9,0
+2012,Anton Larson Bay,Laminaria #2,237,10.2,29,0
+2012,Anton Larson Bay,Laminaria Point,236,NA,13,0
+2012,Anton Larson Bay,Laminaria Point,237,9.5,45,1
+2012,Anton Larson Bay,White rock,236,NA,1,0
+2012,Anton Larson Bay,White rock,237,10.1,0,0
+2012,Anton Larson Bay,Wooden boat,236,NA,3,0
+2012,Anton Larson Bay,Wooden boat,237,10.0,4,0
+2013,Cook Bay,Bare North,206,11.0,0,0
+2013,Cook Bay,Bare North,207,11.2,0,0
+2013,Cook Bay,Eelgrass North,206,12.4,0,0
+2013,Cook Bay,Eelgrass North,207,11.1,0,0
+2013,Cook Bay,Eelgrass South,206,10.8,150,16
+2013,Cook Bay,Eelgrass South,207,12.0,85,136
+2013,Cook Bay,Eelgrass West,206,12.5,53,156
+2013,Cook Bay,Eelgrass West,207,12.0,18,0
+2013,Cook Bay,Laminaria East,206,10.7,0,0
+2013,Cook Bay,Laminaria East,207,10.5,0,0
+2013,Cook Bay,Laminaria North,206,11.5,0,0
+2013,Cook Bay,Laminaria North,207,11.1,0,0
+2013,Cook Bay,Laminaria South,206,10.9,0,0
+2013,Cook Bay,Laminaria South,207,11.3,0,0
+2013,Cook Bay,Middle Cove,207,10.9,0,0
+2013,Anton Larson Bay,Back Bay eelgrass,204,13.8,0,0
+2013,Anton Larson Bay,Back Bay eelgrass,205,14.1,0,0
+2013,Anton Larson Bay,Cobble point,204,12.0,11,0
+2013,Anton Larson Bay,Cobble point,205,11.7,3,0
+2013,Anton Larson Bay,Eelgrass patches,204,11.8,0,0
+2013,Anton Larson Bay,Eelgrass patches,205,10.8,1,0
+2013,Anton Larson Bay,Eelgrass point,204,11.5,43,0
+2013,Anton Larson Bay,Eelgrass point,205,11.0,11,0
+2013,Anton Larson Bay,Laminaria #2,204,12.8,0,0
+2013,Anton Larson Bay,Laminaria #2,205,13.2,0,0
+2013,Anton Larson Bay,Laminaria Point,204,11.8,0,0
+2013,Anton Larson Bay,Laminaria Point,205,10.7,2,0
+2013,Anton Larson Bay,White rock,204,13.1,0,0
+2013,Anton Larson Bay,White rock,205,13.0,0,0
+2013,Anton Larson Bay,Wooden boat,204,12.9,0,0
+2013,Anton Larson Bay,Wooden boat,205,12.6,0,0
+2013,Cook Bay,Bare North,240,10.1,8,0
+2013,Cook Bay,Bare North,242,10.4,22,0
+2013,Cook Bay,Eelgrass North,240,10.2,6,0
+2013,Cook Bay,Eelgrass North,242,10.1,0,0
+2013,Cook Bay,Eelgrass South,240,10.4,30,0
+2013,Cook Bay,Eelgrass South,242,11.4,42,0
+2013,Cook Bay,Eelgrass West,240,10.7,19,0
+2013,Cook Bay,Eelgrass West,242,11.4,17,0
+2013,Cook Bay,Laminaria East,240,10.2,17,0
+2013,Cook Bay,Laminaria East,242,10.3,11,0
+2013,Cook Bay,Laminaria North,240,10.2,6,0
+2013,Cook Bay,Laminaria North,242,10.2,0,0
+2013,Cook Bay,Laminaria South,240,10.1,17,1
+2013,Cook Bay,Laminaria South,242,10.9,33,0
+2013,Cook Bay,Middle Cove,240,10.1,5,0
+2013,Cook Bay,Middle Cove,242,10.2,1,0
+2013,Anton Larson Bay,Back Bay eelgrass,239,10.8,0,0
+2013,Anton Larson Bay,Back Bay eelgrass,241,10.9,0,0
+2013,Anton Larson Bay,Cobble point,239,10.3,7,6
+2013,Anton Larson Bay,Cobble point,241,10.9,1,0
+2013,Anton Larson Bay,Eelgrass patches,239,11.6,0,0
+2013,Anton Larson Bay,Eelgrass patches,241,NA,0,0
+2013,Anton Larson Bay,Eelgrass point,239,11.0,0,0
+2013,Anton Larson Bay,Eelgrass point,241,10.2,0,1
+2013,Anton Larson Bay,Laminaria #2,239,10.9,0,0
+2013,Anton Larson Bay,Laminaria #2,241,10.1,0,0
+2013,Anton Larson Bay,Laminaria Point,239,11.0,0,0
+2013,Anton Larson Bay,Laminaria Point,241,9.7,0,0
+2013,Anton Larson Bay,White rock,239,11.4,0,0
+2013,Anton Larson Bay,White rock,241,11.4,0,0
+2013,Anton Larson Bay,Wooden boat,239,10.8,0,0
+2013,Anton Larson Bay,Wooden boat,241,11.0,0,0
+2014,Cook Bay,Bare North,200,NA,0,0
+2014,Cook Bay,Bare North,203,12.2,0,0
+2014,Cook Bay,Eelgrass North,200,NA,0,0
+2014,Cook Bay,Eelgrass North,203,12.4,0,0
+2014,Cook Bay,Eelgrass South,200,NA,2,1
+2014,Cook Bay,Eelgrass South,203,12.6,0,0
+2014,Cook Bay,Eelgrass West,200,NA,0,0
+2014,Cook Bay,Eelgrass West,203,12.5,0,0
+2014,Cook Bay,Laminaria East,200,NA,0,0
+2014,Cook Bay,Laminaria East,203,12.0,0,0
+2014,Cook Bay,Laminaria North,200,NA,0,0
+2014,Cook Bay,Laminaria North,203,12.1,0,0
+2014,Cook Bay,Laminaria South,200,NA,152,97
+2014,Cook Bay,Laminaria South,203,12.9,5,0
+2014,Cook Bay,Middle Cove,200,NA,0,0
+2014,Cook Bay,Middle Cove,203,11.8,0,0
+2014,Anton Larson Bay,Back Bay eelgrass,197,11.8,0,0
+2014,Anton Larson Bay,Back Bay eelgrass,198,NA,0,0
+2014,Anton Larson Bay,Cobble point,197,10.2,32,3
+2014,Anton Larson Bay,Cobble point,198,NA,9,0
+2014,Anton Larson Bay,Eelgrass patches,197,11.6,6,3
+2014,Anton Larson Bay,Eelgrass patches,198,NA,19,8
+2014,Anton Larson Bay,Eelgrass point,197,11.8,14,1
+2014,Anton Larson Bay,Eelgrass point,198,NA,24,8
+2014,Anton Larson Bay,Laminaria #2,197,11.1,0,0
+2014,Anton Larson Bay,Laminaria #2,198,NA,0,0
+2014,Anton Larson Bay,Laminaria Point,197,11.7,86,5
+2014,Anton Larson Bay,Laminaria Point,198,NA,0,1
+2014,Anton Larson Bay,White rock,197,10.5,0,0
+2014,Anton Larson Bay,White rock,198,NA,1,0
+2014,Anton Larson Bay,Wooden boat,197,11.1,0,0
+2014,Anton Larson Bay,Wooden boat,198,NA,0,0
+2014,Cook Bay,Bare North,234,NA,0,0
+2014,Cook Bay,Bare North,235,12.3,0,0
+2014,Cook Bay,Eelgrass North,234,NA,0,0
+2014,Cook Bay,Eelgrass North,235,12.3,0,0
+2014,Cook Bay,Eelgrass South,234,NA,22,0
+2014,Cook Bay,Eelgrass South,235,12.1,6,0
+2014,Cook Bay,Eelgrass West,234,NA,0,0
+2014,Cook Bay,Eelgrass West,235,12.6,7,1
+2014,Cook Bay,Laminaria East,234,NA,0,0
+2014,Cook Bay,Laminaria East,235,11.9,2,0
+2014,Cook Bay,Laminaria North,234,NA,0,0
+2014,Cook Bay,Laminaria North,235,12.2,0,0
+2014,Cook Bay,Laminaria South,234,NA,4,0
+2014,Cook Bay,Laminaria South,235,12.1,6,0
+2014,Cook Bay,Middle Cove,234,NA,0,0
+2014,Cook Bay,Middle Cove,235,12.1,0,0
+2014,Anton Larson Bay,Back Bay eelgrass,232,12.7,0,0
+2014,Anton Larson Bay,Back Bay eelgrass,233,NA,0,0
+2014,Anton Larson Bay,Cobble point,232,12.4,0,0
+2014,Anton Larson Bay,Cobble point,233,NA,0,0
+2014,Anton Larson Bay,Eelgrass patches,232,12.4,3,0
+2014,Anton Larson Bay,Eelgrass patches,233,NA,3,0
+2014,Anton Larson Bay,Eelgrass point,232,12.0,0,0
+2014,Anton Larson Bay,Eelgrass point,233,NA,0,0
+2014,Anton Larson Bay,Laminaria #2,232,13.4,3,0
+2014,Anton Larson Bay,Laminaria #2,233,NA,0,0
+2014,Anton Larson Bay,Laminaria Point,232,11.9,0,0
+2014,Anton Larson Bay,Laminaria Point,233,NA,0,0
+2014,Anton Larson Bay,White rock,232,13.6,0,0
+2014,Anton Larson Bay,White rock,233,NA,0,0
+2014,Anton Larson Bay,Wooden boat,232,12.0,0,0
+2014,Anton Larson Bay,Wooden boat,233,NA,0,0
+2015,Cook Bay,Bare North,193,12.7,0,0
+2015,Cook Bay,Bare North,196,NA,0,0
+2015,Cook Bay,Eelgrass North,193,13.2,0,0
+2015,Cook Bay,Eelgrass North,196,NA,0,0
+2015,Cook Bay,Eelgrass South,193,10.7,1,0
+2015,Cook Bay,Eelgrass South,196,NA,0,0
+2015,Cook Bay,Eelgrass West,193,12.6,0,0
+2015,Cook Bay,Eelgrass West,196,NA,0,0
+2015,Cook Bay,Laminaria East,193,11.0,2,0
+2015,Cook Bay,Laminaria East,196,NA,2,0
+2015,Cook Bay,Laminaria North,193,12.8,0,0
+2015,Cook Bay,Laminaria North,196,NA,0,0
+2015,Cook Bay,Laminaria South,193,10.7,0,0
+2015,Cook Bay,Laminaria South,196,NA,0,0
+2015,Cook Bay,Middle Cove,193,11.9,0,0
+2015,Cook Bay,Middle Cove,196,NA,0,0
+2015,Anton Larson Bay,Back Bay eelgrass,192,12.0,0,0
+2015,Anton Larson Bay,Back Bay eelgrass,197,NA,0,0
+2015,Anton Larson Bay,Cobble point,192,11.6,0,0
+2015,Anton Larson Bay,Cobble point,197,NA,0,0
+2015,Anton Larson Bay,Eelgrass patches,192,11.5,0,0
+2015,Anton Larson Bay,Eelgrass patches,197,NA,0,0
+2015,Anton Larson Bay,Eelgrass point,192,10.7,0,0
+2015,Anton Larson Bay,Eelgrass point,197,NA,0,0
+2015,Anton Larson Bay,Laminaria #2,192,11.1,0,0
+2015,Anton Larson Bay,Laminaria #2,197,NA,0,0
+2015,Anton Larson Bay,Laminaria Point,192,10.7,0,0
+2015,Anton Larson Bay,Laminaria Point,197,NA,0,0
+2015,Anton Larson Bay,White rock,192,11.6,0,0
+2015,Anton Larson Bay,White rock,197,NA,0,0
+2015,Anton Larson Bay,Wooden boat,192,11.9,0,0
+2015,Anton Larson Bay,Wooden boat,197,NA,0,0
+2015,Cook Bay,Bare North,238,13.7,0,0
+2015,Cook Bay,Eelgrass North,238,14.3,0,0
+2015,Cook Bay,Eelgrass South,238,12.6,4,0
+2015,Cook Bay,Eelgrass West,238,14.2,0,0
+2015,Cook Bay,Laminaria East,238,13.4,0,0
+2015,Cook Bay,Laminaria North,238,14.2,0,0
+2015,Cook Bay,Laminaria South,238,12.7,0,0
+2015,Cook Bay,Middle Cove,238,13.6,76,4
+2015,Anton Larson Bay,Back Bay eelgrass,235,12.8,0,0
+2015,Anton Larson Bay,Cobble point,234,12.1,0,0
+2015,Anton Larson Bay,Cobble point,235,12.4,0,0
+2015,Anton Larson Bay,Eelgrass patches,234,13.1,0,0
+2015,Anton Larson Bay,Eelgrass patches,235,13.2,0,0
+2015,Anton Larson Bay,Eelgrass point,234,12.1,0,0
+2015,Anton Larson Bay,Eelgrass point,235,12.4,0,0
+2015,Anton Larson Bay,Laminaria #2,235,12.6,0,0
+2015,Anton Larson Bay,Laminaria Point,234,12.0,0,0
+2015,Anton Larson Bay,Laminaria Point,235,12.3,0,0
+2015,Anton Larson Bay,White rock,234,12.6,0,0
+2015,Anton Larson Bay,White rock,235,12.3,0,0
+2015,Anton Larson Bay,Wooden boat,235,12.7,0,0
+2016,Cook Bay,Bare North,197,13.7,0,0
+2016,Cook Bay,Bare North,202,NA,0,0
+2016,Cook Bay,Eelgrass North,197,14.0,0,0
+2016,Cook Bay,Eelgrass North,202,NA,0,0
+2016,Cook Bay,Eelgrass South,197,12.6,3,1
+2016,Cook Bay,Eelgrass South,202,NA,21,1
+2016,Cook Bay,Eelgrass West,197,15.0,0,0
+2016,Cook Bay,Eelgrass West,202,NA,0,0
+2016,Cook Bay,Laminaria East,197,12.9,39,2
+2016,Cook Bay,Laminaria East,202,NA,0,0
+2016,Cook Bay,Laminaria North,197,14.0,1,0
+2016,Cook Bay,Laminaria North,202,NA,0,0
+2016,Cook Bay,Laminaria South,197,12.9,0,0
+2016,Cook Bay,Laminaria South,202,NA,0,0
+2016,Cook Bay,Middle Cove,197,12.9,4,0
+2016,Cook Bay,Middle Cove,202,NA,0,0
+2016,Anton Larson Bay,Back Bay eelgrass,198,13.8,0,0
+2016,Anton Larson Bay,Back Bay eelgrass,199,NA,0,0
+2016,Anton Larson Bay,Cobble point,198,13.4,3,0
+2016,Anton Larson Bay,Cobble point,199,NA,1,0
+2016,Anton Larson Bay,Eelgrass patches,198,13.0,3,7
+2016,Anton Larson Bay,Eelgrass patches,199,NA,0,4
+2016,Anton Larson Bay,Eelgrass point,198,12.8,0,0
+2016,Anton Larson Bay,Eelgrass point,199,NA,0,0
+2016,Anton Larson Bay,Laminaria #2,198,13.4,0,0
+2016,Anton Larson Bay,Laminaria #2,199,NA,1,0
+2016,Anton Larson Bay,Laminaria Point,198,12.7,2,3
+2016,Anton Larson Bay,Laminaria Point,199,NA,0,0
+2016,Anton Larson Bay,White rock,198,13.9,0,0
+2016,Anton Larson Bay,White rock,199,NA,0,0
+2016,Anton Larson Bay,Wooden boat,198,13.5,2,0
+2016,Anton Larson Bay,Wooden boat,199,NA,0,0
+2017,Cook Bay,Bare North,196,10.4,52,336
+2017,Cook Bay,Bare North,198,NA,0,215
+2017,Cook Bay,Eelgrass North,196,10.6,377,83
+2017,Cook Bay,Eelgrass North,198,NA,242,17
+2017,Cook Bay,Eelgrass South,196,10.2,709,69
+2017,Cook Bay,Eelgrass South,198,NA,374,101
+2017,Cook Bay,Eelgrass West,196,11.4,392,125
+2017,Cook Bay,Eelgrass West,198,NA,248,10
+2017,Cook Bay,Laminaria East,196,10.8,365,3758
+2017,Cook Bay,Laminaria East,198,NA,271,659
+2017,Cook Bay,Laminaria North,196,10.6,80,97
+2017,Cook Bay,Laminaria North,198,NA,98,29
+2017,Cook Bay,Laminaria South,196,10.1,331,600
+2017,Cook Bay,Laminaria South,198,NA,417,88
+2017,Cook Bay,Middle Cove,196,10.3,155,436
+2017,Cook Bay,Middle Cove,198,NA,184,611
+2017,Anton Larson Bay,Back Bay eelgrass,194,14.1,0,0
+2017,Anton Larson Bay,Back Bay eelgrass,195,NA,0,0
+2017,Anton Larson Bay,Cobble point,194,11.3,62,0
+2017,Anton Larson Bay,Cobble point,195,NA,0,3
+2017,Anton Larson Bay,Eelgrass patches,194,12.1,244,11
+2017,Anton Larson Bay,Eelgrass patches,195,NA,127,5
+2017,Anton Larson Bay,Eelgrass point,194,10.9,186,31
+2017,Anton Larson Bay,Eelgrass point,195,NA,116,1
+2017,Anton Larson Bay,Laminaria #2,194,14.1,36,0
+2017,Anton Larson Bay,Laminaria #2,195,NA,8,0
+2017,Anton Larson Bay,Laminaria Point,194,10.4,56,9
+2017,Anton Larson Bay,Laminaria Point,195,NA,143,95
+2017,Anton Larson Bay,White rock,194,12.9,0,0
+2017,Anton Larson Bay,White rock,195,NA,0,0
+2017,Anton Larson Bay,Wooden boat,194,13.3,28,0
+2017,Anton Larson Bay,Wooden boat,195,NA,17,0
+2017,Cook Bay,Bare North,234,NA,39,0
+2017,Cook Bay,Bare North,235,NA,22,0
+2017,Cook Bay,Eelgrass North,234,NA,76,16
+2017,Cook Bay,Eelgrass North,235,NA,35,6
+2017,Cook Bay,Eelgrass South,234,NA,163,0
+2017,Cook Bay,Eelgrass South,235,NA,22,1
+2017,Cook Bay,Eelgrass West,234,NA,73,0
+2017,Cook Bay,Eelgrass West,235,NA,13,1
+2017,Cook Bay,Laminaria East,234,NA,212,1
+2017,Cook Bay,Laminaria East,235,NA,230,9
+2017,Cook Bay,Laminaria North,234,NA,3,0
+2017,Cook Bay,Laminaria North,235,NA,0,0
+2017,Cook Bay,Laminaria South,234,NA,110,0
+2017,Cook Bay,Laminaria South,235,NA,3,0
+2017,Cook Bay,Middle Cove,234,NA,17,0
+2017,Cook Bay,Middle Cove,235,NA,45,0
+2017,Anton Larson Bay,Back Bay eelgrass,230,NA,9,0
+2017,Anton Larson Bay,Back Bay eelgrass,231,NA,1,0
+2017,Anton Larson Bay,Cobble point,230,NA,1,0
+2017,Anton Larson Bay,Cobble point,231,NA,13,0
+2017,Anton Larson Bay,Eelgrass patches,230,NA,0,0
+2017,Anton Larson Bay,Eelgrass patches,231,NA,11,0
+2017,Anton Larson Bay,Eelgrass point,230,NA,12,0
+2017,Anton Larson Bay,Eelgrass point,231,NA,4,0
+2017,Anton Larson Bay,Laminaria #2,230,NA,1,0
+2017,Anton Larson Bay,Laminaria #2,231,NA,0,0
+2017,Anton Larson Bay,Laminaria Point,230,NA,1,0
+2017,Anton Larson Bay,Laminaria Point,231,NA,0,0
+2017,Anton Larson Bay,White rock,230,NA,0,0
+2017,Anton Larson Bay,White rock,231,NA,4,0
+2017,Anton Larson Bay,Wooden boat,230,NA,0,0
+2017,Anton Larson Bay,Wooden boat,231,NA,7,0
+2018,Anton Larson Bay,Back Bay eelgrass,199,11.7,0,0
+2018,Cook Bay,Bare North,197,10.3,3,0
+2018,Cook Bay,Bare North,198,10.0,7,0
+2018,Anton Larson Bay,Cobble point,199,10.5,6,9
+2018,Cook Bay,Eelgrass North,197,10.0,40,1
+2018,Cook Bay,Eelgrass North,198,11.1,55,39
+2018,Anton Larson Bay,Eelgrass patches,199,11.4,3,0
+2018,Anton Larson Bay,Eelgrass point,199,12.4,32,49
+2018,Cook Bay,Eelgrass South,197,10.9,470,5
+2018,Cook Bay,Eelgrass South,198,10.0,391,137
+2018,Cook Bay,Eelgrass West,197,11.5,17,1
+2018,Cook Bay,Eelgrass West,198,12.7,26,0
+2018,Anton Larson Bay,Laminaria #2,199,12.1,0,0
+2018,Cook Bay,Laminaria East,197,9.8,218,192
+2018,Cook Bay,Laminaria East,198,10.2,789,3931
+2018,Cook Bay,Laminaria North,197,9.8,2,0
+2018,Cook Bay,Laminaria North,198,10.4,20,7
+2018,Anton Larson Bay,Laminaria Point,199,11.6,1,0
+2018,Cook Bay,Laminaria South,197,10.4,203,80
+2018,Cook Bay,Laminaria South,198,10.3,219,35
+2018,Cook Bay,Middle Cove,197,9.7,363,2459
+2018,Cook Bay,Middle Cove,198,10.3,7,0
+2018,Anton Larson Bay,White rock,199,11.9,0,0
+2018,Anton Larson Bay,Wooden boat,199,11.8,69,0
+2018,Anton Larson Bay,Back Bay eelgrass,196,11.3,0,0
+2018,Anton Larson Bay,Cobble point,196,10.0,11,28
+2018,Anton Larson Bay,Eelgrass patches,196,10.0,1,3
+2018,Anton Larson Bay,Eelgrass point,196,9.9,4,102
+2018,Anton Larson Bay,Laminaria #2,196,10.6,0,0
+2018,Anton Larson Bay,Laminaria Point,196,10.1,140,5
+2018,Anton Larson Bay,White rock,196,10.5,0,0
+2018,Anton Larson Bay,Wooden boat,196,10.8,93,1
+2019,Cook Bay,Middle Cove,193,11.8,0,0
+2019,Cook Bay,Bare North,193,12.3,0,0
+2019,Cook Bay,Eelgrass North,193,13.2,0,0
+2019,Cook Bay,Laminaria North,193,13.7,0,0
+2019,Cook Bay,Eelgrass West,193,13.6,0,0
+2019,Cook Bay,Laminaria South,193,12.4,0,0
+2019,Cook Bay,Laminaria East,193,11.8,1,0
+2019,Cook Bay,Eelgrass South,193,12.1,0,0
+2019,Anton Larson Bay,Laminaria #2,194,13.6,0,0
+2019,Anton Larson Bay,Wooden boat,194,12.1,0,0
+2019,Anton Larson Bay,Back Bay eelgrass,194,12.6,0,0
+2019,Anton Larson Bay,Laminaria Point,194,12.4,1,0
+2019,Anton Larson Bay,Eelgrass point,194,12.3,42,0
+2019,Anton Larson Bay,Eelgrass patches,194,13.3,8,0
+2019,Anton Larson Bay,Cobble point,194,12.8,21,0
+2019,Anton Larson Bay,White rock,194,13.5,0,0
+2019,Anton Larson Bay,Laminaria #2,195,11.4,0,0
+2019,Anton Larson Bay,Wooden boat,195,11.0,0,0
+2019,Anton Larson Bay,Back Bay eelgrass,195,12.0,0,0
+2019,Anton Larson Bay,Laminaria Point,195,12.6,1,0
+2019,Anton Larson Bay,Eelgrass patches,195,12.4,0,0
+2019,Anton Larson Bay,Eelgrass point,195,12.4,87,0
+2019,Anton Larson Bay,Cobble point,195,12.5,5,0
+2019,Anton Larson Bay,White rock,195,12.7,0,0
+2019,Cook Bay,Laminaria South,196,11.2,0,0
+2019,Cook Bay,Eelgrass South,196,11.1,2,0
+2019,Cook Bay,Laminaria East,196,11.4,0,0
+2019,Cook Bay,Eelgrass West,196,11.6,0,0
+2019,Cook Bay,Laminaria North,196,11.6,0,0
+2019,Cook Bay,Eelgrass North,196,11.8,0,0
+2019,Cook Bay,Bare North,196,11.8,0,0
+2019,Cook Bay,Middle Cove,196,11.5,0,0
+2019,Cook Bay,Middle Cove,232,13.7,0,0
+2019,Cook Bay,Bare North,232,13.7,0,0
+2019,Cook Bay,Laminaria North,232,13.8,0,0
+2019,Cook Bay,Eelgrass North,232,13.9,0,0
+2019,Cook Bay,Laminaria East,232,13.6,0,0
+2019,Cook Bay,Eelgrass West,232,13.6,0,0
+2019,Cook Bay,Laminaria South,232,13.3,0,0
+2019,Cook Bay,Eelgrass South,232,13.4,0,0
+2019,Cook Bay,Middle Cove,233,13.2,0,0
+2019,Cook Bay,Bare North,233,13.5,0,0
+2019,Cook Bay,Laminaria South,233,13.2,0,0
+2019,Cook Bay,Eelgrass South,233,13.3,1,0
+2019,Cook Bay,Eelgrass North,233,13.6,0,0
+2019,Cook Bay,Laminaria North,233,13.5,0,0
+2019,Cook Bay,Laminaria East,233,13.4,0,0
+2019,Cook Bay,Eelgrass West,233,14.0,0,0
+2019,Anton Larson Bay,White rock,236,15.0,0,0
+2019,Anton Larson Bay,Back Bay eelgrass,236,13.9,0,0
+2019,Anton Larson Bay,Wooden boat,236,13.8,0,0
+2019,Anton Larson Bay,Laminaria #2,236,13.9,0,0
+2019,Anton Larson Bay,Eelgrass patches,236,14.8,7,0
+2019,Anton Larson Bay,Cobble point,236,14.3,30,0
+2019,Anton Larson Bay,Laminaria Point,236,14.5,0,0
+2019,Anton Larson Bay,Eelgrass point,236,14.6,1,0
+2019,Anton Larson Bay,White rock,237,14.0,0,0
+2019,Anton Larson Bay,Back Bay eelgrass,237,14.3,0,0
+2019,Anton Larson Bay,Wooden boat,237,14.3,0,0
+2019,Anton Larson Bay,Laminaria #2,237,14.6,0,0
+2019,Anton Larson Bay,Eelgrass patches,237,15.6,0,0
+2019,Anton Larson Bay,Laminaria Point,237,15.2,0,0
+2019,Anton Larson Bay,Eelgrass point,237,15.4,0,0
+2019,Anton Larson Bay,Cobble point,237,14.9,6,0
+2018,Cook Bay,Bare North,233,11.4,19,0
+2018,Cook Bay,Middle Cove,233,10.9,27,1
+2018,Cook Bay,Eelgrass North,233,11.5,87,2
+2018,Cook Bay,Laminaria North,233,11.7,11,174
+2018,Cook Bay,Laminaria South,233,11.5,0,0
+2018,Cook Bay,Eelgrass South,233,11.7,641,8
+2018,Cook Bay,Eelgrass West,233,11.9,165,29
+2018,Cook Bay,Laminaria East,233,11.4,47,437
+2018,Cook Bay,Laminaria East,234,10.8,79,641
+2018,Cook Bay,Eelgrass South,234,10.8,483,279
+2018,Cook Bay,Laminaria South,234,10.8,38,14
+2018,Cook Bay,Eelgrass West,234,11.4,124,2
+2018,Cook Bay,Laminaria North,234,11.3,19,0
+2018,Cook Bay,Eelgrass North,234,11.3,153,1
+2018,Cook Bay,Middle Cove,234,11.1,3,0
+2018,Cook Bay,Bare North,234,11.1,0,0
+2018,Anton Larson Bay,Laminaria Point,235,12.5,0,0
+2018,Anton Larson Bay,Eelgrass point,235,11.9,0,0
+2018,Anton Larson Bay,Eelgrass patches,235,12.3,12,12
+2018,Anton Larson Bay,Cobble point,235,12.3,1,2
+2018,Anton Larson Bay,Back Bay eelgrass,235,12.5,0,0
+2018,Anton Larson Bay,Wooden boat,235,12.2,0,0
+2018,Anton Larson Bay,Laminaria #2,235,12.2,0,0
+2018,Anton Larson Bay,White rock,235,12.5,0,0
+2018,Anton Larson Bay,Laminaria Point,236,11.5,0,0
+2018,Anton Larson Bay,Eelgrass point,236,11.9,0,0
+2018,Anton Larson Bay,Eelgrass patches,236,12.1,1,19
+2018,Anton Larson Bay,Cobble point,236,12.6,0,0
+2018,Anton Larson Bay,Back Bay eelgrass,236,12.2,0,0
+2018,Anton Larson Bay,Wooden boat,236,11.4,0,0
+2018,Anton Larson Bay,Laminaria #2,236,12.1,0,0
+2018,Anton Larson Bay,White rock,236,13.1,0,0
+2020,Anton Larson Bay,Eelgrass point,233,11.9,5,0
+2020,Anton Larson Bay,Laminaria Point,233,12.4,0,2
+2020,Anton Larson Bay,Laminaria #2,233,12.5,2,1
+2020,Anton Larson Bay,Wooden boat,233,13.5,0,0
+2020,Anton Larson Bay,Back Bay eelgrass,233,13.3,0,1
+2020,Anton Larson Bay,Eelgrass patches,233,14.0,4,2
+2020,Anton Larson Bay,Cobble point,233,12.6,2,0
+2020,Anton Larson Bay,White rock,233,14.4,0,0
+2020,Cook Bay,Laminaria North,184,10.8,16,0
+2020,Cook Bay,Eelgrass West,184,10.6,212,220
+2020,Cook Bay,Laminaria East,184,10.3,204,0
+2020,Cook Bay,Eelgrass South,184,10.3,370,55
+2020,Cook Bay,Laminaria North,234,14.0,484,0
+2020,Cook Bay,Eelgrass North,234,13.2,830,0
+2020,Cook Bay,Eelgrass West,234,13.7,673,2
+2020,Cook Bay,Laminaria East,234,13.2,211,0
+2020,Cook Bay,Eelgrass South,234,13.1,950,0
+2020,Cook Bay,Laminaria South,234,13.5,95,0
+2020,Cook Bay,Middle Cove,234,12.2,67,0
+2020,Cook Bay,Bare North,234,13.8,1350,1
+2018,Ugak,Ugak-1,186,12.0,0,0
+2018,Ugak,Ugak-2,186,11.9,1,0
+2018,Ugak,Ugak-3,186,13.2,11,0
+2018,Ugak,Ugak-4,186,8.3,1,0
+2018,Ugak,Ugak-5,186,12.5,21,0
+2018,Ugak,Ugak-6,186,11.9,103,0
+2018,Kiluida,Kilu-1,188,14.3,0,0
+2018,Kiluida,Kilu-2,188,16.2,0,0
+2018,Kiluida,Kilu-3,188,15.9,13,0
+2018,Kiluida,Kilu-4,188,16.9,4,0
+2018,Kiluida,Kilu-5,188,15.0,5,0
+2018,Kiluida,Kilu-6,188,15.0,0,0
+2018,Kiluida,Kilu-7,188,15.7,2,0
+2018,Kaiugnak,Kai-1,190,10.5,2,0
+2018,Kaiugnak,Kai-2,190,10.7,7,0
+2018,Kaiugnak,Kai-3,190,10.5,18,0
+2018,Kaiugnak,Kai-4,190,10.4,45,0
+2018,Kaiugnak,Kai-5,190,9.1,13,0
+2018,Kaiugnak,Kai-6,190,10.4,6,0
+2018,Japanese,Jap-1,192,10.6,407,0
+2018,Japanese,Jap-2,192,11.0,302,0
+2018,Japanese,Jap-3,192,10.4,345,0
+2018,Japanese,Jap-4,192,11.3,1,0
+2018,Japanese,Jap-5,192,12.6,42,0
+2018,Japanese,Jap-6,192,12.7,47,0
+2018,Rodman Reach,RR-1,195,10.5,17,0
+2018,Rodman Reach,RR-2,195,10.8,16,0
+2018,Rodman Reach,RR-3,195,10.6,379,0
+2018,Rodman Reach,RR-4,195,10.5,44,0
+2018,Rodman Reach,RR-5,195,10.8,0,0
+2018,Rodman Reach,RR-6,195,10.7,54,0
+2018,Agripina,AG-1,197,10.1,103,0
+2018,Agripina,AG-2,197,9.2,200,0
+2018,Agripina,AG-3,197,10.6,643,2
+2018,Agripina,AG-4,197,11.8,835,1
+2018,Agripina,AG-5,197,12.0,807,6
+2018,Agripina,AG-6,197,12.3,2,0
+2018,Port Wrangell,PW-1,198,8.6,558,3144
+2018,Port Wrangell,PW-2,198,8.7,552,3630
+2018,Port Wrangell,PW-3,198,9.5,477,2277
+2018,Port Wrangell,PW-4,198,11.2,311,8
+2018,Mitrofania,Mit-1,203,9.5,70,118
+2018,Mitrofania,Mit-2,203,9.7,72,10
+2018,Mitrofania,Mit-3,203,10.9,55,2
+2018,Mitrofania,Mit-4,203,10.5,131,5
+2018,Mitrofania,Mit-5,203,10.1,123,3
+2018,Mitrofania,Mit-6,203,10.5,16,208
+2018,Fox,Fox-1,205,9.3,389,3
+2018,Fox,Fox-2,205,9.7,129,1
+2018,Fox,Fox-3,205,10.4,276,0
+2018,Fox,Fox-4,205,11.0,26,0
+2018,Fox,Fox-5,205,11.1,12,0
+2018,Sand Point,Sand-1,207,10.5,2,0
+2018,Sand Point,Sand-2,207,10.0,395,0
+2018,Sand Point,Sand-3,207,10.0,316,0
+2018,Falmouth,Fal-1,210,9.1,406,0
+2018,Falmouth,Fal-2,210,9.3,224,0
+2018,Falmouth,Fal-3,210,9.1,118,1
+2018,Falmouth,Fal-4,211,9.3,1324,44
+2018,Falmouth,Fal-5,211,9.5,111,0
+2018,Baralof,Bar-1,213,9.0,257,0
+2018,Baralof,Bar-2,213,9.4,420,0
+2018,Baralof,Bar-3,213,9.2,667,0
+2018,Baralof,Bar-4,213,8.7,304,0
+2018,Baralof,Bar-5,213,9.3,183,0
+2018,Baralof,Bar-6,213,9.8,87,0
+2018,Balboa,BB-1,217,12.2,6,0
+2018,Balboa,BB-2,217,12.0,86,0
+2018,Balboa,BB-3,217,10.7,20,0
+2018,Balboa,BB-4,217,12.5,294,0
+2018,Balboa,BB-5,217,12.0,2,0
+2018,Balboa,BB-6,217,13.5,542,0
+2018,Fox,Fox-4,219,12.5,0,0
+2018,Fox,Fox-5,219,12.9,0,0
+2018,Fox,Fox-1,219,14.3,147,0
+2018,Fox,Fox-2,219,13.9,17,0
+2018,Fox,Fox-3,219,14.5,33,0
+2018,Mitrofania,Mit-1,221,10.5,172,87
+2018,Mitrofania,Mit-2,221,11.6,19,32
+2018,Mitrofania,Mit-3,221,11.6,308,26
+2018,Mitrofania,Mit-6,221,12.5,8,69
+2018,Mitrofania,Mit-4,221,12.4,6,3
+2018,Mitrofania,Mit-5,221,13.2,39,0
+2018,Port Wrangell,PW-3,226,7.9,0,0
+2018,Port Wrangell,PW-2,226,8.0,29,0
+2018,Port Wrangell,PW-1,226,7.5,263,2
+2018,Port Wrangell,PW-4,226,9.1,459,2172
+2018,Agripina,AG-1,227,NA,427,0
+2018,Agripina,AG-2,227,9.1,8,1
+2018,Agripina,AG-4,227,8.4,11,0
+2018,Agripina,AG-3,227,9.4,278,25
+2018,Agripina,AG-5,227,9.4,590,592
+2018,Agripina,AG-6,227,9.3,0,0
+2018,Rodman Reach,RR-1,229,11.8,35,3
+2018,Rodman Reach,RR-4,229,12.4,62,13
+2018,Rodman Reach,RR-5,229,12.4,0,0
+2018,Rodman Reach,RR-6,232,12.4,28,0
+2018,Rodman Reach,RR-2,232,12.4,16,0
+2018,Japanese,Jap-5,234,12.0,0,0
+2018,Japanese,Jap-4,234,11.5,5,0
+2018,Japanese,Jap-1,234,12.0,182,0
+2018,Japanese,Jap-6,234,11.7,459,5
+2018,Japanese,Jap-2,234,11.7,0,0
+2018,Japanese,Jap-3,234,11.4,0,0
+2018,Japanese,Jap-7,234,11.5,1,0
+2018,Kaiugnak,Kai-1,236,9.8,591,97
+2018,Kaiugnak,Kai-2,236,10.0,406,50
+2018,Kaiugnak,Kai-3,236,10.0,87,0
+2018,Kaiugnak,Kai-6,236,10.1,1,0
+2018,Kaiugnak,Kai-4,236,9.9,5,0
+2018,Kaiugnak,Kai-7,236,10.6,3,0
+2018,Kiluida,Kilu-5,238,10.3,144,2
+2018,Kiluida,Kilu-1,238,11.6,65,0
+2018,Kiluida,Kilu-4,238,11.8,64,0
+2018,Kiluida,Kilu-8,238,12.2,94,0
+2018,Kiluida,Kilu-9,238,10.9,1,0
+2018,Ugak,Ugak-5,240,9.3,1,1
+2018,Ugak,Ugak-6,240,8.7,0,0
+2018,Ugak,Ugak-3,240,9.8,0,0
+2018,Ugak,Ugak-2,240,8.4,1,0
+2018,Ugak,Ugak-1,240,11.8,0,0
+2018,Ugak,Ugak-7,240,11.2,0,0
+2018,Ugak,Ugak-4,240,12.4,4,0
+2018,Ugak,Ugak-8,240,11.7,3,0
+2019,Agripina,AG-1,188,11.5,2,0
+2019,Agripina,AG-2,188,12.6,5,0
+2019,Agripina,AG-5,188,12.3,31,0
+2019,Agripina,AG-3,188,12.1,6,0
+2019,Agripina,AG-4,188,11.8,0,0
+2019,Agripina,AG-6,188,17.7,0,0
+2019,Port Wrangell,PW-3,190,11.0,0,0
+2019,Port Wrangell,PW-2,190,12.4,1,0
+2019,Port Wrangell,PW-1,190,12.6,0,0
+2019,Port Wrangell,PW-4,190,15.1,0,0
+2019,Mitrofania,Mit-1,193,11.1,4,0
+2019,Mitrofania,Mit-2,193,12.4,1,0
+2019,Mitrofania,Mit-3,193,13.2,44,7
+2019,Mitrofania,Mit-5,193,13.8,0,0
+2019,Mitrofania,Mit-6,193,13.8,5,0
+2019,Mitrofania,Mit-4,193,14.3,1,0
+2019,Fox,Fox-5,195,15.5,0,0
+2019,Fox,Fox-1,195,12.8,0,0
+2019,Fox,Fox-2,195,12.9,0,0
+2019,Fox,Fox-3,195,12.8,0,0
+2019,Fox,Fox-4,195,12.1,0,0
+2019,Balboa,BB-2,198,13.3,3,27
+2019,Balboa,BB-3,198,13.6,0,0
+2019,Balboa,BB-4,198,13.6,2,1
+2019,Balboa,BB-7,198,13.9,0,23
+2019,Balboa,BB-6,198,14.2,0,0
+2019,Balboa,BB-1,198,14.3,0,0
+2019,Sand Point,Sand-2,202,11.8,7,0
+2019,Sand Point,Sand-3,202,12.3,1,0
+2019,Falmouth,Fal-1,204,11.5,0,0
+2019,Falmouth,Fal-2,204,11.1,0,0
+2019,Falmouth,Fal-3,204,10.8,5,0
+2019,Falmouth,Fal-4,204,10.7,0,1
+2019,Falmouth,Fal-5,204,11.9,0,0
+2019,Baralof,Bar-1,206,12.2,0,0
+2019,Baralof,Bar-3,206,11.5,0,0
+2019,Baralof,Bar-2,206,11.8,0,0
+2019,Baralof,Bar-6,206,11.7,0,0
+2019,Baralof,Bar-4,206,12.1,0,0
+2019,Baralof,Bar-5,206,12.1,0,0
+2019,Rodman Reach,RR-3,212,13.4,3,0
+2019,Rodman Reach,RR-5,212,14.1,0,0
+2019,Rodman Reach,RR-6,212,13.7,0,1
+2019,Rodman Reach,RR-4,212,14.9,8,0
+2019,Rodman Reach,RR-1,212,13.9,0,0
+2019,Rodman Reach,RR-2,212,13.3,1,1
+2019,Japanese,Jap-7,218,12.0,0,0
+2019,Japanese,Jap-2,218,12.1,0,0
+2019,Japanese,Jap-3,218,12.2,0,0
+2019,Japanese,Jap-1,218,13.0,0,0
+2019,Japanese,Jap-6,218,12.8,0,0
+2019,Japanese,Jap-5,218,13.8,2,0
+2019,Japanese,Jap-4,218,12.2,0,0
+2019,Kaiugnak,Kai-1,219,10.4,0,0
+2019,Kaiugnak,Kai-2,219,10.7,32,0
+2019,Kaiugnak,Kai-3,219,11.9,71,0
+2019,Kaiugnak,Kai-6,220,11.9,5,0
+2019,Kaiugnak,Kai-7,220,12.4,0,0
+2019,Kaiugnak,Kai-4,220,10.9,0,0
+2019,Kiluida,Kilu-1,222,15.7,0,0
+2019,Kiluida,Kilu-2,222,16.5,0,0
+2019,Kiluida,Kilu-4,222,16.8,0,0
+2019,Kiluida,Kilu-5,222,13.9,0,0
+2019,Kiluida,Kilu-6,222,14.1,0,0
+2019,Kiluida,Kilu-3,222,15.4,0,0
+2019,Ugak,Ugak-7,226,19.5,0,0
+2019,Ugak,Ugak-2,226,19.1,0,0
+2019,Ugak,Ugak-3,226,18.6,0,0
+2019,Ugak,Ugak-4,226,18.1,0,0
+2019,Ugak,Ugak-8,226,18.9,0,0
+2019,Ugak,Ugak-5,226,19.7,0,0
+2019,Ugak,Ugak-6,226,19.3,0,0
+2020,Agripina,AG-1,188,12.3,328,0
+2020,Agripina,AG-2,188,12.1,381,78
+2020,Agripina,AG-5,188,12.0,615,331
+2020,Agripina,AG-3,188,12.3,2496,434
+2020,Agripina,AG-4,188,12.1,59,1
+2020,Agripina,AG-6,188,13.9,1,0
+2020,Port Wrangell,PW-1,190,8.6,1363,2
+2020,Port Wrangell,PW-2,190,8.8,2076,1224
+2020,Port Wrangell,PW-3,190,9.0,1122,33
+2020,Port Wrangell,PW-4,190,9.2,323,8
+2020,Mitrofania,Mit-1,194,12.3,93,49
+2020,Mitrofania,Mit-2,194,12.7,37,0
+2020,Mitrofania,Mit-3,194,12.5,143,127
+2020,Mitrofania,Mit-4,194,13.0,29,1
+2020,Mitrofania,Mit-5,194,14.8,0,0
+2020,Mitrofania,Mit-6,194,13.4,10,10
+2020,Fox,Fox-1,196,12.4,5,0
+2020,Fox,Fox-2,196,13.5,11,0
+2020,Fox,Fox-3,196,13.1,17,0
+2020,Fox,Fox-4,196,12.2,5,0
+2020,Fox,Fox-5,196,13.1,0,0
+2020,Balboa,BB-2,199,12.7,86,17
+2020,Balboa,BB-3,199,13.0,61,1
+2020,Balboa,BB-4,199,12.4,55,371
+2020,Balboa,BB-6,199,13.1,24,668
+2020,Balboa,BB-7,199,13.7,12,7
+2020,Falmouth,Fal-1,201,12.3,603,0
+2020,Falmouth,Fal-5,201,12.2,101,0
+2020,Falmouth,Fal-3,201,12.0,19,7
+2020,Falmouth,Fal-4,201,12.0,660,26
+2020,Falmouth,Fal-2,201,12.2,0,0
+2020,Sand Point,Sand-2,202,11.9,689,51
+2020,Sand Point,Sand-3,202,12.2,211,20
+2020,Baralof,Bar-2,205,11.2,59,11
+2020,Baralof,Bar-3,205,11.0,861,0
+2020,Baralof,Bar-4,205,11.1,33,0
+2020,Baralof,Bar-5,205,11.0,83,0
+2020,Baralof,Bar-1,205,11.5,77,2
+2020,Baralof,Bar-6,205,11.5,4,1
+2020,Rodman Reach,RR-1,210,13.6,16,66
+2020,Rodman Reach,RR-2,210,13.4,3,0
+2020,Rodman Reach,RR-4,210,12.9,22,67
+2020,Rodman Reach,RR-5,210,14.1,0,0
+2020,Rodman Reach,RR-6,210,14.0,6,0
+2020,Japanese,Jap-2,212,12.2,29,0
+2020,Japanese,Jap-3,212,11.8,332,0
+2020,Japanese,Jap-6,212,11.9,141,0
+2020,Japanese,Jap-1,212,12.6,45,0
+2020,Japanese,Jap-5,212,13.5,48,0
+2020,Japanese,Jap-4,212,13.1,167,0
+2020,Kaiugnak,Kai-1,214,12.1,44,0
+2020,Kaiugnak,Kai-2,214,12.1,636,0
+2020,Kaiugnak,Kai-6,214,11.9,221,0
+2020,Kaiugnak,Kai-3,214,11.3,238,0
+2020,Kaiugnak,Kai-7,214,11.9,5,0
+2020,Kaiugnak,Kai-4,214,12.2,231,0
+2020,Kiluida,Kilu-1,216,12.7,35,0
+2020,Kiluida,Kilu-2,216,12.7,12,0
+2020,Kiluida,Kilu-4,216,12.5,28,0
+2020,Kiluida,Kilu-6,216,12.5,101,0
+2020,Kiluida,Kilu-5,216,12.2,181,0
+2020,Kiluida,Kilu-3,216,12.8,11,0
+2020,Ugak,Ugak-2,220,13.7,0,0
+2020,Ugak,Ugak-3,220,13.8,0,0
+2020,Ugak,Ugak-4,220,12.6,2,0
+2020,Ugak,Ugak-8,220,13.2,0,0
+2020,Ugak,Ugak-5,220,13.1,0,0
+2020,Ugak,Ugak-6,220,13.5,7,0
+2020,Ugak,Ugak-7,220,13.8,0,0
