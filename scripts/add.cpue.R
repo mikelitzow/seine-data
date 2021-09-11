@@ -29,6 +29,7 @@ d3 <- read.csv("./data/length_2021.csv")
 head(d3)
 unique(d3$Species)
 hist(filter(d3, Species == "Pacific cod")$Length)
+
 # clear break with age 1 >> 150mm
 
 age.1 <- d3 %>%
@@ -97,6 +98,28 @@ names(d4)[2:3] <- c("bay", "site")
 dat <- rbind(d1, d4)
 
 # hot dog
+
+# now add 2021 Cooks / Anton's data
+d5 <- read.csv("./data/Kodiak gadid CPUE 2006-2021.csv")
+
+head(d5)
+
+# quick check - does Total.Gadid column = sum of the individual columns?
+check <- d5 %>%
+  mutate(check.total = Saffron.cod + Pacific.cod + Pollock + Pacific.cod.1. + Pacific.cod.2. + Saffron.1. + Saffron.2. + Pollock.1.)
+
+
+ggplot(check, aes(Total.Gadid, check.total, color = Year)) +
+  geom_point() +
+  coord_trans(y = "pseudo_log", x = "pseudo_log") + 
+  scale_color_viridis_c()
+
+
+ggsave("./figs/data_check_plot.png", width = 6, height = 4, units = 'in')
+
+# clean up to combine with dat
+d5 <- d5 %>% 
+  select(Year, Region, Site.Name, Date, )
 
 # now fit model to update time series
 library(dplyr)
