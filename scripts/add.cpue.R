@@ -105,8 +105,27 @@ d5 <- read.csv("./data/Kodiak gadid CPUE 2006-2021.csv")
 head(d5)
 
 # clean up to combine with dat
+# change to julian day
+d5$julian <- lubridate::yday(as.POSIXct(d5$Date, format = "%m/%d/%Y"))
+
 d5 <- d5 %>% 
-  select(Year, Region, Site.Name, Date, )
+  filter(Year == 2021) %>%
+  select(Year, Region, Site.Name, julian, Pacific.cod, Pollock)
+
+# reset names
+names(d5) <- names(dat)
+
+# check for uniform names
+unique(d5$bay)
+unique(dat$bay)
+site.dat <- unique(filter(dat, bay %in% c("Cook Bay", "Anton Larson Bay"))$site)
+site.d5 <-  unique(d5$site)
+
+check.sites <- data.frame(dat = c(str_sort(site.dat), NA),
+                          d5 = str_sort(site.d5))
+
+# aha! d5 has "Middle cove" and "Middle Cove"
+
 
 # now fit model to update time series
 library(dplyr)
