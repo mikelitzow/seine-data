@@ -104,22 +104,6 @@ d5 <- read.csv("./data/Kodiak gadid CPUE 2006-2021.csv")
 
 head(d5)
 
-# quick check - does Total.Gadid column = sum of the individual columns?
-check <- d5 %>%
-  mutate(check.total = Saffron.cod + Pacific.cod + Pollock + Pacific.cod.1. + Pacific.cod.2. + Saffron.1. + Saffron.2. + Pollock.1.)
-
-
-ggplot(check, aes(Total.Gadid, check.total, color = Year)) +
-  geom_point() +
-  coord_trans(y = "pseudo_log", x = "pseudo_log") + 
-  scale_color_viridis_c()
-
-
-ggsave("./figs/data_check_plot.png", width = 6, height = 4, units = 'in')
-
-# something appears to be off
-# looking into that, for now I'll get the code ready to run after the data have been checked
-
 # clean up to combine with dat
 d5 <- d5 %>% 
   select(Year, Region, Site.Name, Date, )
