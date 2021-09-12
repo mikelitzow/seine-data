@@ -99,7 +99,7 @@ dat <- rbind(d1, d4)
 
 # hot dog
 
-# now add 2021 Cooks / Anton's data
+## add 2021 Cooks / Anton's data------------------------------------------------
 d5 <- read.csv("./data/Kodiak gadid CPUE 2006-2021.csv")
 
 head(d5)
@@ -116,6 +116,9 @@ ggplot(check, aes(Total.Gadid, check.total, color = Year)) +
 
 
 ggsave("./figs/data_check_plot.png", width = 6, height = 4, units = 'in')
+
+# something appears to be off
+# looking into that, for now I'll get the code ready to run after the data have been checked
 
 # clean up to combine with dat
 d5 <- d5 %>% 
