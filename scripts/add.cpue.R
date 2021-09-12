@@ -118,100 +118,101 @@ names(d5) <- names(dat)
 # check for uniform names
 unique(d5$bay)
 unique(dat$bay)
-site.dat <- unique(filter(dat, bay %in% c("Cook Bay", "Anton Larson Bay"))$site)
-site.d5 <-  unique(d5$site)
+
 
 check.sites <- data.frame(dat = c(str_sort(site.dat), NA),
                           d5 = str_sort(site.d5))
 
 # aha! d5 has "Middle cove" and "Middle Cove"
+change <- d5$site == "Middle cove"
+d5$site[change] <- "Middle Cove"
 
+# check that worked
+site.dat <- unique(filter(dat, bay %in% c("Cook Bay", "Anton Larson Bay"))$site)
+site.d5 <-  unique(d5$site)
+check.sites <- data.frame(dat = str_sort(site.dat),
+                          d5 = str_sort(site.d5))
+check.sites
 
-# now fit model to update time series
-library(dplyr)
-library(plyr)
-library(tidyverse)
-library(mgcv)
-library(rstan)
-library(brms)
-library(bayesplot)
-source("./scripts/stan_utils.R")
+# hot dog
 
+# combine
+dat <- rbind(dat, d5)
 
-## prepare data --------------------------------------------
-dat$cod <- dat$cod.age.0
-dat$bay_fac <- as.factor(dat$bay)
-dat$year_fac <- as.factor(dat$year)
-dat$site_fac <- as.factor(dat$site)
+# check
+g <- ggplot(dat) +
+  aes(x = year, y = cod.age.0, color = site) +
+  geom_point() +
+  facet_wrap( ~ bay) +
+  theme(legend.position = "none")
+print(g)
 
-## brms: setup ---------------------------------------------
+# some messy names
 
-## Define model formula
-time.series_formula <-  bf(cod ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
-                       zi ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac))
+# first, remove Caton Harbor and NE Harbor (Sanak)
+dat <- dat %>%
+  filter(bay != "Caton Harbor", bay != "NE Harbor")
 
-## Set model distributions
-zinb <- zero_inflated_negbinomial(link = "log", link_shape = "log", link_zi = "logit")
+# clean up names!
 
-## Set priors
-priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
-                 set_prior("normal(0, 3)", class = "Intercept"),
-                 set_prior("student_t(3, 0, 3)", class = "sd"),
-                 set_prior("student_t(3, 0, 3)", class = "sds"),
-                 set_prior("gamma(0.01, 0.01)", class = "shape"),
-                 set_prior("normal(0, 3)", class = "b", dpar = "zi"),
-                 set_prior("logistic(0, 1)", class = "Intercept", dpar = "zi"),
-                 set_prior("student_t(3, 0, 3)", class = "sd", dpar = "zi"),
-                 set_prior("student_t(3, 0, 3)", class = "sds", dpar = "zi"))
+change <- dat$bay == "Cook Bay"
+dat$bay[change] <- "Cook"
 
+change <- dat$bay == "Anton Larson Bay"
+dat$bay[change] <- "Anton Larson"
 
-## fit: zero-inflated --------------------------------------
-cod_time.series_zinb <- brm(time.series_formula,
-                    data = dat,
-                    prior = priors_zinb,
-                    family = zinb,
-                    cores = 4, chains = 4, iter = 4000,
-                    save_pars = save_pars(all = TRUE),
-                    control = list(adapt_delta = 0.999, max_treedepth = 10))
-cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-saveRDS(cod_time.series_zinb, file = "output/cod_time.series_zinb.rds")
+# see what's going on with Agripina
+unique(dat$bay) # the famous trailing space!
 
-cod_time.series_zinb <- readRDS("./output/cod_time.series_zinb.rds")
-check_hmc_diagnostics(cod_time.series_zinb$fit)
-neff_lowest(cod_time.series_zinb$fit)
-rhat_highest(cod_time.series_zinb$fit)
-summary(cod_time.series_zinb)
-bayes_R2(cod_time.series_zinb)
-plot(cod_time.series_zinb$criteria$loo, "k")
-plot(conditional_smooths(cod_time.series_zinb), ask = FALSE)
-y <- cod.data$cod
-yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_time.series_zinb), 25), ]) +
-  xlim(0, 500) +
-  ggtitle("cod_time.series_zinb")
-pdf("./figs/trace_cod_time.series_zinb.pdf", width = 6, height = 4)
-trace_plot(cod_time.series_zinb$fit)
-dev.off()
+change <- dat$bay == "Agripina "
+dat$bay[change] <- "Agripina"
 
-## Predicted effects ---------------------------------------
+change <- dat$bay == "Japanese Bay"
+dat$bay[change] <- "Japanese"
 
-## 95% CI
-ce1s_1 <- conditional_effects(cod_far_zinb, effect = "far_fac", re_formula = NA,
-                              probs = c(0.025, 0.975))  
+change <- dat$bay == "Kaiugnak Bay"
+dat$bay[change] <- "Kaiugnak"
 
-plot <- ce1s_1$far_fac %>%
-  select(far_fac, estimate__, lower__, upper__)
+change <- dat$bay == "Pt Wrangell"
+dat$bay[change] <- "Port Wrangell"
 
-plot$far_fac <- reorder(plot$far_fac, desc(plot$far_fac))
+change <- dat$bay == "Rodmans Reach"
+dat$bay[change] <- "Rodman Reach"
 
-fig.2b <- ggplot(plot, aes(far_fac, estimate__)) +
-  geom_point(size=3) +
-  geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
-  ylab("Fish / set") +
-  xlab("FAR") +
-  scale_x_discrete(labels=c(expression("<0.98"), expression("">=0.98))) +
-  scale_y_continuous(breaks=c(1,5,10,50,100,150)) +
-  coord_trans(y = "pseudo_log") + 
-  theme_bw()
+# check again
+g <- ggplot(dat) +
+  aes(x = year, y = cod.age.0, color = site) +
+  geom_point() +
+  facet_wrap( ~ bay) +
+  theme(legend.position = "none")
+print(g)
 
-print(fig.2b)
+# bays are good - now check sites
+str_sort(unique(dat$site))
+
+# looks like some repeat Rodman Reach names
+View(filter(dat, bay == "Rodman Reach"))
+# yes - the site names are different in 2021
+
+change <- dat$site == "Rod-1"
+dat$site[change] <- "RR-1"
+
+change <- dat$site == "Rod-2"
+dat$site[change] <- "RR-2"
+
+change <- dat$site == "Rod-4"
+dat$site[change] <- "RR-4"
+
+change <- dat$site == "Rod-5"
+dat$site[change] <- "RR-5"
+
+change <- dat$site == "Rod-6"
+dat$site[change] <- "RR-6"
+
+# check again
+str_sort(unique(dat$site))
+
+filter(dat, site == "Rod-1")
+
+# save
+write.csv(dat, "./data/age.0_cod_pollock_seine_cpue.csv")
