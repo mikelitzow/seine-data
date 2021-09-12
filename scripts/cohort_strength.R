@@ -7,7 +7,7 @@ library(rstan)
 library(brms)
 library(bayesplot)
 source("./scripts/stan_utils.R")
-
+theme_set(theme_bw())
 
 dat <- read.csv("./data/age.0_cod_pollock_seine_cpue.csv", row.names = 1)
 
@@ -57,7 +57,7 @@ summary(cod_time.series_zinb)
 bayes_R2(cod_time.series_zinb)
 plot(cod_time.series_zinb$criteria$loo, "k")
 plot(conditional_smooths(cod_time.series_zinb), ask = FALSE)
-y <- cod.data$cod
+y <- dat$cod
 yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
 ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_time.series_zinb), 25), ]) +
   xlim(0, 500) +
@@ -65,25 +65,26 @@ ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_ti
 pdf("./figs/trace_cod_time.series_zinb.pdf", width = 6, height = 4)
 trace_plot(cod_time.series_zinb$fit)
 dev.off()
+
 ## Predicted effects ---------------------------------------
 
 ## 95% CI
-ce1s_1 <- conditional_effects(cod_far_zinb, effect = "far_fac", re_formula = NA,
+ce1s_1 <- conditional_effects(cod_time.series_zinb, effect = "year_fac", re_formula = NA,
                               probs = c(0.025, 0.975))  
 
-plot <- ce1s_1$far_fac %>%
-  select(far_fac, estimate__, lower__, upper__)
+plot.cod <- ce1s_1$year_fac %>%
+  select(year_fac, estimate__, lower__, upper__)
 
-plot$far_fac <- reorder(plot$far_fac, desc(plot$far_fac))
 
-fig.2b <- ggplot(plot, aes(far_fac, estimate__)) +
+ggplot(plot.cod, aes(year_fac, estimate__)) +
   geom_point(size=3) +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Fish / set") +
-  xlab("FAR") +
-  scale_x_discrete(labels=c(expression("<0.98"), expression("">=0.98))) +
-  scale_y_continuous(breaks=c(1,5,10,50,100,150)) +
-  coord_trans(y = "pseudo_log") + 
-  theme_bw()
+  scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
+  coord_trans(y = "pseudo_log") +
+  theme(axis.title.x = element_blank())
 
-print(fig.2b)
+# round, rename columns, and save
+plot.cod[,2:4] <- round(plot.cod[,2:4], 1)
+names(plot.cod) <- c("year", "cod_per_set", "cod_95percent_LCI", "cod_95percent_UCI")
+write.csv(plot.cod, "./output/cod_age0_abundance_estimates.csv", row.names = F)
