@@ -73,7 +73,7 @@ ce1s_1 <- conditional_effects(cod_time.series_zinb, effect = "year_fac", re_form
                               probs = c(0.025, 0.975))  
 
 plot.cod <- ce1s_1$year_fac %>%
-  select(year_fac, estimate__, lower__, upper__)
+  select(year_fac, estimate__, se__, lower__, upper__)
 
 
 ggplot(plot.cod, aes(year_fac, estimate__)) +
@@ -87,8 +87,8 @@ ggplot(plot.cod, aes(year_fac, estimate__)) +
 ggsave("./figs/seine_cod_age0_abundance_estimates.png", width = 6, height = 4, units = 'in')
 
 # round, rename columns, and save
-plot.cod[,2:4] <- round(plot.cod[,2:4], 1)
-names(plot.cod) <- c("year", "cod_per_set", "cod_95percent_LCI", "cod_95percent_UCI")
+plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
+names(plot.cod) <- c("year", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
 write.csv(plot.cod, "./output/seine_cod_age0_abundance_estimates.csv", row.names = F)
 
 ## prepare pollock data --------------------------------------------
@@ -156,7 +156,7 @@ ce1s_1 <- conditional_effects(pollock_time.series_zinb, effect = "year_fac", re_
                               probs = c(0.025, 0.975))  
 
 plot.pollock <- ce1s_1$year_fac %>%
-  select(year_fac, estimate__, lower__, upper__)
+  select(year_fac, estimate__, se__, lower__, upper__)
 
 
 ggplot(plot.pollock, aes(year_fac, estimate__)) +
@@ -170,6 +170,6 @@ ggplot(plot.pollock, aes(year_fac, estimate__)) +
 ggsave("./figs/seine_pollock_age0_abundance_estimates.png", width = 6, height = 4, units = 'in')
 
 # round, rename columns, and save
-plot.pollock[,2:4] <- round(plot.pollock[,2:4], 1)
-names(plot.pollock) <- c("year", "pollock_per_set", "pollock_95percent_LCI", "pollock_95percent_UCI")
+plot.pollock[,2:5] <- round(plot.pollock[,2:5], 2)
+names(plot.pollock) <- c("year", "pollock_per_set", "pollock_se", "pollock_95percent_LCI", "pollock_95percent_UCI")
 write.csv(plot.pollock, "./output/seine_pollock_age0_abundance_estimates.csv", row.names = F)
