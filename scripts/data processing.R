@@ -560,7 +560,69 @@ unique(old.dat$bay)
 
 # clean up
 change <- length.2021$Bay == "Japanese Bay"
-length.2021$Species[change] <- "Japanese"
+length.2021$Bay[change] <- "Japanese"
+
+change <- length.2021$Bay == "Kaiugnak Bay"
+length.2021$Bay[change] <- "Kaiugnak"
+
+change <- length.2021$Bay == "Pt Wrangell"
+length.2021$Bay[change] <- "Port Wrangell"
+
+change <- length.2021$Bay == "Rodmans Reach"
+length.2021$Bay[change] <- "Rodman Reach"
+
+length.2021$Date <- dates(length.2021$Date)
+length.2021$julian <- lubridate::yday(length.2021$Date)
+
+length.2021$year <- 2021
+
+# now need to link in with temp and cpue data
+site <- read.csv("./data/site_2021.csv")
+cpue <- read.csv("./data/cpue_2021.csv")
+
+head(site) 
+head(cpue)
+
+# simplify and clean up to join with length
+unique(cpue$species)
+
+cpue <- cpue %>%
+  filter(species %in% c("Pacific cod", "walleye pollock")) %>%
+  select(Station, species, CPUE) %>%
+  pivot_wider(names_from = species, values_from = CPUE) %>%
+  rename(cod.cpue = `Pacific cod`, pollock.cpue = `walleye pollock`)
+
+# change NA to 0
+change <- is.na(cpue)
+cpue[change] <- 0
+
+# join to length.2021
+length.2021 <- left_join(length.2021, cpue)
+
+# and now temps
+site <- site %>%
+  select(Station, Temp.C) %>%
+  rename(temperature = Temp.C) 
+
+site$Station <- as.numeric(site$Station)
+
+length.2021 <- left_join(length.2021, site)
+
+head(length.2021)
+head(old.dat)
+
+# clean up names and put together
+length.2021 <- length.2021 %>%
+  select(year, julian, Site, Bay, Species, Length, cod.cpue, pollock.cpue, temperature) %>%
+  rename(site = Site, bay = Bay, species = Species, length = Length)
+
+new.dat <- rbind(old.dat, length.2021)
+
+unique(new.dat$site)
+unique(new.dat$bay)
+
+# and save!
+write.csv(new.dat, "./data/cod.pollock.lengths.2006.2021.csv", row.names = F)
 
 ########################
 # cod condition data
