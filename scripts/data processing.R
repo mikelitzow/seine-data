@@ -521,6 +521,46 @@ write.csv(pollock.length, "data/pollock length data.csv")
 # head(site)
 # View(site)
 
+## updating with 2021 WGOA length data
+length.2021 <- read.csv("./data/length_2021.csv")
+
+# clean up - select only P. cod and pollock
+unique(length.2021$Species)
+
+length.2021 <- length.2021 %>%
+  filter(Species %in% c("Pacific cod", "walleye pollock"))
+
+# change species code to match previous data
+change <- length.2021$Species == "Pacific cod"
+length.2021$Species[change] <- "pcod"
+
+change <- length.2021$Species == "walleye pollock"
+length.2021$Species[change] <- "poll"
+
+cod.length <- read.csv("./data/cod length data.csv", row.names = 1)
+
+head(cod.length)
+
+pollock.length <- read.csv("./data/pollock length data.csv", row.names = 1)
+
+head(pollock.length)
+
+old.dat <- rbind(cod.length, pollock.length)
+
+# check site and bay names
+unique(length.2021$Site)
+unique(old.dat$site)
+
+# shorten "Mitro"
+change <- grep("Mitro", length.2021$Site)  
+length.2021$Site[change] <- paste(str_sub(length.2021$Site[change], 1,3), str_sub(length.2021$Site[change], 6,7), sep = "")
+
+unique(length.2021$Bay)
+unique(old.dat$bay)
+
+# clean up
+change <- length.2021$Bay == "Japanese Bay"
+length.2021$Species[change] <- "Japanese"
 
 ########################
 # cod condition data
