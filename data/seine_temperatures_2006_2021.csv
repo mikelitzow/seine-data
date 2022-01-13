@@ -1,0 +1,916 @@
+"year","julian","site","bay","temperature"
+2006,196,"Back Bay eelgrass","Anton Larson Bay",12.3
+2006,197,"Back Bay eelgrass","Anton Larson Bay",11.4
+2006,197,"Cobble point","Anton Larson Bay",11.7
+2006,196,"Eelgrass patches","Anton Larson Bay",14.8
+2006,197,"Eelgrass point","Anton Larson Bay",11.9
+2006,198,"Eelgrass point","Anton Larson Bay",10.7
+2006,196,"Laminaria #2","Anton Larson Bay",10.9
+2006,197,"Laminaria #2","Anton Larson Bay",11.7
+2006,198,"Laminaria #2","Anton Larson Bay",10.4
+2006,197,"Laminaria Point","Anton Larson Bay",11.8
+2006,198,"Laminaria Point","Anton Larson Bay",11.2
+2006,196,"White rock","Anton Larson Bay",14.1
+2006,197,"White rock","Anton Larson Bay",14.1
+2006,198,"White rock","Anton Larson Bay",10.9
+2006,196,"Wooden boat","Anton Larson Bay",13
+2006,197,"Wooden boat","Anton Larson Bay",11
+2006,237,"Bare North","Cook Bay",11.1
+2006,237,"Eelgrass North","Cook Bay",10.7
+2006,237,"Eelgrass South","Cook Bay",10.4
+2006,237,"Eelgrass West","Cook Bay",10.6
+2006,240,"Laminaria East","Cook Bay",10.8
+2006,237,"Laminaria North","Cook Bay",10.7
+2006,237,"Laminaria South","Cook Bay",10.4
+2006,240,"Laminaria South","Cook Bay",11.7
+2006,237,"Middle cove","Cook Bay",10.5
+2006,231,"Back Bay eelgrass","Anton Larson Bay",11.8
+2006,232,"Back Bay eelgrass","Anton Larson Bay",12.1
+2006,233,"Back Bay eelgrass","Anton Larson Bay",12.4
+2006,231,"Cobble point","Anton Larson Bay",11.4
+2006,232,"Cobble point","Anton Larson Bay",11.1
+2006,233,"Cobble point","Anton Larson Bay",11.2
+2006,232,"Eelgrass patches","Anton Larson Bay",10.5
+2006,233,"Eelgrass patches","Anton Larson Bay",10.7
+2006,231,"Eelgrass point","Anton Larson Bay",10.6
+2006,232,"Eelgrass point","Anton Larson Bay",10.4
+2006,233,"Eelgrass point","Anton Larson Bay",11.1
+2006,231,"Laminaria #2","Anton Larson Bay",10.4
+2006,232,"Laminaria #2","Anton Larson Bay",12
+2006,233,"Laminaria #2","Anton Larson Bay",11.6
+2006,231,"Laminaria Point","Anton Larson Bay",10.8
+2006,232,"Laminaria Point","Anton Larson Bay",10.8
+2006,233,"Laminaria Point","Anton Larson Bay",11.1
+2006,231,"White rock","Anton Larson Bay",11.2
+2006,232,"White rock","Anton Larson Bay",11.6
+2006,233,"White rock","Anton Larson Bay",11.8
+2006,231,"Wooden boat","Anton Larson Bay",10.7
+2006,232,"Wooden boat","Anton Larson Bay",12.2
+2006,233,"Wooden boat","Anton Larson Bay",11.2
+2007,205,"Bare North","Cook Bay",9.8
+2007,207,"Bare North","Cook Bay",9.7
+2007,205,"Eelgrass North","Cook Bay",9.6
+2007,207,"Eelgrass North","Cook Bay",9.9
+2007,205,"Eelgrass South","Cook Bay",10.5
+2007,207,"Eelgrass South","Cook Bay",10.1
+2007,205,"Eelgrass West","Cook Bay",10
+2007,207,"Eelgrass West","Cook Bay",9.7
+2007,205,"Laminaria East","Cook Bay",9.9
+2007,207,"Laminaria East","Cook Bay",10
+2007,205,"Laminaria North","Cook Bay",9.6
+2007,207,"Laminaria North","Cook Bay",9.7
+2007,205,"Laminaria South","Cook Bay",10.4
+2007,207,"Laminaria South","Cook Bay",10.1
+2007,205,"Middle cove","Cook Bay",9.9
+2007,207,"Middle cove","Cook Bay",9.9
+2007,202,"Back Bay eelgrass","Anton Larson Bay",12
+2007,202,"Eelgrass patches","Anton Larson Bay",9.7
+2007,202,"Eelgrass point","Anton Larson Bay",9.3
+2007,202,"Laminaria #2","Anton Larson Bay",11.1
+2007,202,"Laminaria Point","Anton Larson Bay",8.3
+2007,202,"White rock","Anton Larson Bay",9.2
+2008,201,"Bare North","Cook Bay",10.5
+2008,201,"Eelgrass South","Cook Bay",9.8
+2008,201,"Eelgrass West","Cook Bay",12.3
+2008,201,"Laminaria East","Cook Bay",9.1
+2008,201,"Laminaria North","Cook Bay",9.8
+2008,201,"Laminaria South","Cook Bay",9.6
+2008,201,"Middle cove","Cook Bay",9.1
+2008,198,"Back Bay eelgrass","Anton Larson Bay",11.1
+2008,196,"Eelgrass point","Anton Larson Bay",9.4
+2008,198,"Eelgrass point","Anton Larson Bay",11.1
+2008,196,"Laminaria #2","Anton Larson Bay",12.1
+2008,198,"Laminaria #2","Anton Larson Bay",11.5
+2008,198,"White rock","Anton Larson Bay",11.5
+2008,240,"Bare North","Cook Bay",11
+2008,240,"Eelgrass South","Cook Bay",10.3
+2008,240,"Eelgrass West","Cook Bay",10.9
+2008,240,"Laminaria East","Cook Bay",10.4
+2008,240,"Laminaria North","Cook Bay",10.8
+2008,240,"Laminaria South","Cook Bay",10.4
+2008,238,"Back Bay eelgrass","Anton Larson Bay",11.3
+2008,236,"Cobble point","Anton Larson Bay",10.9
+2008,236,"Eelgrass patches","Anton Larson Bay",10.9
+2008,238,"Eelgrass patches","Anton Larson Bay",11.7
+2008,238,"Eelgrass point","Anton Larson Bay",10.6
+2008,238,"Laminaria #2","Anton Larson Bay",10.7
+2008,238,"Laminaria Point","Anton Larson Bay",10.9
+2008,238,"Wooden boat","Anton Larson Bay",11.2
+2009,196,"Bare North","Cook Bay",12.3
+2009,196,"Bare North","Cook Bay",11.7
+2009,196,"Eelgrass North","Cook Bay",11.8
+2009,196,"Eelgrass North","Cook Bay",12.5
+2009,196,"Eelgrass South","Cook Bay",11.2
+2009,196,"Eelgrass South","Cook Bay",11.6
+2009,196,"Eelgrass West","Cook Bay",12.2
+2009,196,"Eelgrass West","Cook Bay",11
+2009,196,"Laminaria East","Cook Bay",11.6
+2009,196,"Laminaria East","Cook Bay",11.3
+2009,196,"Laminaria North","Cook Bay",11.3
+2009,196,"Laminaria North","Cook Bay",12.2
+2009,196,"Laminaria South","Cook Bay",12.5
+2009,196,"Laminaria South","Cook Bay",13
+2009,196,"Middle cove","Cook Bay",12.4
+2009,196,"Middle cove","Cook Bay",11.5
+2009,195,"Back Bay eelgrass","Anton Larson Bay",12.1
+2009,194,"Cobble point","Anton Larson Bay",14.5
+2009,195,"Cobble point","Anton Larson Bay",12.2
+2009,194,"Eelgrass patches","Anton Larson Bay",14.8
+2009,195,"Eelgrass patches","Anton Larson Bay",12.2
+2009,194,"Eelgrass point","Anton Larson Bay",13.9
+2009,195,"Eelgrass point","Anton Larson Bay",11.1
+2009,194,"Laminaria #2","Anton Larson Bay",12.9
+2009,195,"Laminaria #2","Anton Larson Bay",11.9
+2009,194,"Laminaria Point","Anton Larson Bay",13.9
+2009,195,"Laminaria Point","Anton Larson Bay",11.7
+2009,194,"White rock","Anton Larson Bay",12.6
+2009,195,"White rock","Anton Larson Bay",11.7
+2009,194,"Wooden boat","Anton Larson Bay",11.9
+2009,195,"Wooden boat","Anton Larson Bay",12.3
+2009,238,"Bare North","Cook Bay",9.7
+2009,238,"Eelgrass North","Cook Bay",9.7
+2009,238,"Eelgrass South","Cook Bay",10.4
+2009,238,"Eelgrass West","Cook Bay",10
+2009,238,"Laminaria East","Cook Bay",9.8
+2009,238,"Laminaria North","Cook Bay",9.6
+2009,238,"Laminaria South","Cook Bay",10.3
+2009,238,"Middle cove","Cook Bay",9.7
+2009,235,"Cobble point","Anton Larson Bay",10.6
+2009,236,"Cobble point","Anton Larson Bay",10.2
+2009,235,"Eelgrass patches","Anton Larson Bay",10.8
+2009,236,"Eelgrass patches","Anton Larson Bay",10.2
+2009,235,"Eelgrass point","Anton Larson Bay",10.4
+2009,236,"Eelgrass point","Anton Larson Bay",10.2
+2009,235,"Laminaria #2","Anton Larson Bay",10.5
+2009,236,"Laminaria #2","Anton Larson Bay",11
+2009,235,"Laminaria Point","Anton Larson Bay",9.9
+2009,236,"Laminaria Point","Anton Larson Bay",9.8
+2009,235,"White rock","Anton Larson Bay",10.4
+2009,236,"White rock","Anton Larson Bay",10.1
+2009,236,"Wooden boat","Anton Larson Bay",11.5
+2010,200,"Bare North","Cook Bay",10.5
+2010,201,"Bare North","Cook Bay",10.5
+2010,200,"Eelgrass North","Cook Bay",11.3
+2010,201,"Eelgrass North","Cook Bay",11.4
+2010,200,"Eelgrass South","Cook Bay",11.3
+2010,201,"Eelgrass South","Cook Bay",10
+2010,200,"Eelgrass West","Cook Bay",10.8
+2010,201,"Eelgrass West","Cook Bay",12
+2010,200,"Laminaria East","Cook Bay",10.8
+2010,201,"Laminaria East","Cook Bay",10
+2010,200,"Laminaria North","Cook Bay",10.8
+2010,201,"Laminaria North","Cook Bay",11.4
+2010,200,"Laminaria South","Cook Bay",10.8
+2010,201,"Laminaria South","Cook Bay",10.1
+2010,200,"Middle cove","Cook Bay",10.8
+2010,201,"Middle cove","Cook Bay",10
+2010,195,"Back Bay eelgrass","Anton Larson Bay",11.9
+2010,195,"Cobble point","Anton Larson Bay",10.4
+2010,195,"Eelgrass patches","Anton Larson Bay",10.2
+2010,195,"Eelgrass point","Anton Larson Bay",10.2
+2010,195,"Laminaria #2","Anton Larson Bay",10.4
+2010,195,"Laminaria Point","Anton Larson Bay",9.3
+2010,195,"Wooden boat","Anton Larson Bay",9.9
+2010,235,"Bare North","Cook Bay",11.6
+2010,235,"Eelgrass South","Cook Bay",11.5
+2010,235,"Eelgrass West","Cook Bay",11.9
+2010,235,"Laminaria East","Cook Bay",12
+2010,239,"Laminaria East","Cook Bay",11.2
+2010,235,"Laminaria South","Cook Bay",11.7
+2010,239,"Laminaria South","Cook Bay",11
+2010,235,"Middle cove","Cook Bay",11.6
+2010,237,"Back Bay eelgrass","Anton Larson Bay",12.6
+2010,236,"Cobble point","Anton Larson Bay",11.2
+2010,237,"Cobble point","Anton Larson Bay",10.7
+2010,236,"Eelgrass patches","Anton Larson Bay",11.4
+2010,237,"Eelgrass patches","Anton Larson Bay",11.8
+2010,236,"Eelgrass point","Anton Larson Bay",10.6
+2010,237,"Eelgrass point","Anton Larson Bay",10.5
+2010,236,"Laminaria #2","Anton Larson Bay",12.8
+2010,237,"Laminaria #2","Anton Larson Bay",11.6
+2010,236,"Laminaria Point","Anton Larson Bay",10.3
+2010,237,"Laminaria Point","Anton Larson Bay",11.6
+2010,195,"White rock","Anton Larson Bay",10.4
+2010,236,"White rock","Anton Larson Bay",10.5
+2010,237,"White rock","Anton Larson Bay",11.2
+2010,237,"Wooden boat","Anton Larson Bay",11.1
+2011,200,"Eelgrass North","Cook Bay",11.6
+2011,201,"Eelgrass North","Cook Bay",10.6
+2011,200,"Eelgrass South","Cook Bay",10.5
+2011,200,"Eelgrass West","Cook Bay",10.7
+2011,201,"Eelgrass West","Cook Bay",10.5
+2011,200,"Laminaria North","Cook Bay",10.9
+2011,201,"Laminaria North","Cook Bay",10.4
+2011,200,"Laminaria South","Cook Bay",10.2
+2011,200,"Middle cove","Cook Bay",10.3
+2011,194,"Back Bay eelgrass","Anton Larson Bay",11.6
+2011,194,"Cobble point","Anton Larson Bay",10.6
+2011,194,"Eelgrass patches","Anton Larson Bay",10.4
+2011,194,"Eelgrass point","Anton Larson Bay",10.2
+2011,194,"Laminaria #2","Anton Larson Bay",11.2
+2011,194,"Laminaria Point","Anton Larson Bay",10.2
+2011,194,"White rock","Anton Larson Bay",10.6
+2011,194,"Wooden boat","Anton Larson Bay",11.2
+2011,241,"Bare North","Cook Bay",10.6
+2011,241,"Eelgrass North","Cook Bay",11.3
+2011,241,"Eelgrass South","Cook Bay",10.5
+2011,241,"Eelgrass West","Cook Bay",11.2
+2011,241,"Laminaria East","Cook Bay",10.3
+2011,241,"Laminaria North","Cook Bay",10.9
+2011,241,"Laminaria South","Cook Bay",10.3
+2011,241,"Middle cove","Cook Bay",10.4
+2011,234,"Back Bay eelgrass","Anton Larson Bay",11.7
+2011,234,"Cobble point","Anton Larson Bay",11.5
+2011,234,"Eelgrass patches","Anton Larson Bay",11.6
+2011,234,"Eelgrass point","Anton Larson Bay",11.8
+2011,234,"Laminaria #2","Anton Larson Bay",11.3
+2011,234,"Laminaria Point","Anton Larson Bay",11.8
+2011,234,"White rock","Anton Larson Bay",11.2
+2011,234,"Wooden boat","Anton Larson Bay",11.4
+2012,200,"Bare North","Cook Bay",10.3
+2012,200,"Eelgrass North","Cook Bay",9.9
+2012,200,"Eelgrass South","Cook Bay",10.1
+2012,200,"Laminaria North","Cook Bay",10.6
+2012,200,"Laminaria South","Cook Bay",10.3
+2012,195,"Back Bay eelgrass","Anton Larson Bay",11.1
+2012,196,"Back Bay eelgrass","Anton Larson Bay",11.8
+2012,195,"Cobble point","Anton Larson Bay",9.8
+2012,195,"Eelgrass patches","Anton Larson Bay",10.5
+2012,195,"Eelgrass point","Anton Larson Bay",10.9
+2012,196,"Eelgrass point","Anton Larson Bay",10.2
+2012,195,"Laminaria #2","Anton Larson Bay",10.7
+2012,195,"Laminaria Point","Anton Larson Bay",10.1
+2012,196,"Laminaria Point","Anton Larson Bay",10.6
+2012,195,"White rock","Anton Larson Bay",9.2
+2012,196,"White rock","Anton Larson Bay",11.6
+2012,195,"Wooden boat","Anton Larson Bay",10.5
+2012,196,"Wooden boat","Anton Larson Bay",11.3
+2012,242,"Bare North","Cook Bay",10.7
+2012,242,"Eelgrass North","Cook Bay",10.8
+2012,242,"Eelgrass South","Cook Bay",10.2
+2012,242,"Eelgrass West","Cook Bay",10.5
+2012,242,"Laminaria East","Cook Bay",10.3
+2012,242,"Laminaria North","Cook Bay",10.7
+2012,242,"Laminaria South","Cook Bay",10.2
+2012,242,"Middle cove","Cook Bay",10.5
+2012,237,"Back Bay eelgrass","Anton Larson Bay",10.4
+2012,237,"Cobble point","Anton Larson Bay",9.8
+2012,237,"Eelgrass patches","Anton Larson Bay",9.7
+2012,237,"Eelgrass point","Anton Larson Bay",9.9
+2012,237,"Laminaria #2","Anton Larson Bay",10.2
+2012,237,"Laminaria Point","Anton Larson Bay",9.5
+2012,237,"White rock","Anton Larson Bay",10.1
+2012,237,"Wooden boat","Anton Larson Bay",10
+2013,206,"Bare North","Cook Bay",11
+2013,207,"Bare North","Cook Bay",11.2
+2013,206,"Eelgrass North","Cook Bay",12.4
+2013,207,"Eelgrass North","Cook Bay",11.1
+2013,206,"Eelgrass South","Cook Bay",10.8
+2013,207,"Eelgrass South","Cook Bay",12
+2013,206,"Eelgrass West","Cook Bay",12.5
+2013,207,"Eelgrass West","Cook Bay",12
+2013,206,"Laminaria East","Cook Bay",10.7
+2013,207,"Laminaria East","Cook Bay",10.5
+2013,206,"Laminaria North","Cook Bay",11.5
+2013,207,"Laminaria North","Cook Bay",11.1
+2013,206,"Laminaria South","Cook Bay",10.9
+2013,207,"Laminaria South","Cook Bay",11.3
+2013,207,"Middle cove","Cook Bay",10.9
+2013,204,"Back Bay eelgrass","Anton Larson Bay",13.8
+2013,205,"Back Bay eelgrass","Anton Larson Bay",14.1
+2013,204,"Cobble point","Anton Larson Bay",12
+2013,205,"Cobble point","Anton Larson Bay",11.7
+2013,204,"Eelgrass patches","Anton Larson Bay",11.8
+2013,205,"Eelgrass patches","Anton Larson Bay",10.8
+2013,204,"Eelgrass point","Anton Larson Bay",11.5
+2013,205,"Eelgrass point","Anton Larson Bay",11
+2013,204,"Laminaria #2","Anton Larson Bay",12.8
+2013,205,"Laminaria #2","Anton Larson Bay",13.2
+2013,204,"Laminaria Point","Anton Larson Bay",11.8
+2013,205,"Laminaria Point","Anton Larson Bay",10.7
+2013,204,"White rock","Anton Larson Bay",13.1
+2013,205,"White rock","Anton Larson Bay",13
+2013,204,"Wooden boat","Anton Larson Bay",12.9
+2013,205,"Wooden boat","Anton Larson Bay",12.6
+2013,240,"Bare North","Cook Bay",10.1
+2013,242,"Bare North","Cook Bay",10.4
+2013,240,"Eelgrass North","Cook Bay",10.2
+2013,242,"Eelgrass North","Cook Bay",10.1
+2013,240,"Eelgrass South","Cook Bay",10.4
+2013,242,"Eelgrass South","Cook Bay",11.4
+2013,240,"Eelgrass West","Cook Bay",10.7
+2013,242,"Eelgrass West","Cook Bay",11.4
+2013,240,"Laminaria East","Cook Bay",10.2
+2013,242,"Laminaria East","Cook Bay",10.3
+2013,240,"Laminaria North","Cook Bay",10.2
+2013,242,"Laminaria North","Cook Bay",10.2
+2013,240,"Laminaria South","Cook Bay",10.1
+2013,242,"Laminaria South","Cook Bay",10.9
+2013,240,"Middle cove","Cook Bay",10.1
+2013,242,"Middle cove","Cook Bay",10.2
+2013,239,"Back Bay eelgrass","Anton Larson Bay",10.8
+2013,241,"Back Bay eelgrass","Anton Larson Bay",10.9
+2013,239,"Cobble point","Anton Larson Bay",10.3
+2013,241,"Cobble point","Anton Larson Bay",10.9
+2013,239,"Eelgrass patches","Anton Larson Bay",11.6
+2013,239,"Eelgrass point","Anton Larson Bay",11
+2013,241,"Eelgrass point","Anton Larson Bay",10.2
+2013,239,"Laminaria #2","Anton Larson Bay",10.9
+2013,241,"Laminaria #2","Anton Larson Bay",10.1
+2013,239,"Laminaria Point","Anton Larson Bay",11
+2013,241,"Laminaria Point","Anton Larson Bay",9.7
+2013,239,"White rock","Anton Larson Bay",11.4
+2013,241,"White rock","Anton Larson Bay",11.4
+2013,239,"Wooden boat","Anton Larson Bay",10.8
+2013,241,"Wooden boat","Anton Larson Bay",11
+2014,203,"Bare North","Cook Bay",12.2
+2014,203,"Eelgrass North","Cook Bay",12.4
+2014,203,"Eelgrass South","Cook Bay",12.6
+2014,203,"Eelgrass West","Cook Bay",12.5
+2014,203,"Laminaria East","Cook Bay",12
+2014,203,"Laminaria North","Cook Bay",12.1
+2014,203,"Laminaria South","Cook Bay",12.9
+2014,203,"Middle cove","Cook Bay",11.8
+2014,197,"Back Bay eelgrass","Anton Larson Bay",11.8
+2014,197,"Cobble point","Anton Larson Bay",10.2
+2014,197,"Eelgrass patches","Anton Larson Bay",11.6
+2014,197,"Eelgrass point","Anton Larson Bay",11.8
+2014,197,"Laminaria #2","Anton Larson Bay",11.1
+2014,197,"Laminaria Point","Anton Larson Bay",11.7
+2014,197,"White rock","Anton Larson Bay",10.5
+2014,197,"Wooden boat","Anton Larson Bay",11.1
+2014,235,"Bare North","Cook Bay",12.3
+2014,235,"Eelgrass North","Cook Bay",12.3
+2014,235,"Eelgrass South","Cook Bay",12.1
+2014,235,"Eelgrass West","Cook Bay",12.6
+2014,235,"Laminaria East","Cook Bay",11.9
+2014,235,"Laminaria North","Cook Bay",12.2
+2014,235,"Laminaria South","Cook Bay",12.1
+2014,235,"Middle cove","Cook Bay",12.1
+2014,232,"Back Bay eelgrass","Anton Larson Bay",12.7
+2014,232,"Cobble point","Anton Larson Bay",12.4
+2014,232,"Eelgrass patches","Anton Larson Bay",12.4
+2014,232,"Eelgrass point","Anton Larson Bay",12
+2014,232,"Laminaria #2","Anton Larson Bay",13.4
+2014,232,"Laminaria Point","Anton Larson Bay",11.9
+2014,232,"White rock","Anton Larson Bay",13.6
+2014,232,"Wooden boat","Anton Larson Bay",12
+2015,193,"Bare North","Cook Bay",12.7
+2015,193,"Eelgrass North","Cook Bay",13.2
+2015,193,"Eelgrass South","Cook Bay",10.7
+2015,193,"Eelgrass West","Cook Bay",12.6
+2015,193,"Laminaria East","Cook Bay",11
+2015,193,"Laminaria North","Cook Bay",12.8
+2015,193,"Laminaria South","Cook Bay",10.7
+2015,193,"Middle cove","Cook Bay",11.9
+2015,192,"Back Bay eelgrass","Anton Larson Bay",12
+2015,192,"Cobble point","Anton Larson Bay",11.6
+2015,192,"Eelgrass patches","Anton Larson Bay",11.5
+2015,192,"Eelgrass point","Anton Larson Bay",10.7
+2015,192,"Laminaria #2","Anton Larson Bay",11.1
+2015,192,"Laminaria Point","Anton Larson Bay",10.7
+2015,192,"White rock","Anton Larson Bay",11.6
+2015,192,"Wooden boat","Anton Larson Bay",11.9
+2015,238,"Bare North","Cook Bay",13.7
+2015,238,"Eelgrass North","Cook Bay",14.3
+2015,238,"Eelgrass South","Cook Bay",12.6
+2015,238,"Eelgrass West","Cook Bay",14.2
+2015,238,"Laminaria East","Cook Bay",13.4
+2015,238,"Laminaria North","Cook Bay",14.2
+2015,238,"Laminaria South","Cook Bay",12.7
+2015,238,"Middle cove","Cook Bay",13.6
+2015,235,"Back Bay eelgrass","Anton Larson Bay",12.8
+2015,234,"Cobble point","Anton Larson Bay",12.1
+2015,235,"Cobble point","Anton Larson Bay",12.4
+2015,234,"Eelgrass patches","Anton Larson Bay",13.1
+2015,235,"Eelgrass patches","Anton Larson Bay",13.2
+2015,234,"Eelgrass point","Anton Larson Bay",12.1
+2015,235,"Eelgrass point","Anton Larson Bay",12.4
+2015,235,"Laminaria #2","Anton Larson Bay",12.6
+2015,234,"Laminaria Point","Anton Larson Bay",12
+2015,235,"Laminaria Point","Anton Larson Bay",12.3
+2015,234,"White rock","Anton Larson Bay",12.6
+2015,235,"White rock","Anton Larson Bay",12.3
+2015,235,"Wooden boat","Anton Larson Bay",12.7
+2016,197,"Bare North","Cook Bay",13.7
+2016,197,"Eelgrass North","Cook Bay",14
+2016,197,"Eelgrass South","Cook Bay",12.6
+2016,197,"Eelgrass West","Cook Bay",15
+2016,197,"Laminaria East","Cook Bay",12.9
+2016,197,"Laminaria North","Cook Bay",14
+2016,197,"Laminaria South","Cook Bay",12.9
+2016,197,"Middle cove","Cook Bay",12.9
+2016,198,"Back Bay eelgrass","Anton Larson Bay",13.8
+2016,198,"Cobble point","Anton Larson Bay",13.4
+2016,198,"Eelgrass patches","Anton Larson Bay",13
+2016,198,"Eelgrass point","Anton Larson Bay",12.8
+2016,198,"Laminaria #2","Anton Larson Bay",13.4
+2016,198,"Laminaria Point","Anton Larson Bay",12.7
+2016,198,"White rock","Anton Larson Bay",13.9
+2016,198,"Wooden boat","Anton Larson Bay",13.5
+2017,196,"Bare North","Cook Bay",10.4
+2017,196,"Eelgrass North","Cook Bay",10.6
+2017,196,"Eelgrass South","Cook Bay",10.2
+2017,196,"Eelgrass West","Cook Bay",11.4
+2017,196,"Laminaria East","Cook Bay",10.8
+2017,196,"Laminaria North","Cook Bay",10.6
+2017,196,"Laminaria South","Cook Bay",10.1
+2017,196,"Middle cove","Cook Bay",10.3
+2017,194,"Back Bay eelgrass","Anton Larson Bay",14.1
+2017,194,"Cobble point","Anton Larson Bay",11.3
+2017,194,"Eelgrass patches","Anton Larson Bay",12.1
+2017,194,"Eelgrass point","Anton Larson Bay",10.9
+2017,194,"Laminaria #2","Anton Larson Bay",14.1
+2017,194,"Laminaria Point","Anton Larson Bay",10.4
+2017,194,"White rock","Anton Larson Bay",12.9
+2017,194,"Wooden boat","Anton Larson Bay",13.3
+2018,199,"Back Bay eelgrass","Anton Larson Bay",11.7
+2018,197,"Bare North","Cook Bay",10.3
+2018,198,"Bare North","Cook Bay",10
+2018,199,"Cobble point","Anton Larson Bay",10.5
+2018,197,"Eelgrass North","Cook Bay",10
+2018,198,"Eelgrass North","Cook Bay",11.1
+2018,199,"Eelgrass patches","Anton Larson Bay",11.4
+2018,199,"Eelgrass point","Anton Larson Bay",12.4
+2018,197,"Eelgrass South","Cook Bay",10.9
+2018,198,"Eelgrass South","Cook Bay",10
+2018,197,"Eelgrass West","Cook Bay",11.5
+2018,198,"Eelgrass West","Cook Bay",12.7
+2018,199,"Laminaria #2","Anton Larson Bay",12.1
+2018,197,"Laminaria East","Cook Bay",9.8
+2018,198,"Laminaria East","Cook Bay",10.2
+2018,197,"Laminaria North","Cook Bay",9.8
+2018,198,"Laminaria North","Cook Bay",10.4
+2018,199,"Laminaria Point","Anton Larson Bay",11.6
+2018,197,"Laminaria South","Cook Bay",10.4
+2018,198,"Laminaria South","Cook Bay",10.3
+2018,197,"Middle cove","Cook Bay",9.7
+2018,198,"Middle cove","Cook Bay",10.3
+2018,199,"White rock","Anton Larson Bay",11.9
+2018,199,"Wooden boat","Anton Larson Bay",11.8
+2018,196,"Back Bay eelgrass","Anton Larson Bay",11.3
+2018,196,"Cobble point","Anton Larson Bay",10
+2018,196,"Eelgrass patches","Anton Larson Bay",10
+2018,196,"Eelgrass point","Anton Larson Bay",9.9
+2018,196,"Laminaria #2","Anton Larson Bay",10.6
+2018,196,"Laminaria Point","Anton Larson Bay",10.1
+2018,196,"White rock","Anton Larson Bay",10.5
+2018,196,"Wooden boat","Anton Larson Bay",10.8
+2019,193,"Middle cove","Cook Bay",11.8
+2019,193,"Bare North","Cook Bay",12.3
+2019,193,"Eelgrass North","Cook Bay",13.2
+2019,193,"Laminaria North","Cook Bay",13.7
+2019,193,"Eelgrass West","Cook Bay",13.6
+2019,193,"Laminaria South","Cook Bay",12.4
+2019,193,"Laminaria East","Cook Bay",11.8
+2019,193,"Eelgrass South","Cook Bay",12.1
+2019,194,"Laminaria #2","Anton Larson Bay",13.6
+2019,194,"Wooden boat","Anton Larson Bay",12.1
+2019,194,"Back Bay eelgrass","Anton Larson Bay",12.6
+2019,194,"Laminaria Point","Anton Larson Bay",12.4
+2019,194,"Eelgrass point","Anton Larson Bay",12.3
+2019,194,"Eelgrass patches","Anton Larson Bay",13.3
+2019,194,"Cobble point","Anton Larson Bay",12.8
+2019,194,"White rock","Anton Larson Bay",13.5
+2019,195,"Laminaria #2","Anton Larson Bay",11.4
+2019,195,"Wooden boat","Anton Larson Bay",11
+2019,195,"Back Bay eelgrass","Anton Larson Bay",12
+2019,195,"Laminaria Point","Anton Larson Bay",12.6
+2019,195,"Eelgrass patches","Anton Larson Bay",12.4
+2019,195,"Eelgrass point","Anton Larson Bay",12.4
+2019,195,"Cobble point","Anton Larson Bay",12.5
+2019,195,"White rock","Anton Larson Bay",12.7
+2019,196,"Laminaria South","Cook Bay",11.2
+2019,196,"Eelgrass South","Cook Bay",11.1
+2019,196,"Laminaria East","Cook Bay",11.4
+2019,196,"Eelgrass West","Cook Bay",11.6
+2019,196,"Laminaria North","Cook Bay",11.6
+2019,196,"Eelgrass North","Cook Bay",11.8
+2019,196,"Bare North","Cook Bay",11.8
+2019,196,"Middle cove","Cook Bay",11.5
+2019,232,"Middle cove","Cook Bay",13.7
+2019,232,"Bare North","Cook Bay",13.7
+2019,232,"Laminaria North","Cook Bay",13.8
+2019,232,"Eelgrass North","Cook Bay",13.9
+2019,232,"Laminaria East","Cook Bay",13.6
+2019,232,"Eelgrass West","Cook Bay",13.6
+2019,232,"Laminaria South","Cook Bay",13.3
+2019,232,"Eelgrass South","Cook Bay",13.4
+2019,233,"Middle cove","Cook Bay",13.2
+2019,233,"Bare North","Cook Bay",13.5
+2019,233,"Laminaria South","Cook Bay",13.2
+2019,233,"Eelgrass South","Cook Bay",13.3
+2019,233,"Eelgrass North","Cook Bay",13.6
+2019,233,"Laminaria North","Cook Bay",13.5
+2019,233,"Laminaria East","Cook Bay",13.4
+2019,233,"Eelgrass West","Cook Bay",14
+2019,236,"White rock","Anton Larson Bay",15
+2019,236,"Back Bay eelgrass","Anton Larson Bay",13.9
+2019,236,"Wooden boat","Anton Larson Bay",13.8
+2019,236,"Laminaria #2","Anton Larson Bay",13.9
+2019,236,"Eelgrass patches","Anton Larson Bay",14.8
+2019,236,"Cobble point","Anton Larson Bay",14.3
+2019,236,"Laminaria Point","Anton Larson Bay",14.5
+2019,236,"Eelgrass point","Anton Larson Bay",14.6
+2019,237,"White rock","Anton Larson Bay",14
+2019,237,"Back Bay eelgrass","Anton Larson Bay",14.3
+2019,237,"Wooden boat","Anton Larson Bay",14.3
+2019,237,"Laminaria #2","Anton Larson Bay",14.6
+2019,237,"Eelgrass patches","Anton Larson Bay",15.6
+2019,237,"Laminaria Point","Anton Larson Bay",15.2
+2019,237,"Eelgrass point","Anton Larson Bay",15.4
+2019,237,"Cobble point","Anton Larson Bay",14.9
+2018,233,"Bare North","Cook Bay",11.4
+2018,233,"Middle cove","Cook Bay",10.9
+2018,233,"Eelgrass North","Cook Bay",11.5
+2018,233,"Laminaria North","Cook Bay",11.7
+2018,233,"Laminaria South","Cook Bay",11.5
+2018,233,"Eelgrass South","Cook Bay",11.7
+2018,233,"Eelgrass West","Cook Bay",11.9
+2018,233,"Laminaria East","Cook Bay",11.4
+2018,234,"Laminaria East","Cook Bay",10.8
+2018,234,"Eelgrass South","Cook Bay",10.8
+2018,234,"Laminaria South","Cook Bay",10.8
+2018,234,"Eelgrass West","Cook Bay",11.4
+2018,234,"Laminaria North","Cook Bay",11.3
+2018,234,"Eelgrass North","Cook Bay",11.3
+2018,234,"Middle cove","Cook Bay",11.1
+2018,234,"Bare North","Cook Bay",11.1
+2018,235,"Laminaria Point","Anton Larson Bay",12.5
+2018,235,"Eelgrass point","Anton Larson Bay",11.9
+2018,235,"Eelgrass patches","Anton Larson Bay",12.3
+2018,235,"Cobble point","Anton Larson Bay",12.3
+2018,235,"Back Bay eelgrass","Anton Larson Bay",12.5
+2018,235,"Wooden boat","Anton Larson Bay",12.2
+2018,235,"Laminaria #2","Anton Larson Bay",12.2
+2018,235,"White rock","Anton Larson Bay",12.5
+2018,236,"Laminaria Point","Anton Larson Bay",11.5
+2018,236,"Eelgrass point","Anton Larson Bay",11.9
+2018,236,"Eelgrass patches","Anton Larson Bay",12.1
+2018,236,"Cobble point","Anton Larson Bay",12.6
+2018,236,"Back Bay eelgrass","Anton Larson Bay",12.2
+2018,236,"Wooden boat","Anton Larson Bay",11.4
+2018,236,"Laminaria #2","Anton Larson Bay",12.1
+2018,236,"White rock","Anton Larson Bay",13.1
+2020,233,"Eelgrass point","Anton Larson Bay",11.9
+2020,233,"Laminaria Point","Anton Larson Bay",12.4
+2020,233,"Laminaria #2","Anton Larson Bay",12.5
+2020,233,"Wooden boat","Anton Larson Bay",13.5
+2020,233,"Back Bay eelgrass","Anton Larson Bay",13.3
+2020,233,"Eelgrass patches","Anton Larson Bay",14
+2020,233,"Cobble point","Anton Larson Bay",12.6
+2020,233,"White rock","Anton Larson Bay",14.4
+2018,186,"Ugak-1","Ugak",12
+2018,186,"Ugak-2","Ugak",11.9
+2018,186,"Ugak-3","Ugak",13.2
+2018,186,"Ugak-4","Ugak",8.3
+2018,186,"Ugak-5","Ugak",12.5
+2018,186,"Ugak-6","Ugak",11.9
+2018,188,"Kilu-1","Kiluida",14.3
+2018,188,"Kilu-2","Kiluida",16.2
+2018,188,"Kilu-3","Kiluida",15.9
+2018,188,"Kilu-4","Kiluida",16.9
+2018,188,"Kilu-5","Kiluida",15
+2018,188,"Kilu-6","Kiluida",15
+2018,188,"Kilu-7","Kiluida",15.7
+2018,190,"Kai-1","Kaiugnak",10.5
+2018,190,"Kai-2","Kaiugnak",10.7
+2018,190,"Kai-3","Kaiugnak",10.5
+2018,190,"Kai-4","Kaiugnak",10.4
+2018,190,"Kai-5","Kaiugnak",9.1
+2018,190,"Kai-6","Kaiugnak",10.4
+2018,192,"Jap-1","Japanese",10.6
+2018,192,"Jap-2","Japanese",11
+2018,192,"Jap-3","Japanese",10.4
+2018,192,"Jap-4","Japanese",11.3
+2018,192,"Jap-5","Japanese",12.6
+2018,192,"Jap-6","Japanese",12.7
+2018,195,"RR-1","Rodman Reach",10.5
+2018,195,"RR-2","Rodman Reach",10.8
+2018,195,"RR-3","Rodman Reach",10.6
+2018,195,"RR-4","Rodman Reach",10.5
+2018,195,"RR-5","Rodman Reach",10.8
+2018,195,"RR-6","Rodman Reach",10.7
+2018,197,"AG-1","Agripina",10.1
+2018,197,"AG-2","Agripina",9.2
+2018,197,"AG-3","Agripina",10.6
+2018,197,"AG-4","Agripina",11.8
+2018,197,"AG-5","Agripina",12
+2018,197,"AG-6","Agripina",12.3
+2018,198,"PW-1","Port Wrangell",8.6
+2018,198,"PW-2","Port Wrangell",8.7
+2018,198,"PW-3","Port Wrangell",9.5
+2018,198,"PW-4","Port Wrangell",11.2
+2018,200,"Kuj-1","Kujulik",9.9
+2018,200,"Kuj-2","Kujulik",10.2
+2018,200,"Kuj-3","Kujulik",10.7
+2018,200,"Kuj-4","Kujulik",11.8
+2018,203,"Mit-1","Mitrofania",9.5
+2018,203,"Mit-2","Mitrofania",9.7
+2018,203,"Mit-3","Mitrofania",10.9
+2018,203,"Mit-4","Mitrofania",10.5
+2018,203,"Mit-5","Mitrofania",10.1
+2018,203,"Mit-6","Mitrofania",10.5
+2018,205,"Fox-1","Fox",9.3
+2018,205,"Fox-2","Fox",9.7
+2018,205,"Fox-3","Fox",10.4
+2018,205,"Fox-4","Fox",11
+2018,205,"Fox-5","Fox",11.1
+2018,207,"Sand-1","Sand Point",10.5
+2018,207,"Sand-2","Sand Point",10
+2018,207,"Sand-3","Sand Point",10
+2018,210,"Fal-1","Falmouth",9.1
+2018,210,"Fal-2","Falmouth",9.3
+2018,210,"Fal-3","Falmouth",9.1
+2018,211,"Fal-4","Falmouth",9.3
+2018,211,"Fal-5","Falmouth",9.5
+2018,213,"Bar-1","Baralof",9
+2018,213,"Bar-2","Baralof",9.4
+2018,213,"Bar-3","Baralof",9.2
+2018,213,"Bar-4","Baralof",8.7
+2018,213,"Bar-5","Baralof",9.3
+2018,213,"Bar-6","Baralof",9.8
+2018,217,"BB-1","Balboa",12.2
+2018,217,"BB-2","Balboa",12
+2018,217,"BB-3","Balboa",10.7
+2018,217,"BB-4","Balboa",12.5
+2018,217,"BB-5","Balboa",12
+2018,217,"BB-6","Balboa",13.5
+2018,219,"Fox-4","Fox",12.5
+2018,219,"Fox-5","Fox",12.9
+2018,219,"Fox-1","Fox",14.3
+2018,219,"Fox-2","Fox",13.9
+2018,219,"Fox-3","Fox",14.5
+2018,221,"Mit-1","Mitrofania",10.5
+2018,221,"Mit-2","Mitrofania",11.6
+2018,221,"Mit-3","Mitrofania",11.6
+2018,221,"Mit-6","Mitrofania",12.5
+2018,221,"Mit-4","Mitrofania",12.4
+2018,221,"Mit-5","Mitrofania",13.2
+2018,226,"PW-3","Port Wrangell",7.9
+2018,226,"PW-2","Port Wrangell",8
+2018,226,"PW-1","Port Wrangell",7.5
+2018,226,"PW-4","Port Wrangell",9.1
+2018,227,"AG-2","Agripina",9.1
+2018,227,"AG-4","Agripina",8.4
+2018,227,"AG-3","Agripina",9.4
+2018,227,"AG-5","Agripina",9.4
+2018,227,"AG-6","Agripina",9.3
+2018,229,"RR-1","Rodman Reach",11.8
+2018,229,"RR-4","Rodman Reach",12.4
+2018,229,"RR-5","Rodman Reach",12.4
+2018,232,"RR-6","Rodman Reach",12.4
+2018,232,"RR-2","Rodman Reach",12.4
+2018,234,"Jap-5","Japanese",12
+2018,234,"Jap-4","Japanese",11.5
+2018,234,"Jap-1","Japanese",12
+2018,234,"Jap-6","Japanese",11.7
+2018,234,"Jap-2","Japanese",11.7
+2018,234,"Jap-3","Japanese",11.4
+2018,234,"Jap-7","Japanese",11.5
+2018,236,"Kai-1","Kaiugnak",9.8
+2018,236,"Kai-2","Kaiugnak",10
+2018,236,"Kai-3","Kaiugnak",10
+2018,236,"Kai-6","Kaiugnak",10.1
+2018,236,"Kai-4","Kaiugnak",9.9
+2018,236,"Kai-5","Kaiugnak",10
+2018,236,"Kai-7","Kaiugnak",10.6
+2018,238,"Kilu-3","Kiluida",12
+2018,238,"Kilu-5","Kiluida",10.3
+2018,238,"Kilu-1","Kiluida",11.6
+2018,238,"Kilu-4","Kiluida",11.8
+2018,238,"Kilu-8","Kiluida",12.2
+2018,238,"Kilu-9","Kiluida",10.9
+2018,240,"Ugak-5","Ugak",9.3
+2018,240,"Ugak-6","Ugak",8.7
+2018,240,"Ugak-3","Ugak",9.8
+2018,240,"Ugak-2","Ugak",8.4
+2018,240,"Ugak-1","Ugak",11.8
+2018,240,"Ugak-7","Ugak",11.2
+2018,240,"Ugak-4","Ugak",12.4
+2018,240,"Ugak-8","Ugak",11.7
+2019,188,"AG-1","Agripina",11.5
+2019,188,"AG-2","Agripina",12.6
+2019,188,"AG-5","Agripina",12.3
+2019,188,"AG-3","Agripina",12.1
+2019,188,"AG-4","Agripina",11.8
+2019,188,"AG-6","Agripina",17.7
+2019,190,"PW-3","Port Wrangell",11
+2019,190,"PW-2","Port Wrangell",12.4
+2019,190,"PW-1","Port Wrangell",12.6
+2019,190,"PW-4","Port Wrangell",15.1
+2019,193,"Mit-1","Mitrofania",11.1
+2019,193,"Mit-2","Mitrofania",12.4
+2019,193,"Mit-3","Mitrofania",13.2
+2019,193,"Mit-5","Mitrofania",13.8
+2019,193,"Mit-6","Mitrofania",13.8
+2019,193,"Mit-4","Mitrofania",14.3
+2019,195,"Fox-5","Fox",15.5
+2019,195,"Fox-1","Fox",12.8
+2019,195,"Fox-2","Fox",12.9
+2019,195,"Fox-3","Fox",12.8
+2019,195,"Fox-4","Fox",12.1
+2019,198,"BB-2","Balboa",13.3
+2019,198,"BB-3","Balboa",13.6
+2019,198,"BB-4","Balboa",13.6
+2019,198,"BB-7","Balboa",13.9
+2019,198,"BB-6","Balboa",14.2
+2019,198,"BB-1","Balboa",14.3
+2019,202,"Sand-2","Sand Point",11.8
+2019,202,"Sand-3","Sand Point",12.3
+2019,204,"Fal-1","Falmouth",11.5
+2019,204,"Fal-2","Falmouth",11.1
+2019,204,"Fal-3","Falmouth",10.8
+2019,204,"Fal-4","Falmouth",10.7
+2019,204,"Fal-5","Falmouth",11.9
+2019,206,"Bar-1","Baralof",12.2
+2019,206,"Bar-3","Baralof",11.5
+2019,206,"Bar-2","Baralof",11.8
+2019,206,"Bar-6","Baralof",11.7
+2019,206,"Bar-4","Baralof",12.1
+2019,206,"Bar-5","Baralof",12.1
+2019,212,"RR-3","Rodman Reach",13.4
+2019,212,"RR-5","Rodman Reach",14.1
+2019,212,"RR-6","Rodman Reach",13.7
+2019,212,"RR-4","Rodman Reach",14.9
+2019,212,"RR-1","Rodman Reach",13.9
+2019,212,"RR-2","Rodman Reach",13.3
+2019,218,"Jap-7","Japanese",12
+2019,218,"Jap-2","Japanese",12.1
+2019,218,"Jap-3","Japanese",12.2
+2019,218,"Jap-1","Japanese",13
+2019,218,"Jap-6","Japanese",12.8
+2019,218,"Jap-5","Japanese",13.8
+2019,218,"Jap-4","Japanese",12.2
+2019,219,"Kai-1","Kaiugnak",10.4
+2019,219,"Kai-2","Kaiugnak",10.7
+2019,219,"Kai-3","Kaiugnak",11.9
+2019,220,"Kai-6","Kaiugnak",11.9
+2019,220,"Kai-7","Kaiugnak",12.4
+2019,220,"Kai-4","Kaiugnak",10.9
+2019,222,"Kilu-1","Kiluida",15.7
+2019,222,"Kilu-2","Kiluida",16.5
+2019,222,"Kilu-4","Kiluida",16.8
+2019,222,"Kilu-5","Kiluida",13.9
+2019,222,"Kilu-6","Kiluida",14.1
+2019,222,"Kilu-3","Kiluida",15.4
+2019,226,"Ugak-7","Ugak",19.5
+2019,226,"Ugak-2","Ugak",19.1
+2019,226,"Ugak-3","Ugak",18.6
+2019,226,"Ugak-4","Ugak",18.1
+2019,226,"Ugak-8","Ugak",18.9
+2019,226,"Ugak-5","Ugak",19.7
+2019,226,"Ugak-6","Ugak",19.3
+2020,188,"AG-1","Agripina",12.3
+2020,188,"AG-2","Agripina",12.1
+2020,188,"AG-5","Agripina",12
+2020,188,"AG-3","Agripina",12.3
+2020,188,"AG-4","Agripina",12.1
+2020,188,"AG-6","Agripina",13.9
+2020,190,"PW-1","Port Wrangell",8.6
+2020,190,"PW-2","Port Wrangell",8.8
+2020,190,"PW-3","Port Wrangell",9
+2020,190,"PW-4","Port Wrangell",9.2
+2020,194,"Mit-1","Mitrofania",12.3
+2020,194,"Mit-2","Mitrofania",12.7
+2020,194,"Mit-3","Mitrofania",12.5
+2020,194,"Mit-4","Mitrofania",13
+2020,194,"Mit-5","Mitrofania",14.8
+2020,194,"Mit-6","Mitrofania",13.4
+2020,196,"Fox-1","Fox",12.4
+2020,196,"Fox-2","Fox",13.5
+2020,196,"Fox-3","Fox",13.1
+2020,196,"Fox-4","Fox",12.2
+2020,196,"Fox-5","Fox",13.1
+2020,196,"Fox-1","Fox",12.8
+2020,199,"BB-2","Balboa",12.7
+2020,199,"BB-3","Balboa",13
+2020,199,"BB-4","Balboa",12.4
+2020,199,"BB-6","Balboa",13.1
+2020,199,"BB-7","Balboa",13.7
+2020,201,"Fal-1","Falmouth",12.3
+2020,201,"Fal-5","Falmouth",12.2
+2020,201,"Fal-3","Falmouth",12
+2020,201,"Fal-4","Falmouth",12
+2020,201,"Fal-2","Falmouth",12.2
+2020,202,"Sand-2","Sand Point",11.9
+2020,202,"Sand-3","Sand Point",12.2
+2020,205,"Bar-2","Baralof",11.2
+2020,205,"Bar-3","Baralof",11
+2020,205,"Bar-4","Baralof",11.1
+2020,205,"Bar-5","Baralof",11
+2020,205,"Bar-1","Baralof",11.5
+2020,205,"Bar-6","Baralof",11.5
+2020,210,"RR-1","Rodman Reach",13.6
+2020,210,"RR-2","Rodman Reach",13.4
+2020,210,"RR-4","Rodman Reach",12.9
+2020,210,"RR-3","Rodman Reach",14.1
+2020,210,"RR-5","Rodman Reach",14.1
+2020,210,"RR-6","Rodman Reach",14
+2020,212,"Jap-2","Japanese",12.2
+2020,212,"Jap-3","Japanese",11.8
+2020,212,"Jap-6","Japanese",11.9
+2020,212,"Jap-1","Japanese",12.6
+2020,212,"Jap-5","Japanese",13.5
+2020,212,"Jap-4","Japanese",13.1
+2020,214,"Kai-1","Kaiugnak",12.1
+2020,214,"Kai-2","Kaiugnak",12.1
+2020,214,"Kai-6","Kaiugnak",11.9
+2020,214,"Kai-3","Kaiugnak",11.3
+2020,214,"Kai-7","Kaiugnak",11.9
+2020,214,"Kai-4","Kaiugnak",12.2
+2020,216,"Kilu-1","Kiluida",12.7
+2020,216,"Kilu-2","Kiluida",12.7
+2020,216,"Kilu-4","Kiluida",12.5
+2020,216,"Kilu-6","Kiluida",12.5
+2020,216,"Kilu-5","Kiluida",12.2
+2020,216,"Kilu-3","Kiluida",12.8
+2020,220,"Ugak-2","Ugak",13.7
+2020,220,"Ugak-3","Ugak",13.8
+2020,220,"Ugak-4","Ugak",12.6
+2020,220,"Ugak-8","Ugak",13.2
+2020,220,"Ugak-5","Ugak",13.1
+2020,220,"Ugak-6","Ugak",13.5
+2020,220,"Ugak-7","Ugak",13.8
+2020,184,"Eelgrass West","Cook Bay",10.6
+2020,184,"Laminaria East","Cook Bay",10.3
+2020,184,"Laminaria North","Cook Bay",10.8
+2020,234,"Bare North","Cook Bay",13.8
+2020,234,"Eelgrass North","Cook Bay",13.2
+2020,234,"Eelgrass South","Cook Bay",13.1
+2020,234,"Eelgrass West","Cook Bay",13.7
+2020,234,"Laminaria East","Cook Bay",13.2
+2020,234,"Laminaria North","Cook Bay",14
+2020,234,"Laminaria South","Cook Bay",13.5
+2020,234,"Middle Cove","Cook Bay",12.2
+2020,233,"Back Bay eelgrass","Anton Larson Bay",13.3
+2020,233,"Cobble point","Anton Larson Bay",12.6
+2020,233,"Eelgrass patches","Anton Larson Bay",14
+2020,233,"Eelgrass point","Anton Larson Bay",11.9
+2020,233,"Laminaria #2","Anton Larson Bay",12.5
+2020,233,"Laminaria Point","Anton Larson Bay",12.4
+2020,233,"White rock","Anton Larson Bay",14.4
+2020,233,"Wooden boat","Anton Larson Bay",13.5
+2021,195,"Bare North","Cook Bay",9.5
+2021,196,"Bare North","Cook Bay",9.7
+2021,195,"Eelgrass North","Cook Bay",8.9
+2021,196,"Eelgrass North","Cook Bay",9.8
+2021,195,"Eelgrass South","Cook Bay",9.8
+2021,196,"Eelgrass South","Cook Bay",9.2
+2021,195,"Eelgrass West","Cook Bay",8.8
+2021,196,"Eelgrass West","Cook Bay",10
+2021,196,"Laminaria East","Cook Bay",9.9
+2021,195,"Laminaria North","Cook Bay",8.9
+2021,196,"Laminaria North","Cook Bay",9.8
+2021,195,"Laminaria South","Cook Bay",9.5
+2021,196,"Laminaria South","Cook Bay",9.5
+2021,195,"Middle cove","Cook Bay",8.8
+2021,196,"Middle cove","Cook Bay",9.2
+2021,190,"Back Bay eelgrass","Anton Larson Bay",11
+2021,191,"Back Bay eelgrass","Anton Larson Bay",9.7
+2021,190,"Cobble point","Anton Larson Bay",10.3
+2021,191,"Cobble point","Anton Larson Bay",9
+2021,190,"Eelgrass patches","Anton Larson Bay",10.2
+2021,191,"Eelgrass patches","Anton Larson Bay",9.4
+2021,190,"Eelgrass point","Anton Larson Bay",9.8
+2021,191,"Eelgrass point","Anton Larson Bay",8.6
+2021,191,"Laminaria #2","Anton Larson Bay",9.4
+2021,192,"Laminaria #2","Anton Larson Bay",9.6
+2021,190,"Laminaria Point","Anton Larson Bay",9.9
+2021,191,"Laminaria Point","Anton Larson Bay",8.7
+2021,190,"White rock","Anton Larson Bay",10.2
+2021,191,"White rock","Anton Larson Bay",9.8
+2021,191,"Wooden boat","Anton Larson Bay",9.5
+2021,192,"Wooden boat","Anton Larson Bay",9.2
+2021,232,"Bare North","Cook Bay",11.9
+2021,233,"Bare North","Cook Bay",12.1
+2021,232,"Eelgrass North","Cook Bay",11.2
+2021,233,"Eelgrass North","Cook Bay",11.3
+2021,232,"Eelgrass South","Cook Bay",11.1
+2021,233,"Eelgrass South","Cook Bay",11
+2021,232,"Eelgrass West","Cook Bay",11.3
+2021,233,"Eelgrass West","Cook Bay",11.1
+2021,232,"Laminaria East","Cook Bay",11.1
+2021,233,"Laminaria East","Cook Bay",11.2
+2021,232,"Laminaria North","Cook Bay",11.5
+2021,233,"Laminaria North","Cook Bay",11.5
+2021,232,"Laminaria South","Cook Bay",11
+2021,233,"Laminaria South","Cook Bay",11.2
+2021,232,"Middle Cove","Cook Bay",11.3
+2021,233,"Middle Cove","Cook Bay",11.3
+2021,235,"Back Bay eelgrass","Anton Larson Bay",11.3
+2021,236,"Back Bay eelgrass","Anton Larson Bay",12.2
+2021,235,"Cobble point","Anton Larson Bay",11.4
+2021,236,"Cobble point","Anton Larson Bay",12.2
+2021,234,"Eelgrass patches","Anton Larson Bay",12.4
+2021,235,"Eelgrass patches","Anton Larson Bay",11.9
+2021,234,"Eelgrass point","Anton Larson Bay",12.8
+2021,235,"Eelgrass point","Anton Larson Bay",11.8
+2021,234,"Laminaria #2","Anton Larson Bay",11.6
+2021,235,"Laminaria #2","Anton Larson Bay",11.9
+2021,234,"Laminaria Point","Anton Larson Bay",12.9
+2021,235,"Laminaria Point","Anton Larson Bay",11.9
+2021,235,"White rock","Anton Larson Bay",12.7
+2021,236,"White rock","Anton Larson Bay",11.6
+2021,234,"Wooden boat","Anton Larson Bay",11.4
+2021,235,"Wooden boat","Anton Larson Bay",11.4
