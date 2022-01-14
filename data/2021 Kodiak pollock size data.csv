@@ -1,0 +1,315 @@
+Trip,Year,Date,Region,Site Name,Waypoint,Lat deg,Lat min,Long deg,Long min,Time,Temperature,Habitat,Species,Size (TL mm)
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,40
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,39
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,35
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,32
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,53
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,54
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,38
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,32
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,47
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,38
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,40
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,46
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,30
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,30
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,54
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,47
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,46
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,51
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,57
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,52
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,48
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,48
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,43
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,49
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,54
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,43
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,51
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,44
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,43
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,48
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,45
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,46
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,45
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,53
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,55
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,31
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,39
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,52
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,37
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,53
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,56
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,44
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,41
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,42
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,40
+1,2021,7/9/2021,Anton Larson Bay,Laminaria Point,,,,,,,,laminaria,poll,39
+1,2021,7/9/2021,Anton Larson Bay,White Rock,,,,,,,,Bare,poll,25
+1,2021,7/10/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,57
+1,2021,7/10/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,43
+1,2021,7/10/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,49
+1,2021,7/10/2021,Anton Larson Bay,Wooden Boat,,,,,,,,laminaria,poll,48
+1,2021,7/10/2021,Anton Larson Bay,Wooden Boat,,,,,,,,laminaria,poll,47
+1,2021,7/10/2021,Anton Larson Bay,Cobble Point,,,,,,,,Eelgrass,poll,54
+1,2021,7/10/2021,Anton Larson Bay,White Rock,,,,,,,,Bare,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,57
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,58
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,60
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,52
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,45
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,59
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,49
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,57
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,53
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,52
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,65
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,55
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,45
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,41
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass North,,,,,,,,Eelgrass,poll,52
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,49
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,43
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,46
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,44
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,46
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,55
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,43
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,54
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,46
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,45
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,51
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,56
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,48
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,47
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,51
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,52
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,44
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,46
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,52
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,39
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,49
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,34
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,42
+1,2021,7/14/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,49
+2,2021,8/22/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,76
+2,2021,8/22/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,70
+2,2021,8/22/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,86
+2,2021,8/23/2021,Anton Larson Bay,Eelgrass patches,,,,,,,,Eelgrass,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,89
+2,2021,8/23/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,68
+2,2021,8/23/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,76
+2,2021,8/23/2021,Anton Larson Bay,Eelgrass Point,,,,,,,,Eelgrass,poll,90
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,78
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,105
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,89
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,82
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,74
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,88
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,92
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,107
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,98
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,103
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,102
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,88
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,89
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,94
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,101
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,84
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,102
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,105
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,98
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,99
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,114
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,105
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,95
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,88
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,94
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,96
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,103
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,101
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,105
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,88
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,106
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,98
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,85
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,91
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,90
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,93
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,109
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,113
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,84
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,111
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,119
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,98
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,92
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,108
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,102
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,89
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,100
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,97
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,104
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,110
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,108
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,93
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,91
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,96
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,94
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,88
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,95
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,86
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,98
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,93
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,84
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,83
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,85
+2,2021,8/23/2021,Anton Larson Bay,Cobble Point,,,,,,,,Bare,poll,92
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,61
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,61
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,63
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,64
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,64
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,65
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,66
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,67
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,68
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,68
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,68
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,69
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,69
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,69
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,70
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,71
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,71
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,72
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,72
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,72
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,73
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,73
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,74
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,79
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,79
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,80
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,80
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,81
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,85
+2,2021,8/20/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,93
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,61
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,67
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,72
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,72
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,74
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,76
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,77
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,78
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,78
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,79
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,82
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,82
+2,2021,8/21/2021,Cook Bay,Eelgrass South,,,,,,,,Eelgrass,poll,84
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,63
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,64
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,69
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,72
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,73
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,73
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,76
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,77
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,78
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,78
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,79
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,79
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,80
+2,2021,8/20/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,81
+2,2021,8/21/2021,Cook Bay,Eelgrass West,,,,,,,,Eelgrass,poll,75
+2,2021,8/20/2021,Cook Bay,Laminaria East,,,,,,,,laminaria,poll,85
+2,2021,8/20/2021,Cook Bay,Laminaria North,,,,,,,,laminaria,poll,82
+2,2021,8/20/2021,Cook Bay,Laminaria North,,,,,,,,laminaria,poll,83
+2,2021,8/20/2021,Cook Bay,Laminaria North,,,,,,,,laminaria,poll,93
+2,2021,8/20/2021,Cook Bay,Laminaria North,,,,,,,,laminaria,poll,97
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,54
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,61
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,62
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,63
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,66
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,66
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,66
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,66
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,66
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,67
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,68
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,68
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,69
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,69
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,70
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,70
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,70
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,70
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,71
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,72
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,73
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,75
+2,2021,8/20/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,80
+2,2021,8/21/2021,Cook Bay,Laminaria South,,,,,,,,laminaria,poll,73

@@ -624,6 +624,46 @@ unique(new.dat$bay)
 # and save!
 write.csv(new.dat, "./data/cod.pollock.lengths.2006.2021.csv", row.names = F)
 
+## check - do we have 2021 Cook/Anton value?
+new.dat <- read.csv("./data/cod.pollock.lengths.2006.2021.csv")
+
+head(new.dat)
+
+check <- new.dat %>%
+  filter(year == 2021, bay %in% c("Cook Bay", "Anton Larson Bay"))
+
+check # nada!
+
+extra.new <- read.csv("./data/2021 Kodiak pollock size data.csv")
+
+head(extra.new)
+
+extra.new$julian <- lubridate::yday(chron::dates(as.character(extra.new$Date)))
+
+extra.new <- extra.new %>%
+  rename(year = Year, site = Site.Name, length = Size..TL.mm.,
+         temperature = Temperature, species = Species, bay = Region) %>%
+  mutate(cod.cpue = NA, pollock.cpue = NA) %>%
+  select(year, julian, site, bay, species, length, cod.cpue, pollock.cpue, temperature)
+
+new.dat <- rbind(new.dat, extra.new)
+
+# and check names
+unique(new.dat$bay)
+unique(new.dat$site)
+
+# a few incompatible site names
+check <- new.dat$site == "Eelgrass point"
+new.dat$site[check] <- "Eelgrass Point"
+
+check <- new.dat$site == "Cobble point"
+new.dat$site[check] <- "Cobble Point"
+  
+check <- new.dat$site == "Wooden boat"
+new.dat$site[check] <- "Wooden Boat"
+
+write.csv(new.dat, "./data/cod.pollock.lengths.2006.2021.csv")
+
 ########################
 # cod condition data
 dat <- read.csv("data/Cond_18_20.csv", row.names = 1)
