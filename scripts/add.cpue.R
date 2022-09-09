@@ -1,5 +1,7 @@
 # add 2021 data to models of cod and pollock abundance
 
+# updated at the end of the script to update with 2022 data
+
 library(tidyverse)
 
 # load cod/pollock data for 2006-2020
@@ -213,6 +215,179 @@ dat$site[change] <- "RR-6"
 str_sort(unique(dat$site))
 
 filter(dat, site == "Rod-1")
+
+### add 2022 data ----------------------------
+
+# load 2022 wGOA cpue data
+d6 <- read.csv("./data/cpue2022.csv")
+
+# change date to julian
+d6$julian <- lubridate::yday(as.POSIXct(paste(d6$year, d6$month, d6$day, sep = "-")))
+
+# examine spp. names 
+unique(d6$species)
+
+# need to check for age-1 cod
+d7 <- read.csv("./data/length2022.csv")
+head(d7)
+unique(d7$species)
+hist(filter(d7, species == "Pacific cod")$length)
+# none!
+
+hist(filter(d7, species == "walleye pollock")$length)
+# one - need to remove anything < 100 mm
+
+age.1 <- d7 %>%
+  filter(species == "walleye pollock", length > 100) %>%
+  group_by(Site) %>%
+  summarize(pollock.age.1 = n())
+age.1
+
+# clean up names to match d1
+names(d6)[6:7] <- c("site", "bay")
+
+# restrict d6 to cod and pollock
+d6 <- d6 %>%
+  filter(species %in% c("Pacific cod", "walleye pollock")) %>%
+  select(Station, year, bay, site, julian, species, CPUE) %>%
+  pivot_wider(names_from = species, values_from = CPUE)
+
+# remove age-1 pollock
+names(age.1)[1] <- "site"
+
+unique(d6$site)
+unique(age.1$site)
+
+d6 <- left_join(d6, age.1)
+
+# replace NAs with 0
+change <- is.na(d6)
+d6[change] <- 0
+
+# clean up again
+d6 <- d6 %>%
+  mutate(cod.age.0 = `Pacific cod`) %>%
+  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) %>%
+  select(-`Pacific cod`, -pollock.age.1, -`walleye pollock`, -year, -julian, -bay, -site)
+
+# now we need to join to site data to account for sets with no cod or pollock caught
+d8 <- read.csv("./data/site2022.csv")
+
+
+# change date to julian
+d8$julian <- lubridate::yday(as.POSIXct(d8$Date, format = "%m/%d/%Y"))
+
+# clean up 
+d8 <- d8 %>%
+  mutate(year = 2022) %>%
+  filter(use.for.CPUE == "yes") %>%
+  select(Station, year, Bay, Site, julian) %>%
+  mutate(Station = as.integer(as.character(Station)))
+
+d8 <- left_join(d8, d6)
+
+# replace NA with 0
+change <- is.na(d8)
+d8[change] <- 0
+
+# remove Chief Cove and May samples
+d8 <- d8 %>%
+  filter(Bay != "Chief Cove",
+         julian > 151)
+
+# clean up 
+d8 <- d8 %>%
+  select(-Station)
+
+names(d8)[2:3] <- c("bay", "site")
+
+dat <- rbind(dat, d8)
+
+## add 2022 Cook / Anton's data-------------------
+d9 <- read.csv("./data/Kodiak 2022 seine data - gadid and salmonid.csv")
+
+head(d9)
+
+# clean up to combine with dat
+# change to julian day
+d9$julian <- lubridate::yday(as.POSIXct(d9$Date, format = "%m/%d/%Y"))
+
+d9 <- d9 %>%
+  arrange(desc(X.1..Pacific.cod))
+head(d9)
+
+d9 <- d9 %>% 
+  filter(Year == 2022) %>%
+  select(Year, Region, Site.Name, julian, X..Pacific.cod, X..Pollock) %>%
+  rename(Pacific.cod = X..Pacific.cod,
+         Pollock = X..Pollock)
+
+# reset names
+names(d9) <- names(dat)
+
+unique(d9$bay)
+unique(dat$bay)
+
+change <- d9$bay == "Cook Bay"
+d9$bay[change] <- "Cook"
+
+
+change <- d9$bay == "Anton Larson Bay"
+d9$bay[change] <- "Anton Larsen"
+
+# change Anton Larsen spelling in dat
+change <- dat$bay == "Anton Larson"
+dat$bay[change] <- "Anton Larsen"
+
+
+unique(d9$site)
+unique(dat$site)
+
+change <- d9$site == "laminaria #2"
+d9$site[change] <- "Laminaria #2"
+
+change <- d9$site == "Middle cove"
+d9$site[change] <- "Middle Cove"
+
+change <- dat$site == "Mitro-1"
+dat$site[change] <- "Mit-1"
+
+change <- dat$site == "Mitro-2"
+dat$site[change] <- "Mit-2"
+
+change <- dat$site == "Mitro-3"
+dat$site[change] <- "Mit-3"
+
+change <- dat$site == "Mitro-4"
+dat$site[change] <- "Mit-4"
+
+change <- dat$site == "Mitro-5"
+dat$site[change] <- "Mit-5"
+
+change <- dat$site == "Mitro-6"
+dat$site[change] <- "Mit-6"
+
+change <- dat$bay == "Kiluida"
+dat$bay[change] <- "Kiliuda"
+
+
+# check that worked
+site.dat <- unique(filter(dat, bay %in% c("Cook", "Anton Larsen"))$site)
+site.d9 <-  unique(d9$site)
+check.sites <- data.frame(dat = str_sort(site.dat),
+                          d9 = str_sort(site.d9))
+
+# combine
+dat <- rbind(dat, d9)
+
+# check
+g <- ggplot(dat) +
+  aes(x = year, y = cod.age.0, color = site) +
+  geom_point() +
+  facet_wrap( ~ bay) +
+  theme(legend.position = "none")
+print(g)
+
 
 # save
 write.csv(dat, "./data/age.0_cod_pollock_seine_cpue.csv")
