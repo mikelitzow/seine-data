@@ -418,18 +418,19 @@ age.1
 
 # clean up column names to match d1
 names(d11)[3:4] <- c("site", "bay")
+names(d10)[6:7] <- c("site", "bay")
 
 # restrict cpue file, d10, to cod and pollock
 d10 <- d10 %>%
   filter(species %in% c("Pacific cod", "walleye pollock")) %>%
-  select(Station, year, Bay, Site, julian, species, CPUE) %>%
+  select(Station, year, bay, site, julian, species, CPUE) %>%
   pivot_wider(names_from = species, values_from = CPUE)
 
 # remove age-1 cod
-names(age.1)[1] <- "Site"
+names(age.1)[1] <- "site"
 
-unique(d10$Site)
-unique(age.1$Site)
+unique(d10$site)
+unique(age.1$site)
 
 d10 <- left_join(d10, age.1)
 
@@ -450,23 +451,10 @@ age.1p <- d11 %>%
 age.1p
 
 # remove age-1 pollock
-names(age.1p)[1] <- "Site"
+names(age.1p)[1] <- "site"
 
-unique(d10$Site)
-unique(age.1p$Site)
-
-d10 <- left_join(d10, age.1p)
-
-# replace NAs with 0
-change <- is.na(d10)
-d10[change] <- 0
-
-
-# remove age-1 pollock
-names(age.1p)[1] <- "Site"
-
-unique(d10$Site)
-unique(age.1p$Site)
+unique(d10$site)
+unique(age.1p$site)
 
 d10 <- left_join(d10, age.1p)
 
@@ -474,14 +462,16 @@ d10 <- left_join(d10, age.1p)
 change <- is.na(d10)
 d10[change] <- 0
 
+### AA stop
 # clean up again
 d10 <- d10 %>%
-  mutate(cod.age.0 = `Pacific cod` - age.1) %>%
-  mutate(pollock.age.0 = `walleye pollock` - age.1p) %>%
-  select(-`cod.age.0`, -`pollock.age.0`, -year, -julian, -Bay, -Site)
+  mutate(cod.age.0 = `Pacific cod`) %>%
+  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) %>%
+  select(-`cod.age.0`, -`pollock.age.0`, -year, -julian, -bay, -site)
 
-###stop
-####run everything again from 2023 then pick it up here.
+
+
+
 
 # now we need to join to site data to account for sets with no cod or pollock caught
 d8 <- read.csv("./data/site2022.csv")
