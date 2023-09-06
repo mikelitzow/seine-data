@@ -462,128 +462,85 @@ d10 <- left_join(d10, age.1p)
 change <- is.na(d10)
 d10[change] <- 0
 
-### AA stop
 # clean up again
 d10 <- d10 %>%
-  mutate(cod.age.0 = `Pacific cod`) %>%
-  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) %>%
-  select(-`cod.age.0`, -`pollock.age.0`, -year, -julian, -bay, -site)
-
-
-
-
+  mutate(cod.age.0 = `Pacific cod` - cod.age.1) %>%
+  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) 
+head(d10)
+##here I removed code that selected to remove year, cod.age.0, bay, etc
+##not sure if this will mess up data joining or not
 
 # now we need to join to site data to account for sets with no cod or pollock caught
-d8 <- read.csv("./data/site2022.csv")
-
+d12 <- read.csv("./data/site2023.csv")
 
 # change date to julian
-d8$julian <- lubridate::yday(as.POSIXct(d8$Date, format = "%m/%d/%Y"))
+d12$julian <- lubridate::yday(as.POSIXct(d12$Date, format = "%m/%d/%Y"))
 
 # clean up 
-d8 <- d8 %>%
-  mutate(year = 2022) %>%
+d12 <- d12 %>%
+  mutate(year = 2023) %>%
   filter(use.for.CPUE == "yes") %>%
   select(Station, year, Bay, Site, julian) %>%
   mutate(Station = as.integer(as.character(Station)))
 
-d8 <- left_join(d8, d6)
+d12 <- left_join(d12, d10)
 
 # replace NA with 0
-change <- is.na(d8)
-d8[change] <- 0
+change <- is.na(d12)
+d12[change] <- 0
 
 # remove Chief Cove and May samples
-d8 <- d8 %>%
+d12 <- d12 %>%
   filter(Bay != "Chief Cove",
          julian > 151)
 
 # clean up 
-d8 <- d8 %>%
+d12 <- d12 %>%
   select(-Station)
 
-names(d8)[2:3] <- c("bay", "site")
+names(d12)[2:3] <- c("bay", "site")
+#want to make d12 have only 6 columns so matches 'dat'
+d12a <- d12 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d12a)
 
-dat <- rbind(dat, d8)
+dat <- rbind(dat, d12a)
+#hot dog!
 
-## add 2022 Cook / Anton's data-------------------
-d9 <- read.csv("./data/Kodiak 2022 seine data - gadid and salmonid.csv")
+## add 2023 Cook / Anton's data-------------------
+d13 <- read.csv("./data/Kodiak_2023_seine_data_gadid_and_pinks.csv")
 
-head(d9)
+head(d13)
 
 # clean up to combine with dat
 # change to julian day
-d9$julian <- lubridate::yday(as.POSIXct(d9$Date, format = "%m/%d/%Y"))
+d13$julian <- lubridate::yday(as.POSIXct(d13$Date, format = "%m/%d/%Y"))
 
-d9 <- d9 %>%
-  arrange(desc(X.1..Pacific.cod))
-head(d9)
-
-d9 <- d9 %>% 
-  filter(Year == 2022) %>%
-  select(Year, Region, Site.Name, julian, X..Pacific.cod, X..Pollock) %>%
-  rename(Pacific.cod = X..Pacific.cod,
-         Pollock = X..Pollock)
+d13 <- d13 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d13)
 
 # reset names
-names(d9) <- names(dat)
+names(d13) <- names(dat)
 
-unique(d9$bay)
+#check for repeat names
+unique(d13$bay)
 unique(dat$bay)
-
-change <- d9$bay == "Cook Bay"
-d9$bay[change] <- "Cook"
-
-
-change <- d9$bay == "Anton Larson Bay"
-d9$bay[change] <- "Anton Larsen"
-
-# change Anton Larsen spelling in dat
-change <- dat$bay == "Anton Larson"
-dat$bay[change] <- "Anton Larsen"
-
-
-unique(d9$site)
+unique(d13$site)
 unique(dat$site)
 
-change <- d9$site == "laminaria #2"
-d9$site[change] <- "Laminaria #2"
-
-change <- d9$site == "Middle cove"
-d9$site[change] <- "Middle Cove"
-
-change <- dat$site == "Mitro-1"
-dat$site[change] <- "Mit-1"
-
-change <- dat$site == "Mitro-2"
-dat$site[change] <- "Mit-2"
-
-change <- dat$site == "Mitro-3"
-dat$site[change] <- "Mit-3"
-
-change <- dat$site == "Mitro-4"
-dat$site[change] <- "Mit-4"
-
-change <- dat$site == "Mitro-5"
-dat$site[change] <- "Mit-5"
-
-change <- dat$site == "Mitro-6"
-dat$site[change] <- "Mit-6"
-
-change <- dat$bay == "Kiluida"
-dat$bay[change] <- "Kiliuda"
-
-change <- dat$bay == "Pt Wrangell"
-dat$bay[change] <- "Port Wrangell"
+#none found, so don't need anything like next 2 lines
+#change <- d9$bay == "Cook Bay"
+#d9$bay[change] <- "Cook"
 
 # check that worked
 site.dat <- unique(filter(dat, bay %in% c("Cook", "Anton Larsen"))$site)
-site.d9 <-  unique(d9$site)
+site.d13 <-  unique(d13$site)
 check.sites <- data.frame(dat = str_sort(site.dat),
-                          d9 = str_sort(site.d9))
+                          d13 = str_sort(site.d13))
 
 # combine
-dat <- rbind(dat, d9)
+dat <- rbind(dat, d13)
 
 # check
 g <- ggplot(dat) +
