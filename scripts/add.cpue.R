@@ -408,10 +408,10 @@ unique(d11$species)
 hist(filter(d11, species == "Pacific cod")$length)
 
 # clear break with age 1 >> 139mm
-#ALISA STOP HERE - not sure what object d11 is below
+
 age.1 <- d11 %>%
   filter(species == "Pacific cod", length > 120) %>%
-  group_by(site) %>%
+  group_by(Site) %>%
   summarize(cod.age.1 = n())
 age.1
 
