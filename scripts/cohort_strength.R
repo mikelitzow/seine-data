@@ -17,6 +17,14 @@ dat$bay_fac <- as.factor(dat$bay)
 dat$year_fac <- as.factor(dat$year)
 dat$site_fac <- as.factor(dat$site)
 
+# summarize
+summ <- dat %>%
+  group_by(year) %>%
+  summarise(n_bays = length(unique(bay_fac)),
+            n_sets = n())
+
+summ
+
 ## cod brms: setup ---------------------------------------------
 
 ## Define model formula
