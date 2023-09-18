@@ -77,7 +77,7 @@ plot.cod <- ce1s_1$year_fac %>%
 
 
 ggplot(plot.cod, aes(year_fac, estimate__)) +
-  geom_point(size=3) +
+  geom_col(color = "black", fill = "grey") +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Age-0 cod / set") +
   scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
@@ -160,7 +160,7 @@ plot.pollock <- ce1s_1$year_fac %>%
 
 
 ggplot(plot.pollock, aes(year_fac, estimate__)) +
-  geom_point(size=3) +
+  geom_col(color = "black", fill = "grey") +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Age-0 pollock / set") +
   scale_y_continuous(breaks=c(0,1,5,10,50,100,200,300), minor_breaks = NULL) +
