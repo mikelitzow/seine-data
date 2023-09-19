@@ -104,9 +104,21 @@ dat$pollock <- dat$pollock.age.0
 
 # restrict to long-term sites and AK Peninsula bays with high proportion of positive catches
 levels(dat$bay_fac)
-keep <- c("Agripina", "Anton Larson", "Balboa", "Cook", "Mitrofania", "Port Wrangell") 
+keep <- c("Agripina", "Anton Larsen", "Balboa", "Cook", "Mitrofania", "Port Wrangell") 
 dat <- dat %>%
   filter(bay_fac %in% keep)
+
+# check we have all the bays!
+unique(dat$bay)
+
+# summarize
+summ <- dat %>%
+  group_by(year) %>%
+  dplyr::summarise(n_sets = n(), n_bays = length(unique(bay_fac))
+            )
+
+summ
+
 
 ## pollock brms: setup ---------------------------------------------
 
@@ -181,3 +193,13 @@ ggsave("./figs/seine_pollock_age0_abundance_estimates.png", width = 6, height = 
 plot.pollock[,2:5] <- round(plot.pollock[,2:5], 2)
 names(plot.pollock) <- c("year", "pollock_per_set", "pollock_se", "pollock_95percent_LCI", "pollock_95percent_UCI")
 write.csv(plot.pollock, "./output/seine_pollock_age0_abundance_estimates.csv", row.names = F)
+
+# get time series mean and quantiles
+summ <- plot.pollock %>%
+  mutate(log_cpue = log(pollock_per_set)) %>%
+  select(year, log_cpue)
+
+ggplot(summ, aes(log_cpue)) +
+  geom_histogram(bins = 6, fill = "grey", color = "black")
+  
+mean(summ$log_cpue)
