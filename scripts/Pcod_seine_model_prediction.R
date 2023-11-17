@@ -75,17 +75,20 @@ print(model.plot)
 ggsave("./figs/seine_model_regression.png", width = 4, height = 3, units = 'in')
 
 ## plot residuals by year-------------------------------------------------------
+seine_model_brm <- readRDS("./output/seine_model_brm.rds")
 
 prediction_residuals <- as.data.frame(residuals(seine_model_brm)) %>%
   mutate(year = 2006:2019)
 
 
 ggplot(prediction_residuals, aes(year, Estimate)) +
+  geom_ribbon(aes(ymin = Q2.5, ymax = Q97.5), lty = 0, fill = "grey", alpha = 0.5) +
   geom_hline(yintercept = 0, color = "dark grey") +
   geom_line(color = "red3") +
   geom_point(color = "red3") +
   geom_ribbon(aes(ymin = Q2.5, ymax = Q97.5), lty = 0, fill = "grey", alpha = 0.5) +
-  scale_x_continuous(breaks = 2006:2019) +
+  scale_x_continuous(breaks = 2006:2019,
+                     minor_breaks = NULL) +
   labs(x = "Year class",
        y = "Posterior residuals")
 
