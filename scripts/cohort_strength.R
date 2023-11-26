@@ -17,6 +17,14 @@ dat$bay_fac <- as.factor(dat$bay)
 dat$year_fac <- as.factor(dat$year)
 dat$site_fac <- as.factor(dat$site)
 
+# summarize
+summ <- dat %>%
+  group_by(year) %>%
+  summarise(n_bays = length(unique(bay_fac)),
+            n_sets = n())
+
+summ
+
 ## cod brms: setup ---------------------------------------------
 
 ## Define model formula
@@ -77,7 +85,7 @@ plot.cod <- ce1s_1$year_fac %>%
 
 
 ggplot(plot.cod, aes(year_fac, estimate__)) +
-  geom_point(size=3) +
+  geom_col(color = "black", fill = "grey") +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Age-0 cod / set") +
   scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
@@ -96,9 +104,21 @@ dat$pollock <- dat$pollock.age.0
 
 # restrict to long-term sites and AK Peninsula bays with high proportion of positive catches
 levels(dat$bay_fac)
-keep <- c("Agripina", "Anton Larson", "Balboa", "Cook", "Mitrofania", "Port Wrangell") 
+keep <- c("Agripina", "Anton Larsen", "Balboa", "Cook", "Mitrofania", "Port Wrangell") 
 dat <- dat %>%
   filter(bay_fac %in% keep)
+
+# check we have all the bays!
+unique(dat$bay)
+
+# summarize
+summ <- dat %>%
+  group_by(year) %>%
+  dplyr::summarise(n_sets = n(), n_bays = length(unique(bay_fac))
+            )
+
+summ
+
 
 ## pollock brms: setup ---------------------------------------------
 
@@ -160,7 +180,7 @@ plot.pollock <- ce1s_1$year_fac %>%
 
 
 ggplot(plot.pollock, aes(year_fac, estimate__)) +
-  geom_point(size=3) +
+  geom_col(color = "black", fill = "grey") +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Age-0 pollock / set") +
   scale_y_continuous(breaks=c(0,1,5,10,50,100,200,300), minor_breaks = NULL) +
@@ -173,3 +193,13 @@ ggsave("./figs/seine_pollock_age0_abundance_estimates.png", width = 6, height = 
 plot.pollock[,2:5] <- round(plot.pollock[,2:5], 2)
 names(plot.pollock) <- c("year", "pollock_per_set", "pollock_se", "pollock_95percent_LCI", "pollock_95percent_UCI")
 write.csv(plot.pollock, "./output/seine_pollock_age0_abundance_estimates.csv", row.names = F)
+
+# get time series mean and quantiles
+summ <- plot.pollock %>%
+  mutate(log_cpue = log(pollock_per_set)) %>%
+  select(year, log_cpue)
+
+ggplot(summ, aes(log_cpue)) +
+  geom_histogram(bins = 6, fill = "grey", color = "black")
+  
+mean(summ$log_cpue)
