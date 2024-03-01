@@ -246,3 +246,48 @@ ggplot(era_effect$seine, aes(effect1__, estimate__, color = era, fill = era)) +
 
 
 ggsave("./figs/seine_model_regression_era_intercepts_one_slope.png", width = 6.25, height = 3.5, units = 'in')
+
+## just for kicks, fit through 2022
+## fit model with one seine slope, different era intercepts
+data$era <- if_else(data$year <= 2016, "2006-2016", "2017-2022")
+formula <- bf(model ~ era + seine)
+
+seine_model_brm_5 <- brm(formula,
+                         data = data[data$year <= 2022,],
+                         cores = 4, chains = 4, iter = 2000,
+                         save_pars = save_pars(all = TRUE),
+                         control = list(adapt_delta = 0.999, max_treedepth = 10))
+
+saveRDS(seine_model_brm_5, file = "output/seine_model_brm_era_intercept_one_slope_through_2022.rds")
+
+seine_model_brm_5 <- readRDS("./output/seine_model_brm_era_intercept_one_slope_through_2022.rds")
+check_hmc_diagnostics(seine_model_brm_5$fit)
+neff_lowest(seine_model_brm_5$fit)
+rhat_highest(seine_model_brm_5$fit)
+summary(seine_model_brm_5)
+bayes_R2(seine_model_brm_5)
+y <- data$model[data$year <= 2020]
+yrep_seine_model_brm_5  <- fitted(seine_model_brm_5, scale = "response", summary = FALSE)
+ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_5[sample(nrow(yrep_seine_model_brm_5), 25), ]) +
+  xlim(-6, 6) +
+  ggtitle("seine_model_brm_5")
+trace_plot(seine_model_brm_3$fit)
+
+conditions <- make_conditions(seine_model_brm_5, vars = "era")
+
+era_effect <- conditional_effects(seine_model_brm_5, effect = "seine", re_formula = NA, conditions = conditions,
+                                  probs = c(0.025, 0.975)) 
+
+data$era <- if_else(data$year <= 2016, "2006-2016", "2017-2020")
+
+ggplot(era_effect$seine, aes(effect1__, estimate__, color = era, fill = era)) +
+  geom_line() + 
+  geom_ribbon(aes(ymin = lower__, ymax = upper__), alpha = 0.2, color = NA) +
+  scale_color_manual(values = cb[c(2,6)]) +
+  scale_fill_manual(values = cb[c(2,6)]) + 
+  geom_text(data = data[data$year <= 2022,], aes( x = seine, y = model, label = year)) +
+  labs(x = "Seine estimate",
+       y = "Assessment model estimate")
+
+
+ggsave("./figs/seine_model_regression_era_intercepts_one_slope_through_2022.png", width = 6.25, height = 3.5, units = 'in')
