@@ -1,4 +1,4 @@
-year,cod0_per_set,cod0_se,cod0_95percent_LCI,cod0_95percent_UCI,cod1_per_set,cod1_se,cod1_95percent_LCI,cod1_95percent_UCI
+Cohort,cod0_per_set,cod0_se,cod0_95percent_LCI,cod0_95percent_UCI,cod1_per_set,cod1_se,cod1_95percent_LCI,cod1_95percent_UCI
 2006,131.44,37.57,75.71,236.45,0.37,0.23,0.09,2.83
 2007,8.83,3.16,4.39,18.85,0.16,0.12,0.03,1.22
 2008,32.61,10.81,17.1,65.06,0.04,0.04,0,0.59
@@ -16,4 +16,3 @@ year,cod0_per_set,cod0_se,cod0_95percent_LCI,cod0_95percent_UCI,cod1_per_set,cod
 2020,204.59,53.51,121.89,346.67,2.59,1.55,0.56,14.58
 2021,22.4,5.65,13.8,37.55,0.32,0.28,0.03,1.95
 2022,126.59,32.39,76.44,214.25,1.55,0.84,0.46,11.34
-2023,34.78,8.74,20.79,57.99,0,0,0,0

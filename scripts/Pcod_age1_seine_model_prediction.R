@@ -315,38 +315,38 @@ ggsave("./figs/seine_model_regression_era_intercepts_one_slope_through_2022.png"
 
 ##################
 ###what follows is age-0 from seine and age-1 from seine###
+#need to lag the age-1 data so lagged it in excel and made .csv with Cohort column
+#Cohort = cohort year
+#year 2023 removed because do not have age-1 from cohort 2023 (not sampled yet)
+##thus, this is for years 2006 - 2022 only
 
 juv_seine <- read.csv("./output/seine_cod_age01_abundance_estimates.csv") %>%
   mutate(seine = as.vector(scale(log(cod0_per_set)))) %>%
-  select(year, seine)
+  select(Cohort, seine)
 
 names(juv_seine)[2] <- "age0"
 View(juv_seine)
 
 juv_seine1 <- read.csv("./output/seine_cod_age01_abundance_estimates.csv") %>%
-  mutate(seine1 = as.vector(scale(log(cod1_per_set + 1)))) %>%
-  select(year, seine1)
+  mutate(seine1 = as.vector(scale(log(cod1_per_set +1)))) %>%
+  select(Cohort, seine1)
 
 names(juv_seine1)[2] <- "age1"
 View(juv_seine1)
 
-#need to lag the age-1 data so lagged it in excel and made .csv
-#but it didn't like the log (x+1) with a na for year 2023 so made those zeros and 
-##will need to select years accordingly from here out 2006 - 2022 only
 juv_data = left_join(juv_seine, juv_seine1)
-juv_data <- filter(juv_data,juv_data$year<=2022) 
-# this import because 2023 age-1 numbers that needed removal
+
 View(juv_data) #looks good
 
-ggplot(juv_data[juv_data$year <= 2022,], aes(age0, age1)) +
-  geom_text(aes(label = year))
+ggplot(juv_data[juv_data$Cohort <= 2022,], aes(age0, age1)) +
+  geom_text(aes(label = Cohort))
 
 ## fit brms model ------------------------
 
 formula <- bf(age1 ~ s(age0, k = 4))
 
 seine_model_brm <- brm(formula,
-                       data = juv_data[juv_data$year <= 2022,],
+                       data = juv_data[juv_data$Cohort <= 2022,],
                        cores = 4, chains = 4, iter = 2000,
                        save_pars = save_pars(all = TRUE),
                        control = list(adapt_delta = 0.999, max_treedepth = 10))
@@ -359,7 +359,7 @@ neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
 summary(seine_model_brm)
 bayes_R2(seine_model_brm)
-y <- data$model[data$year <= 2022]
+y <- data$model[data$Cohort <= 2022]
 yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
 ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
   xlim(-6, 6) +
@@ -390,7 +390,7 @@ model.plot <- ggplot(dat_ce) +
   #geom_ribbon(aes(ymin = lower_80, ymax = upper_80), fill = "grey80") +
   geom_line(size = 1, color = "red3") +
   labs(x = "Seine abundance age-0", y = "Seine abundance age-1") +
-  geom_text(data = juv_data[juv_data$year <= 2022,], aes(age0, age1, label = year), size=3) 
+  geom_text(data = juv_data[juv_data$Cohort <= 2022,], aes(age0, age1, label = Cohort), size=3) 
 
 print(model.plot)
 ## seems like this plot driven by high 2020 and 2022 years. 
@@ -404,7 +404,7 @@ ggsave("./figs/seine_0_1_model_regression2022.png", width = 4, height = 3, units
 formula <- bf(age1 ~ s(age0, k = 4))
 
 seine_model_brm <- brm(formula,
-                       data = juv_data[juv_data$year <= 2020,],
+                       data = juv_data[juv_data$Cohort <= 2020,],
                        cores = 4, chains = 4, iter = 2000,
                        save_pars = save_pars(all = TRUE),
                        control = list(adapt_delta = 0.999, max_treedepth = 10))
@@ -417,7 +417,7 @@ neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
 summary(seine_model_brm)
 bayes_R2(seine_model_brm)
-y <- data$model[data$year <= 2020]
+y <- data$model[data$Cohort <= 2020]
 yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
 ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
   xlim(-6, 6) +
@@ -448,7 +448,7 @@ model.plot <- ggplot(dat_ce) +
   #geom_ribbon(aes(ymin = lower_80, ymax = upper_80), fill = "grey80") +
   geom_line(size = 1, color = "red3") +
   labs(x = "Seine abundance age-0", y = "Seine abundance age-1") +
-  geom_text(data = juv_data[juv_data$year <= 2020,], aes(age0, age1, label = year), size=3) 
+  geom_text(data = juv_data[juv_data$Cohort <= 2020,], aes(age0, age1, label = Cohort), size=3) 
 
 print(model.plot)
 ## interesting. now look at model output to age-1
@@ -460,6 +460,7 @@ ggsave("./figs/seine_0_1_model_regression2020.png", width = 4, height = 3, units
 ###what follows is age-1 from seine and model. 
 ###But I am confused and need help here: the model is age-0 and not age-3
 # to compare age-1 to model, do we need the age-3 numbers from the model?
+#need to ask Mike to help me lag model output
 
 seine <- read.csv("./output/seine_cod_age1_abundance_estimates.csv") %>%
   mutate(seine = as.vector(scale(log(cod_per_set + 1)))) %>%
