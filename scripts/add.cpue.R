@@ -407,6 +407,26 @@ head(d11)
 unique(d11$species)
 hist(filter(d11, species == "Pacific cod")$length)
 
+#make this into a nice histogram for ESASS talk
+cod23len <- filter(d11, species == "Pacific cod")
+head(cod23len)
+count(cod23len)
+
+library(patchwork)
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+
+ggplot(cod23len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,250) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Pacific cod from beach seines in 2023 (n = 1029)")
+
+
 # clear break with age 1 >= 139mm
 #now isolate age-1
 
