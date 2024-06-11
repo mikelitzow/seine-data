@@ -291,7 +291,7 @@ yrep_seine_model_brm_5  <- fitted(seine_model_brm_5, scale = "response", summary
 ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_5[sample(nrow(yrep_seine_model_brm_5), 25), ]) +
   xlim(-6, 6) +
   ggtitle("seine_model_brm_5")
-trace_plot(seine_age1_model_brm$fit)
+trace_plot(seine_model_brm_5$fit)
 
 conditions <- make_conditions(seine_model_brm_5, vars = "era")
 
@@ -507,7 +507,7 @@ neff_lowest(seine_age1_model_brm$fit)
 rhat_highest(seine_age1_model_brm$fit)
 summary(seine_age1_model_brm)
 bayes_R2(seine_age1_model_brm)
-y <- data$model[data$year <= 2020]
+y <- data$model[data$year <= 2022]
 yrep_seine_age1_model_brm  <- fitted(seine_age1_model_brm, scale = "response", summary = FALSE)
 ppc_dens_overlay(y = y, yrep = yrep_seine_age1_model_brm[sample(nrow(yrep_seine_age1_model_brm), 25), ]) +
   xlim(-6, 6) +
@@ -627,7 +627,19 @@ mod <- lm(model ~ seine, data = data)
 stationary_output <- rbind(stationary_output,
                            data.frame(age = "age_0",
                                       AICc = MuMIn::AICc(mod)))
+##plot only age-0 for ESASS talk
 
+output0 <- output %>%
+  filter(age == "age_0")
+
+ggplot(output0, aes(breakpoint, AICc, color = age)) +
+  geom_point() +
+  geom_line() +
+  geom_hline(data = stationary_output, aes(yintercept = AICc), lty = 2) +
+  scale_color_manual(values = cb[c(3,4)]) +
+  labs(x = "Breakpoint")
+ggsave("./figs/breakpoint_age0_AIC_plot.png", width = 6, height = 4, units = 'in')
+##
 ggplot(output, aes(breakpoint, AICc, color = age)) +
   geom_point() +
   geom_line() +
