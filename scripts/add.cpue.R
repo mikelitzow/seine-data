@@ -2,6 +2,8 @@
 
 # updated at the end of the script to update with 2022 data
 # updated at the end of the script to update with 2023 data
+# updated at end of script (around line 580) with 2024 data
+
 library(tidyverse)
 
 # load cod/pollock data for 2006-2020
@@ -161,7 +163,7 @@ change <- dat$bay == "Cook Bay"
 dat$bay[change] <- "Cook"
 
 change <- dat$bay == "Anton Larson Bay"
-dat$bay[change] <- "Anton Larson"
+dat$bay[change] <- "Anton Larsen"
 
 # see what's going on with Agripina
 unique(dat$bay) # the famous trailing space!
@@ -519,12 +521,22 @@ d12 <- d12 %>%
   select(-Station)
 
 names(d12)[2:3] <- c("bay", "site")
+unique(d12$bay)
+unique(d12$site)
+head(d12)
+#there are 2 columns with name bay and 2 columns with name site
+#need to rename columns 5 and 6
+names(d12)[5:6] <- c("Bay", "Site")
+head(d12)
+
 #want to make d12 have only 6 columns so matches 'dat'
 d12a <- d12 %>%
   select(year, bay, site, julian, cod.age.0, pollock.age.0)
 head(d12a)
+unique(d12$site)
 
 dat <- rbind(dat, d12a)
+head(dat)
 #hot dog!
 
 ## add 2023 Cook / Anton's data-------------------
