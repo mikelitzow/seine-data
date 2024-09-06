@@ -1,0 +1,757 @@
+month,day,year,date,Station,Site,Bay,species,CPUE
+7,18,2024,7/18/2024,574,Bar-2,Baralof,Alaska plaice,2
+7,9,2024,7/9/2024,564,AG-3,Agripina,antlered sculpin,1
+6,6,2024,6/6/2024,544,EG West,Cook,arctic shanny,1
+7,18,2024,7/18/2024,575,Bar-1,Baralof,armorhead sculpin,2
+7,18,2024,7/18/2024,574,Bar-2,Baralof,armorhead sculpin,1
+7,18,2024,7/18/2024,571,Bar-5,Baralof,armorhead sculpin,2
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,black rockfish,1
+7,23,2024,7/23/2024,590,Fox-1,Fox,black rockfish,6
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,black rockfish,1
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,black rockfish,1
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,black rockfish,8
+7,21,2024,7/21/2024,584,BB-3,Balboa,buffalo sculpin,1
+7,23,2024,7/23/2024,586,Fox-4,Fox,buffalo sculpin,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,capelin,1
+6,6,2024,6/6/2024,542,EG South,Cook,capelin,1
+6,6,2024,6/6/2024,544,EG West,Cook,capelin,152
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,capelin,13
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,capelin,1
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,capelin,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,capelin,1
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,capelin,15
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,capelin,2
+7,21,2024,7/21/2024,582,BB-7,Balboa,chinook salmon,1
+7,18,2024,7/18/2024,575,Bar-1,Baralof,chinook salmon,1
+7,18,2024,7/18/2024,572,Bar-4,Baralof,chinook salmon,3
+7,18,2024,7/18/2024,571,Bar-5,Baralof,chinook salmon,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,chinook salmon,1
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,chinook salmon,6
+7,9,2024,7/9/2024,561,AG-1,Agripina,chum salmon,11
+7,9,2024,7/9/2024,562,AG-2,Agripina,chum salmon,6
+7,9,2024,7/9/2024,563,AG-5,Agripina,chum salmon,5
+7,9,2024,7/9/2024,566,AG-6,Agripina,chum salmon,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,chum salmon,5
+7,21,2024,7/21/2024,583,BB-4,Balboa,chum salmon,4
+7,21,2024,7/21/2024,582,BB-7,Balboa,chum salmon,34
+7,18,2024,7/18/2024,575,Bar-1,Baralof,chum salmon,140
+7,18,2024,7/18/2024,574,Bar-2,Baralof,chum salmon,4
+7,18,2024,7/18/2024,573,Bar-3,Baralof,chum salmon,28
+7,23,2024,7/23/2024,591,Fox-3,Fox,chum salmon,1
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,chum salmon,13
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,chum salmon,1
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,chum salmon,1
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,chum salmon,2
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,chum salmon,1
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,chum salmon,1
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,chum salmon,1
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,chum salmon,2
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,chum salmon,2
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,chum salmon,1
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,chum salmon,7
+7,18,2024,7/18/2024,573,Bar-3,Baralof,coho salmon,1
+7,9,2024,7/9/2024,562,AG-2,Agripina,copper rockfish,1
+7,9,2024,7/9/2024,563,AG-5,Agripina,copper rockfish,4
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,copper rockfish,2
+7,9,2024,7/9/2024,561,AG-1,Agripina,crescent gunnel,6
+7,9,2024,7/9/2024,564,AG-3,Agripina,crescent gunnel,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,crescent gunnel,7
+7,21,2024,7/21/2024,582,BB-7,Balboa,crescent gunnel,21
+7,18,2024,7/18/2024,573,Bar-3,Baralof,crescent gunnel,1
+7,18,2024,7/18/2024,572,Bar-4,Baralof,crescent gunnel,5
+6,6,2024,6/6/2024,546,EG North,Cook,crescent gunnel,1
+6,6,2024,6/6/2024,542,EG South,Cook,crescent gunnel,8
+6,6,2024,6/6/2024,544,EG West,Cook,crescent gunnel,6
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,crescent gunnel,1
+7,23,2024,7/23/2024,586,Fox-4,Fox,crescent gunnel,4
+7,23,2024,7/23/2024,587,Fox-5,Fox,crescent gunnel,3
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,crescent gunnel,8
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,crescent gunnel,15
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,crescent gunnel,5
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,crescent gunnel,3
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,crescent gunnel,3
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,crescent gunnel,3
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,crescent gunnel,6
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,crescent gunnel,3
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,crescent gunnel,6
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,crescent gunnel,3
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,crescent gunnel,9
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,crescent gunnel,1
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,crescent gunnel,3
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,crescent gunnel,23
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,crescent gunnel,5
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,crescent gunnel,7
+7,21,2024,7/21/2024,584,BB-3,Balboa,dolly varden,1
+7,21,2024,7/21/2024,583,BB-4,Balboa,dolly varden,1
+7,18,2024,7/18/2024,574,Bar-2,Baralof,dolly varden,78
+7,18,2024,7/18/2024,573,Bar-3,Baralof,dolly varden,3
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,dolly varden,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,dolly varden,1
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,dolly varden,5
+7,21,2024,7/21/2024,583,BB-4,Balboa,English sole,14
+7,18,2024,7/18/2024,575,Bar-1,Baralof,English sole,1
+7,18,2024,7/18/2024,574,Bar-2,Baralof,English sole,1
+7,18,2024,7/18/2024,571,Bar-5,Baralof,English sole,12
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,English sole,15
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,English sole,1
+7,9,2024,7/9/2024,561,AG-1,Agripina,great sculpin,26
+7,9,2024,7/9/2024,563,AG-5,Agripina,great sculpin,1
+7,9,2024,7/9/2024,566,AG-6,Agripina,great sculpin,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,great sculpin,6
+7,21,2024,7/21/2024,584,BB-3,Balboa,great sculpin,1
+7,21,2024,7/21/2024,583,BB-4,Balboa,great sculpin,4
+7,21,2024,7/21/2024,582,BB-7,Balboa,great sculpin,1
+7,18,2024,7/18/2024,575,Bar-1,Baralof,great sculpin,8
+7,18,2024,7/18/2024,574,Bar-2,Baralof,great sculpin,2
+7,18,2024,7/18/2024,573,Bar-3,Baralof,great sculpin,1
+7,18,2024,7/18/2024,572,Bar-4,Baralof,great sculpin,3
+7,18,2024,7/18/2024,571,Bar-5,Baralof,great sculpin,1
+6,6,2024,6/6/2024,546,EG North,Cook,great sculpin,3
+6,6,2024,6/6/2024,542,EG South,Cook,great sculpin,5
+6,6,2024,6/6/2024,544,EG West,Cook,great sculpin,2
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,great sculpin,3
+7,23,2024,7/23/2024,588,Fox-2,Fox,great sculpin,1
+7,23,2024,7/23/2024,586,Fox-4,Fox,great sculpin,2
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,great sculpin,3
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,great sculpin,2
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,great sculpin,3
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,great sculpin,2
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,great sculpin,3
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,great sculpin,4
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,great sculpin,2
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,great sculpin,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,great sculpin,1
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,great sculpin,2
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,great sculpin,1
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,great sculpin,6
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,great sculpin,7
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,great sculpin,1
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,great sculpin,1
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,great sculpin,1
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,great sculpin,2
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,great sculpin,5
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,great sculpin,2
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,kelp clingfish,2
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,kelp clingfish,51
+7,5,2024,7/5/2024,555,Kai-4,Kaiugnak,kelp clingfish,5
+6,6,2024,6/6/2024,542,EG South,Cook,kelp greenling,2
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,kelp greenling,2
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,kelp greenling,2
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,kelp greenling,2
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,kelp greenling,2
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,kelp greenling,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,kelp greenling,3
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,kelp greenling,3
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,kelp greenling,4
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,kelp greenling,3
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,kelp greenling,1
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,kelp greenling,1
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,kelp greenling,1
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,kelp greenling,1
+6,6,2024,6/6/2024,541,Lam South,Cook,manacled sculpin,1
+7,9,2024,7/9/2024,561,AG-1,Agripina,masked greenling,3
+7,9,2024,7/9/2024,562,AG-2,Agripina,masked greenling,10
+7,9,2024,7/9/2024,564,AG-3,Agripina,masked greenling,4
+7,9,2024,7/9/2024,565,AG-4,Agripina,masked greenling,8
+7,9,2024,7/9/2024,563,AG-5,Agripina,masked greenling,5
+7,9,2024,7/9/2024,566,AG-6,Agripina,masked greenling,4
+7,21,2024,7/21/2024,585,BB-2,Balboa,masked greenling,14
+7,21,2024,7/21/2024,584,BB-3,Balboa,masked greenling,3
+7,21,2024,7/21/2024,583,BB-4,Balboa,masked greenling,8
+7,21,2024,7/21/2024,582,BB-7,Balboa,masked greenling,9
+7,18,2024,7/18/2024,574,Bar-2,Baralof,masked greenling,14
+7,18,2024,7/18/2024,573,Bar-3,Baralof,masked greenling,17
+7,18,2024,7/18/2024,572,Bar-4,Baralof,masked greenling,28
+7,18,2024,7/18/2024,571,Bar-5,Baralof,masked greenling,5
+6,6,2024,6/6/2024,546,EG North,Cook,masked greenling,1
+6,6,2024,6/6/2024,542,EG South,Cook,masked greenling,21
+6,6,2024,6/6/2024,544,EG West,Cook,masked greenling,2
+6,6,2024,6/6/2024,541,Lam South,Cook,masked greenling,5
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,masked greenling,13
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,masked greenling,9
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,masked greenling,4
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,masked greenling,2
+7,20,2024,7/20/2024,577,Fal-5,Falmouth,masked greenling,10
+7,23,2024,7/23/2024,590,Fox-1,Fox,masked greenling,6
+7,23,2024,7/23/2024,588,Fox-2,Fox,masked greenling,3
+7,23,2024,7/23/2024,586,Fox-4,Fox,masked greenling,27
+7,23,2024,7/23/2024,587,Fox-5,Fox,masked greenling,49
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,masked greenling,71
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,masked greenling,9
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,masked greenling,14
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,masked greenling,23
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,masked greenling,40
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,masked greenling,11
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,masked greenling,12
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,masked greenling,8
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,masked greenling,6
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,masked greenling,6
+7,5,2024,7/5/2024,555,Kai-4,Kaiugnak,masked greenling,2
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,masked greenling,7
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,masked greenling,11
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,masked greenling,7
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,masked greenling,2
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,masked greenling,8
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,masked greenling,2
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,masked greenling,9
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,masked greenling,9
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,masked greenling,13
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,masked greenling,14
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,masked greenling,20
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,masked greenling,107
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,masked greenling,63
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,masked greenling,6
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,masked greenling,6
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,masked greenling,3
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,masked greenling,12
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,masked greenling,3
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,masked greenling,5
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,masked greenling,2
+6,6,2024,6/6/2024,543,Lam East,Cook,masked greenling ,2
+6,6,2024,6/6/2024,545,Lam North,Cook,Myox jaok,1
+7,9,2024,7/9/2024,563,AG-5,Agripina,northern rock sole,1
+7,21,2024,7/21/2024,583,BB-4,Balboa,northern rock sole,32
+7,18,2024,7/18/2024,575,Bar-1,Baralof,northern rock sole,22
+7,18,2024,7/18/2024,574,Bar-2,Baralof,northern rock sole,17
+7,18,2024,7/18/2024,571,Bar-5,Baralof,northern rock sole,59
+6,6,2024,6/6/2024,546,EG North,Cook,northern rock sole,2
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,northern rock sole,4
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,northern rock sole,1
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,northern rock sole,1
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,northern rock sole,7
+7,9,2024,7/9/2024,565,AG-4,Agripina,northern sculpin,2
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,northern sculpin,1
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,northern sculpin,1
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,northern sculpin,1
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,northern sculpin,1
+7,9,2024,7/9/2024,562,AG-2,Agripina,Pacific cod,127
+7,9,2024,7/9/2024,564,AG-3,Agripina,Pacific cod,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,Pacific cod,19
+7,21,2024,7/21/2024,584,BB-3,Balboa,Pacific cod,3
+7,21,2024,7/21/2024,583,BB-4,Balboa,Pacific cod,4
+7,21,2024,7/21/2024,582,BB-7,Balboa,Pacific cod,61
+7,18,2024,7/18/2024,575,Bar-1,Baralof,Pacific cod,70
+7,18,2024,7/18/2024,574,Bar-2,Baralof,Pacific cod,28
+7,18,2024,7/18/2024,573,Bar-3,Baralof,Pacific cod,566
+7,18,2024,7/18/2024,572,Bar-4,Baralof,Pacific cod,33
+7,18,2024,7/18/2024,571,Bar-5,Baralof,Pacific cod,51
+6,6,2024,6/6/2024,544,EG West,Cook,Pacific cod,2
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,Pacific cod,259
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,Pacific cod,945
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,Pacific cod,405
+7,20,2024,7/20/2024,577,Fal-5,Falmouth,Pacific cod,28
+7,23,2024,7/23/2024,590,Fox-1,Fox,Pacific cod,13
+7,23,2024,7/23/2024,588,Fox-2,Fox,Pacific cod,302
+7,23,2024,7/23/2024,587,Fox-5,Fox,Pacific cod,3
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,Pacific cod,208
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,Pacific cod,23
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,Pacific cod,3
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,Pacific cod,394
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,Pacific cod,124
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,Pacific cod,1
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,Pacific cod,26
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,Pacific cod,41
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,Pacific cod,16
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,Pacific cod,323
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,Pacific cod,89
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,Pacific cod,23
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,Pacific cod,124
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,Pacific cod,8
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,Pacific cod,1
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,Pacific cod,161
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,Pacific cod,40
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,Pacific cod,2
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,Pacific cod,1
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,Pacific cod,4
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,Pacific cod,125
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,Pacific cod,55
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,Pacific cod,82
+7,18,2024,7/18/2024,575,Bar-1,Baralof,Pacific halibut,7
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,Pacific herring,129
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,Pacific herring,17
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,Pacific herring,12
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,Pacific herring,204
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,Pacific sandfish,1
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,Pacific sandfish,2
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,Pacific sandfish,6
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,Pacific sandfish,119
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,Pacific sandfish,1
+7,18,2024,7/18/2024,575,Bar-1,Baralof,Pacific sandlance,2
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,Pacific sandlance,7
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,Pacific sandlance,65
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,Pacific sandlance,263
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,Pacific sandlance,2
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,Pacific sandlance,1
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,Pacific sandlance,68
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,Pacific sandlance,1
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,Pacific sandlance,10
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,Pacific sandlance,33
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,Pacific sandlance,2
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,Pacific sandlance (larval),200
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,Pacific staghorn sculpin,1
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,penpoint gunnel,1
+7,9,2024,7/9/2024,561,AG-1,Agripina,pink salmon,1
+7,9,2024,7/9/2024,566,AG-6,Agripina,pink salmon,1
+7,21,2024,7/21/2024,583,BB-4,Balboa,pink salmon,1
+7,18,2024,7/18/2024,573,Bar-3,Baralof,pink salmon,6
+6,6,2024,6/6/2024,546,EG North,Cook,pink salmon,1
+6,6,2024,6/6/2024,542,EG South,Cook,pink salmon,1
+6,6,2024,6/6/2024,544,EG West,Cook,pink salmon,45
+6,6,2024,6/6/2024,543,Lam East,Cook,pink salmon,12
+6,6,2024,6/6/2024,545,Lam North,Cook,pink salmon,1
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,pink salmon,28
+7,23,2024,7/23/2024,591,Fox-3,Fox,pink salmon,5
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,pink salmon,1
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,adult pink salmon,1
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,pink salmon,12
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,pink salmon,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,pink salmon,48
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,pink salmon,379
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,pink salmon,1069
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,pink salmon,20
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,pink salmon,2
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,pink salmon,1
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,pink salmon,5
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,pink salmon,2
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,pink salmon,1
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,pink salmon,43
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,pink salmon,2
+7,23,2024,7/23/2024,587,Fox-5,Fox,red irish lord,1
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,red irish lord,2
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,red irish lord,1
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,red irish lord,1
+7,9,2024,7/9/2024,562,AG-2,Agripina,rock greenling,2
+7,9,2024,7/9/2024,564,AG-3,Agripina,rock greenling,1
+7,9,2024,7/9/2024,565,AG-4,Agripina,rock greenling,1
+7,9,2024,7/9/2024,563,AG-5,Agripina,rock greenling,1
+7,9,2024,7/9/2024,566,AG-6,Agripina,rock greenling,2
+7,21,2024,7/21/2024,585,BB-2,Balboa,rock greenling,3
+7,21,2024,7/21/2024,583,BB-4,Balboa,rock greenling,8
+7,21,2024,7/21/2024,582,BB-7,Balboa,rock greenling,4
+7,18,2024,7/18/2024,575,Bar-1,Baralof,rock greenling,3
+7,18,2024,7/18/2024,574,Bar-2,Baralof,rock greenling,12
+7,18,2024,7/18/2024,573,Bar-3,Baralof,rock greenling,7
+7,18,2024,7/18/2024,572,Bar-4,Baralof,rock greenling,20
+6,6,2024,6/6/2024,546,EG North,Cook,rock greenling,2
+6,6,2024,6/6/2024,542,EG South,Cook,rock greenling,12
+6,6,2024,6/6/2024,544,EG West,Cook,rock greenling,3
+6,6,2024,6/6/2024,541,Lam South,Cook,rock greenling,2
+6,6,2024,6/6/2024,543,Lam East,Cook,rock greenling,5
+6,6,2024,6/6/2024,545,Lam North,Cook,rock greenling,2
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,rock greenling,2
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,rock greenling,11
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,rock greenling,1
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,rock greenling,3
+7,20,2024,7/20/2024,577,Fal-5,Falmouth,rock greenling,5
+7,23,2024,7/23/2024,590,Fox-1,Fox,rock greenling,1
+7,23,2024,7/23/2024,588,Fox-2,Fox,rock greenling,1
+7,23,2024,7/23/2024,591,Fox-3,Fox,rock greenling,4
+7,23,2024,7/23/2024,586,Fox-4,Fox,rock greenling,17
+7,23,2024,7/23/2024,587,Fox-5,Fox,rock greenling,19
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,rock greenling,26
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,rock greenling,5
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,rock greenling,6
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,rock greenling,10
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,rock greenling,7
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,rock greenling,3
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,rock greenling,6
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,rock greenling,1
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,rock greenling,5
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,rock greenling,6
+7,5,2024,7/5/2024,555,Kai-4,Kaiugnak,rock greenling,2
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,rock greenling,2
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,rock greenling,10
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,rock greenling,6
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,rock greenling,3
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,rock greenling,26
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,rock greenling,14
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,rock greenling,11
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,rock greenling,5
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,rock greenling,3
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,rock greenling,5
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,rock greenling,12
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,rock greenling,39
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,rock greenling,23
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,rock greenling,2
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,rock greenling,5
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,rock greenling,5
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,rock greenling,1
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,rock greenling,4
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,copper rockfish,3
+7,21,2024,7/21/2024,585,BB-2,Balboa,saffron cod,2
+7,21,2024,7/21/2024,583,BB-4,Balboa,saffron cod,5
+7,21,2024,7/21/2024,582,BB-7,Balboa,saffron cod,6
+7,18,2024,7/18/2024,572,Bar-4,Baralof,saffron cod,2
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,saffron cod,1
+7,23,2024,7/23/2024,590,Fox-1,Fox,saffron cod,2
+7,23,2024,7/23/2024,587,Fox-5,Fox,saffron cod,1
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,saffron cod,76
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,saffron cod,4
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,saffron cod,3
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,saffron cod,13
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,saffron cod,4
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,saffron cod,13
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,saffron cod,3
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,saffron cod,1
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,saffron cod,4
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,saffron cod,5
+7,18,2024,7/18/2024,575,Bar-1,Baralof,sand sole,1
+7,18,2024,7/18/2024,574,Bar-2,Baralof,sand sole,1
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,sand sole,4
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,sand sole,1
+7,9,2024,7/9/2024,566,AG-6,Agripina,silverspotted sculpin,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,silverspotted sculpin,23
+7,21,2024,7/21/2024,583,BB-4,Balboa,silverspotted sculpin,3
+7,21,2024,7/21/2024,582,BB-7,Balboa,silverspotted sculpin,5
+7,18,2024,7/18/2024,575,Bar-1,Baralof,silverspotted sculpin,5
+7,18,2024,7/18/2024,574,Bar-2,Baralof,silverspotted sculpin,5
+7,18,2024,7/18/2024,573,Bar-3,Baralof,silverspotted sculpin,12
+7,18,2024,7/18/2024,572,Bar-4,Baralof,silverspotted sculpin,35
+7,18,2024,7/18/2024,571,Bar-5,Baralof,silverspotted sculpin,4
+6,6,2024,6/6/2024,546,EG North,Cook,silverspotted sculpin,9
+6,6,2024,6/6/2024,542,EG South,Cook,silverspotted sculpin,36
+6,6,2024,6/6/2024,544,EG West,Cook,silverspotted sculpin,45
+6,6,2024,6/6/2024,541,Lam South,Cook,silverspotted sculpin,1
+6,6,2024,6/6/2024,543,Lam East,Cook,silverspotted sculpin,3
+6,6,2024,6/6/2024,545,Lam North,Cook,silverspotted sculpin,1
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,silverspotted sculpin,2
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,silverspotted sculpin,3
+7,23,2024,7/23/2024,590,Fox-1,Fox,silverspotted sculpin,6
+7,23,2024,7/23/2024,586,Fox-4,Fox,silverspotted sculpin,5
+7,23,2024,7/23/2024,587,Fox-5,Fox,silverspotted sculpin,6
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,silverspotted sculpin,3
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,silverspotted sculpin,1
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,silverspotted sculpin,13
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,silverspotted sculpin,5
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,silverspotted sculpin,1
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,silverspotted sculpin,6
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,silverspotted sculpin,4
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,silverspotted sculpin,1
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,silverspotted sculpin,25
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,silverspotted sculpin,18
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,silverspotted sculpin,20
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,silverspotted sculpin,2
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,silverspotted sculpin,1
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,silverspotted sculpin,1
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,silverspotted sculpin,8
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,silverspotted sculpin,6
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,silverspotted sculpin,1
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,silverspotted sculpin,6
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,silverspotted sculpin,1
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,silverspotted sculpin,3
+7,9,2024,7/9/2024,561,AG-1,Agripina,slipskin snailfish,1
+7,21,2024,7/21/2024,583,BB-4,Balboa,smoothhead sculpin,2
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,smoothhead sculpin,4
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,smoothhead sculpin,1
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,snailfish,1
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,snailfish,1
+7,21,2024,7/21/2024,582,BB-7,Balboa,snake prickleback,2
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,snake prickleback,3
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,snake prickleback,1
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,snake prickleback,36
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,snake prickleback,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,snake prickleback,4
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,snake prickleback,2
+7,18,2024,7/18/2024,575,Bar-1,Baralof,starry flounder,1
+7,18,2024,7/18/2024,574,Bar-2,Baralof,starry flounder,1
+6,6,2024,6/6/2024,546,EG North,Cook,starry flounder,1
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,starry flounder,1
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,sturgeon poacher,1
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,sturgeon poacher,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,three-spine stickleback,2
+7,21,2024,7/21/2024,582,BB-7,Balboa,three-spine stickleback,2
+7,18,2024,7/18/2024,573,Bar-3,Baralof,three-spine stickleback,1
+6,6,2024,6/6/2024,542,EG South,Cook,three-spine stickleback,3
+7,23,2024,7/23/2024,586,Fox-4,Fox,three-spine stickleback,13
+7,23,2024,7/23/2024,587,Fox-5,Fox,three-spine stickleback,7
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,three-spine stickleback,1
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,three-spine stickleback,1
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,three-spine stickleback,3
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,three-spine stickleback,2
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,three-spine stickleback,1
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,three-spine stickleback,5
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,three-spine stickleback,1
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,three-spine stickleback,1
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,three-spine stickleback,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,tidepool sculpin,1
+7,21,2024,7/21/2024,584,BB-3,Balboa,tidepool sculpin,2
+7,18,2024,7/18/2024,575,Bar-1,Baralof,tidepool sculpin,96
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,tidepool sculpin,7
+7,23,2024,7/23/2024,586,Fox-4,Fox,tidepool sculpin,9
+7,23,2024,7/23/2024,587,Fox-5,Fox,tidepool sculpin,6
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,tidepool sculpin,3
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,tidepool sculpin,4
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,tidepool sculpin,1
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,tidepool sculpin,4
+7,9,2024,7/9/2024,564,AG-3,Agripina,Tidepool snailfish,1
+7,9,2024,7/9/2024,565,AG-4,Agripina,Tidepool snailfish,1
+7,21,2024,7/21/2024,585,BB-2,Balboa,tubenose poacher,2
+7,21,2024,7/21/2024,583,BB-4,Balboa,tubenose poacher,2
+7,21,2024,7/21/2024,582,BB-7,Balboa,tubenose poacher,24
+7,18,2024,7/18/2024,575,Bar-1,Baralof,tubenose poacher,3
+7,18,2024,7/18/2024,574,Bar-2,Baralof,tubenose poacher,4
+7,18,2024,7/18/2024,573,Bar-3,Baralof,tubenose poacher,3
+7,18,2024,7/18/2024,572,Bar-4,Baralof,tubenose poacher,4
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,tubenose poacher,4
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,tubenose poacher,3
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,tubenose poacher,1
+7,23,2024,7/23/2024,590,Fox-1,Fox,tubenose poacher,1
+7,23,2024,7/23/2024,587,Fox-5,Fox,tubenose poacher,3
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,tubenose poacher,1
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,tubenose poacher,10
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,tubenose poacher,5
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,tubenose poacher,2
+7,5,2024,7/5/2024,555,Kai-4,Kaiugnak,tubenose poacher,2
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,tubenose poacher,15
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,tubenose poacher,2
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,tubenose poacher,1
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,tubenose poacher,4
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,tubenose poacher,10
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,tubenose poacher,4
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,tubenose poacher,1
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,tubenose poacher,3
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,tubenose poacher,4
+7,18,2024,7/18/2024,572,Bar-4,Baralof,tubesnout,29
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,tubesnout,2
+7,9,2024,7/9/2024,565,AG-4,Agripina,walleye pollock,1
+7,9,2024,7/9/2024,563,AG-5,Agripina,walleye pollock,1
+7,18,2024,7/18/2024,575,Bar-1,Baralof,walleye pollock,2
+7,18,2024,7/18/2024,573,Bar-3,Baralof,walleye pollock,30
+7,18,2024,7/18/2024,572,Bar-4,Baralof,walleye pollock,2
+7,18,2024,7/18/2024,571,Bar-5,Baralof,walleye pollock,17
+6,6,2024,6/6/2024,544,EG West,Cook,walleye pollock,7
+7,23,2024,7/23/2024,590,Fox-1,Fox,walleye pollock,8
+7,23,2024,7/23/2024,588,Fox-2,Fox,walleye pollock,1257
+7,23,2024,7/23/2024,586,Fox-4,Fox,walleye pollock,15
+7,23,2024,7/23/2024,587,Fox-5,Fox,walleye pollock,220
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,walleye pollock,2
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,walleye pollock,1
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,walleye pollock,5
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,walleye pollock,1
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,walleye pollock,27
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,walleye pollock,39
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,walleye pollock,1
+7,26,2024,7/26/2024,595,Mit-3,Mitrofania,walleye pollock,10
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,walleye pollock,204
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,walleye pollock,2
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,walleye pollock,2
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,walleye pollock,9
+7,9,2024,7/9/2024,561,AG-1,Agripina,whitespotted greenling,6
+7,9,2024,7/9/2024,562,AG-2,Agripina,whitespotted greenling,6
+7,9,2024,7/9/2024,564,AG-3,Agripina,whitespotted greenling,2
+7,9,2024,7/9/2024,565,AG-4,Agripina,whitespotted greenling,6
+7,9,2024,7/9/2024,563,AG-5,Agripina,whitespotted greenling,4
+7,9,2024,7/9/2024,566,AG-6,Agripina,whitespotted greenling,9
+7,21,2024,7/21/2024,585,BB-2,Balboa,whitespotted greenling,7
+7,21,2024,7/21/2024,583,BB-4,Balboa,whitespotted greenling,3
+7,18,2024,7/18/2024,575,Bar-1,Baralof,whitespotted greenling,5
+7,18,2024,7/18/2024,574,Bar-2,Baralof,whitespotted greenling,14
+7,18,2024,7/18/2024,573,Bar-3,Baralof,whitespotted greenling,11
+7,18,2024,7/18/2024,572,Bar-4,Baralof,whitespotted greenling,12
+7,18,2024,7/18/2024,571,Bar-5,Baralof,whitespotted greenling,8
+6,6,2024,6/6/2024,546,EG North,Cook,whitespotted greenling,3
+6,6,2024,6/6/2024,542,EG South,Cook,whitespotted greenling,24
+6,6,2024,6/6/2024,544,EG West,Cook,whitespotted greenling,11
+6,6,2024,6/6/2024,543,Lam East,Cook,whitespotted greenling,3
+6,6,2024,6/6/2024,545,Lam North,Cook,whitespotted greenling,2
+7,20,2024,7/20/2024,576,Fal-1,Falmouth,whitespotted greenling,1
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,whitespotted greenling,6
+7,20,2024,7/20/2024,578,Fal-3,Falmouth,whitespotted greenling,3
+7,20,2024,7/20/2024,579,Fal-4,Falmouth,whitespotted greenling,4
+7,20,2024,7/20/2024,577,Fal-5,Falmouth,whitespotted greenling,1
+7,23,2024,7/23/2024,590,Fox-1,Fox,whitespotted greenling,1
+7,23,2024,7/23/2024,591,Fox-3,Fox,whitespotted greenling,1
+7,23,2024,7/23/2024,586,Fox-4,Fox,whitespotted greenling,2
+7,23,2024,7/23/2024,587,Fox-5,Fox,whitespotted greenling,9
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,whitespotted greenling,40
+7,31,2024,7/31/2024,603,Jap-2,Japanese ,whitespotted greenling,14
+7,31,2024,7/31/2024,601,Jap-3,Japanese ,whitespotted greenling,10
+7,30,2024,7/30/2024,599,Jap-4,Japanese ,whitespotted greenling,18
+7,30,2024,7/30/2024,600,Jap-5,Japanese ,whitespotted greenling,26
+7,31,2024,7/31/2024,604,Jap-6,Japanese ,whitespotted greenling,13
+7,31,2024,7/31/2024,602,Jap-7,Japanese ,whitespotted greenling,5
+7,5,2024,7/5/2024,557,Kai-1,Kaiugnak,whitespotted greenling,8
+7,5,2024,7/5/2024,556,Kai-2,Kaiugnak,whitespotted greenling,1
+7,5,2024,7/5/2024,552,Kai-3,Kaiugnak,whitespotted greenling,4
+7,5,2024,7/5/2024,555,Kai-4,Kaiugnak,whitespotted greenling,2
+7,5,2024,7/5/2024,553,Kai-6,Kaiugnak,whitespotted greenling,4
+7,5,2024,7/5/2024,554,Kai-7,Kaiugnak,whitespotted greenling,5
+7,3,2024,7/3/2024,550,Kilu-1,Kiliuda,whitespotted greenling,3
+7,3,2024,7/3/2024,549,Kilu-3,Kiliuda,whitespotted greenling,2
+7,3,2024,7/3/2024,551,Kilu-4,Kiliuda,whitespotted greenling,16
+7,3,2024,7/3/2024,548,Kilu-5,Kiliuda,whitespotted greenling,11
+7,3,2024,7/3/2024,547,Kilu-6,Kiliuda,whitespotted greenling,15
+7,26,2024,7/26/2024,597,Mit-1,Mitrofania,whitespotted greenling,3
+7,26,2024,7/26/2024,596,Mit-2,Mitrofania,whitespotted greenling,4
+7,26,2024,7/26/2024,592,Mit-4,Mitrofania,whitespotted greenling,17
+7,26,2024,7/26/2024,593,Mit-5,Mitrofania,whitespotted greenling,11
+7,26,2024,7/26/2024,594,Mit-6,Mitrofania,whitespotted greenling,8
+7,10,2024,7/10/2024,567,PW-1,Port Wrangell,whitespotted greenling,4
+7,10,2024,7/10/2024,568,PW-4,Port Wrangell,whitespotted greenling,4
+7,7,2024,7/7/2024,560,RR-1,Rodman Reach,whitespotted greenling,9
+7,7,2024,7/7/2024,558,RR-3,Rodman Reach,whitespotted greenling,132
+7,7,2024,7/7/2024,559,RR-4,Rodman Reach,whitespotted greenling,5
+7,16,2024,7/16/2024,569,Sand-2,Sand Point,whitespotted greenling,6
+7,16,2024,7/16/2024,570,Sand-3,Sand Point,whitespotted greenling,2
+7,9,2024,7/9/2024,561,AG-1,Agripina,yellow irish lord,2
+7,18,2024,7/18/2024,574,Bar-2,Baralof,yellow irish lord,5
+7,18,2024,7/18/2024,573,Bar-3,Baralof,yellow irish lord,1
+6,6,2024,6/6/2024,542,EG South,Cook,yellow irish lord,1
+7,20,2024,7/20/2024,580,Fal-2,Falmouth,yellow irish lord,1
+7,30,2024,7/30/2024,598,Jap-1,Japanese ,yellow irish lord,9
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
