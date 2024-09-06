@@ -1,6 +1,6 @@
 # fit brms models to update time series
-library(dplyr)
 library(plyr)
+library(dplyr)
 library(tidyverse)
 library(mgcv)
 library(rstan)
