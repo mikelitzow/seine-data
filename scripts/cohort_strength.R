@@ -148,8 +148,8 @@ pollock_time.series_zinb <- brm(time.series_formula,
                             family = zinb,
                             cores = 4, chains = 4, iter = 4000,
                             save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.999, max_treedepth = 10))
-pollock_time.series_zinb  <- add_criterion(pollock_time.series_zinb, "bayes_R2")
+                            control = list(adapt_delta = 0.999, max_treedepth = 11))
+#pollock_time.series_zinb  <- add_criterion(pollock_time.series_zinb, "bayes_R2")
 saveRDS(pollock_time.series_zinb, file = "output/pollock_time.series_zinb.rds")
 
 pollock_time.series_zinb <- readRDS("./output/pollock_time.series_zinb.rds")
