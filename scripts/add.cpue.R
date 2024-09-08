@@ -655,6 +655,18 @@ d14[change] <- 0
 ##check if age-1 pollock
 hist(filter(d15, species == "walleye pollock")$length)
 
+poll24len <- filter(d15, species == "walleye pollock")
+head(poll24len)
+count(poll24len)
+ggplot(poll24len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,300) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Walleye pollock from beach seines in 2024 (n = 243)")
+
 #need to remove pollock > 100mm
 #first isolate age-1 pollock
 
