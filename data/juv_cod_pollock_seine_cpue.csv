@@ -1503,3 +1503,129 @@
 1496,2023,Cook,Laminaria North,232,2,0,0
 1500,2023,Cook,Laminaria South,232,25,0,0
 1504,2023,Cook,Middle Cove,232,23,0,0
+1525,2024,Agripina,AG-1,191,0,0,0
+1526,2024,Agripina,AG-2,191,127,0,0
+1527,2024,Agripina,AG-5,191,0,1,0
+1528,2024,Agripina,AG-3,191,1,0,0
+1529,2024,Agripina,AG-4,191,0,1,0
+1530,2024,Agripina,AG-6,191,0,0,0
+1567,2024,Anton Larsen,Back Bay eelgrass,202,0,0,0
+1624,2024,Anton Larsen,White rock,202,0,0,0
+1568,2024,Anton Larsen,Back Bay eelgrass,203,0,0,0
+1623,2024,Anton Larsen,White rock,203,0,0,0
+1569,2024,Anton Larsen,Back Bay eelgrass,231,0,0,0
+1576,2024,Anton Larsen,Cobble point,231,0,0,0
+1602,2024,Anton Larsen,Laminaria #2,231,0,0,0
+1625,2024,Anton Larsen,White rock,231,0,0,0
+1630,2024,Anton Larsen,Wooden boat,231,0,0,0
+1570,2024,Anton Larsen,Back Bay eelgrass,232,0,0,0
+1577,2024,Anton Larsen,Cobble point,232,0,0,0
+1601,2024,Anton Larsen,Laminaria #2,232,0,0,0
+1626,2024,Anton Larsen,White rock,232,0,0,0
+1629,2024,Anton Larsen,Wooden boat,232,0,0,0
+1599,2024,Anton Larsen,Laminaria #2,202,1,0,0
+1611,2024,Anton Larsen,Laminaria Point,202,1,81,2
+1578,2024,Anton Larsen,Cobble point,203,1,413,0
+1613,2024,Anton Larsen,Laminaria Point,231,1,1,0
+1614,2024,Anton Larsen,Laminaria Point,232,2,0,1
+1586,2024,Anton Larsen,Eelgrass patches,232,3,1,0
+1575,2024,Anton Larsen,Cobble point,202,4,98,0
+1612,2024,Anton Larsen,Laminaria Point,203,4,642,0
+1589,2024,Anton Larsen,Eelgrass point,231,4,3,0
+1627,2024,Anton Larsen,Wooden boat,202,5,5,0
+1590,2024,Anton Larsen,Eelgrass point,232,5,0,0
+1588,2024,Anton Larsen,Eelgrass point,203,6,1939,0
+1587,2024,Anton Larsen,Eelgrass point,202,8,1379,0
+1583,2024,Anton Larsen,Eelgrass patches,203,16,136,0
+1628,2024,Anton Larsen,Wooden boat,203,17,9,0
+1584,2024,Anton Larsen,Eelgrass patches,202,18,144,0
+1600,2024,Anton Larsen,Laminaria #2,203,22,0,0
+1585,2024,Anton Larsen,Eelgrass patches,231,52,2,0
+1545,2024,Balboa,BB-7,203,61,0,0
+1546,2024,Balboa,BB-4,203,4,0,0
+1547,2024,Balboa,BB-3,203,3,0,0
+1548,2024,Balboa,BB-2,203,19,0,0
+1535,2024,Baralof,Bar-5,200,51,17,0
+1536,2024,Baralof,Bar-4,200,33,0,0
+1537,2024,Baralof,Bar-3,200,566,30,0
+1538,2024,Baralof,Bar-2,200,28,0,0
+1539,2024,Baralof,Bar-1,200,70,2,0
+1505,2024,Cook,Laminaria South,158,0,0,0
+1506,2024,Cook,Eelgrass South,158,0,0,0
+1507,2024,Cook,Laminaria East,158,0,0,0
+1509,2024,Cook,Laminaria North,158,0,0,0
+1510,2024,Cook,Eelgrass North,158,0,0,0
+1572,2024,Cook,Bare North,200,0,0,0
+1581,2024,Cook,Eelgrass North,200,0,0,0
+1571,2024,Cook,Bare North,201,0,0,0
+1582,2024,Cook,Eelgrass North,201,0,0,0
+1622,2024,Cook,Middle Cove,201,0,0,0
+1620,2024,Cook,Middle Cove,200,1,0,1
+1573,2024,Cook,Bare North,233,1,0,1
+1508,2024,Cook,Eelgrass West,158,2,7,0
+1610,2024,Cook,Laminaria North,200,2,0,0
+1579,2024,Cook,Eelgrass North,233,2,0,0
+1606,2024,Cook,Laminaria East,201,4,0,2
+1574,2024,Cook,Bare North,234,4,0,0
+1615,2024,Cook,Laminaria South,201,6,30,1
+1608,2024,Cook,Laminaria North,201,7,1,0
+1603,2024,Cook,Laminaria East,200,10,5,3
+1591,2024,Cook,Eelgrass South,201,14,0,4
+1621,2024,Cook,Middle Cove,234,21,0,0
+1607,2024,Cook,Laminaria North,233,23,0,0
+1619,2024,Cook,Middle Cove,233,23,0,1
+1609,2024,Cook,Laminaria North,234,34,0,0
+1618,2024,Cook,Laminaria South,234,39,12,14
+1616,2024,Cook,Laminaria South,200,40,225,8
+1593,2024,Cook,Eelgrass South,200,71,17,13
+1605,2024,Cook,Laminaria East,234,81,11,2
+1580,2024,Cook,Eelgrass North,234,91,0,0
+1594,2024,Cook,Eelgrass South,234,120,0,5
+1617,2024,Cook,Laminaria South,233,126,6,3
+1604,2024,Cook,Laminaria East,233,130,0,0
+1598,2024,Cook,Eelgrass West,201,154,19,2
+1597,2024,Cook,Eelgrass West,234,197,0,70
+1592,2024,Cook,Eelgrass South,233,256,3,7
+1595,2024,Cook,Eelgrass West,233,362,48,21
+1596,2024,Cook,Eelgrass West,200,534,144,1
+1540,2024,Falmouth,Fal-1,202,259,0,0
+1541,2024,Falmouth,Fal-5,202,28,0,0
+1542,2024,Falmouth,Fal-3,202,945,0,0
+1543,2024,Falmouth,Fal-4,202,405,0,0
+1544,2024,Falmouth,Fal-2,202,0,0,0
+1549,2024,Fox,Fox-4,205,0,15,0
+1550,2024,Fox,Fox-5,205,3,220,0
+1551,2024,Fox,Fox-1,205,0,0,0
+1552,2024,Fox,Fox-1,205,13,8,0
+1553,2024,Fox,Fox-3,205,0,0,0
+1560,2024,Japanese,Jap-1,212,208,0,0
+1561,2024,Japanese,Jap-4,212,23,0,0
+1562,2024,Japanese,Jap-5,212,3,0,0
+1563,2024,Japanese,Jap-3,213,0,0,0
+1564,2024,Japanese,Jap-7,213,124,1,0
+1565,2024,Japanese,Jap-2,213,0,0,0
+1566,2024,Japanese,Jap-6,213,394,2,0
+1516,2024,Kaiugnak,Kai-3,187,0,0,0
+1517,2024,Kaiugnak,Kai-6,187,0,0,0
+1518,2024,Kaiugnak,Kai-7,187,25,3,1
+1519,2024,Kaiugnak,Kai-4,187,0,0,0
+1520,2024,Kaiugnak,Kai-2,187,0,0,0
+1521,2024,Kaiugnak,Kai-1,187,1,0,0
+1511,2024,Kiliuda,Kilu-6,185,89,39,0
+1512,2024,Kiliuda,Kilu-5,185,323,27,0
+1513,2024,Kiliuda,Kilu-3,185,41,1,0
+1514,2024,Kiliuda,Kilu-1,185,0,0,0
+1515,2024,Kiliuda,Kilu-4,185,16,0,0
+1554,2024,Mitrofania,Mit-4,208,8,0,0
+1555,2024,Mitrofania,Mit-5,208,1,0,0
+1556,2024,Mitrofania,Mit-6,208,161,204,0
+1557,2024,Mitrofania,Mit-3,208,123,10,1
+1558,2024,Mitrofania,Mit-2,208,23,1,0
+1559,2024,Mitrofania,Mit-1,208,0,0,0
+1531,2024,Port Wrangell,PW-1,192,40,2,0
+1532,2024,Port Wrangell,PW-4,192,2,0,0
+1522,2024,Rodman Reach,RR-3,189,4,0,0
+1523,2024,Rodman Reach,RR-4,189,125,2,0
+1524,2024,Rodman Reach,RR-1,189,1,0,0
+1533,2024,Sand Point,Sand-2,198,55,0,0
+1534,2024,Sand Point,Sand-3,198,82,9,0
