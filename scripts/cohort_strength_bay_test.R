@@ -118,9 +118,9 @@ dat2$site_fac <- as.factor(dat2$site)
 
 ## cod brms: setup ---------------------------------------------
 
-## Define model formula
-time.series_formula <-  bf(cod2 ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
-                           zi ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac))
+## Define model formula - simpler model without site factor
+time.series_formula <-  bf(cod2 ~ year_fac + s(julian, k = 4) + (1 | bay_fac),
+                           zi ~ year_fac + s(julian, k = 4) + (1 | bay_fac))
 
 ## Set model distributions
 zinb <- zero_inflated_negbinomial(link = "log", link_shape = "log", link_zi = "logit")
@@ -139,13 +139,13 @@ priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
 
 ## cod fit: zero-inflated --------------------------------------
 ##first run said 1644 transitions exceed max tree depth of 11, so I increased to 15
-cod_time.series_zin_test <- brm(time.series_formula,
+cod_time.series_zinb_test <- brm(time.series_formula,
                             data = dat2,
                             prior = priors_zinb,
                             family = zinb,
                             cores = 4, chains = 4, iter = 3000,
                             save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.999, max_treedepth = 15))
+                            control = list(adapt_delta = 0.9999, max_treedepth = 12))
 
 saveRDS(cod_time.series_zinb_test, file = "output/cod_time.series_zinb_test.rds")
 
