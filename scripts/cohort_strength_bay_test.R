@@ -138,7 +138,7 @@ priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
 
 
 ## cod fit: zero-inflated --------------------------------------
-##first run said 1644 transitions exceed max tree depth of 11, so I increased to 15
+
 cod_time.series_zinb_test <- brm(time.series_formula,
                             data = dat2,
                             prior = priors_zinb,
