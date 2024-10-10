@@ -103,23 +103,23 @@ names(plot.cod) <- c("year", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_
 write.csv(plot.cod, "./output/seine_cod_age0_abundance_estimates.csv", row.names = F)
 
 ################################ test if only cook and ALB
-dat <- read.csv("./data/age.0_cod_pollock_seine_cpue.csv", row.names = 1)
+
 ## prepare data with only cook and ALB --------------------------------------------
 #15 bays for full model, filter so only Cook and ALB
-dat <- filter(dat, bay == "Cook" | bay == "Anton Larsen" )
-distinct(dat,bay_fac)
+dat2 <- filter(dat, bay == "Cook" | bay == "Anton Larsen" )
+distinct(dat2,bay_fac)
 #this is only 2 bays
 
 ## prepare cod data --------------------------------------------
-dat$cod <- dat$cod.age.0
-dat$bay_fac <- as.factor(dat$bay)
-dat$year_fac <- as.factor(dat$year)
-dat$site_fac <- as.factor(dat$site)
+dat2$cod2 <- dat2$cod.age.0
+dat2$bay_fac <- as.factor(dat2$bay)
+dat2$year_fac <- as.factor(dat2$year)
+dat2$site_fac <- as.factor(dat2$site)
 
 ## cod brms: setup ---------------------------------------------
 
 ## Define model formula
-time.series_formula <-  bf(cod ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
+time.series_formula <-  bf(cod2 ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
                            zi ~ year_fac + s(julian, k = 4) + (1 | bay_fac/site_fac))
 
 ## Set model distributions
@@ -138,13 +138,14 @@ priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
 
 
 ## cod fit: zero-inflated --------------------------------------
+##first run said 1644 transitions exceed max tree depth of 11, so I increased to 15
 cod_time.series_zin_test <- brm(time.series_formula,
-                            data = dat,
+                            data = dat2,
                             prior = priors_zinb,
                             family = zinb,
-                            cores = 4, chains = 4, iter = 4000,
+                            cores = 4, chains = 4, iter = 3000,
                             save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.999, max_treedepth = 11))
+                            control = list(adapt_delta = 0.999, max_treedepth = 15))
 
 saveRDS(cod_time.series_zinb_test, file = "output/cod_time.series_zinb_test.rds")
 
