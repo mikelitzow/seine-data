@@ -104,18 +104,17 @@ write.csv(plot.cod, "./output/seine_cod_age0_abundance_estimates.csv", row.names
 
 ################################ test if only cook and ALB
 dat <- read.csv("./data/age.0_cod_pollock_seine_cpue.csv", row.names = 1)
+## prepare data with only cook and ALB --------------------------------------------
+#15 bays for full model, filter so only Cook and ALB
+dat <- filter(dat, bay == "Cook" | bay == "Anton Larsen" )
+distinct(dat,bay_fac)
+#this is only 2 bays
 
 ## prepare cod data --------------------------------------------
 dat$cod <- dat$cod.age.0
 dat$bay_fac <- as.factor(dat$bay)
 dat$year_fac <- as.factor(dat$year)
 dat$site_fac <- as.factor(dat$site)
-
-## prepare data with only cook and ALB --------------------------------------------
-#15 bays for full model, filter so only Cook and ALB
-dat <- filter(dat, bay == "Cook" | bay == "Anton Larsen" )
-distinct(dat,bay_fac)
-#this is only 2 bays
 
 ## cod brms: setup ---------------------------------------------
 
