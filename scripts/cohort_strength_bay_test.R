@@ -7,6 +7,9 @@ library(rstan)
 library(brms)
 library(bayesplot)
 source("./scripts/stan_utils.R")
+
+cb <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
 theme_set(theme_bw())
 
 dat <- read.csv("./data/age.0_cod_pollock_seine_cpue.csv", row.names = 1)
@@ -370,25 +373,92 @@ dev.off()
 ## Cod predicted effects ---------------------------------------
 
 ## 95% CI
-ce1s_1 <- conditional_effects(cod_time.series_zinb_test2, effect = "year_fac", re_formula = NA,
+ce1s_1 <- conditional_effects(cod_time.series_zinb_test3, effect = "year_fac", re_formula = NA,
                               probs = c(0.025, 0.975))  
 
-plot.cod_test2 <- ce1s_1$year_fac %>%
+plot.cod_test3 <- ce1s_1$year_fac %>%
   select(year_fac, estimate__, se__, lower__, upper__)
 
 
-ggplot(plot.cod_test2, aes(year_fac, estimate__)) +
+ggplot(plot.cod_test3, aes(year_fac, estimate__)) +
   geom_col(color = "black", fill = "grey") +
   geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
   ylab("Age-0 cod / set") +
-  scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
+  scale_y_continuous(breaks=c(1,5,10,50,100,200,300,500), minor_breaks = NULL) +
   coord_trans(y = "pseudo_log") +
   theme(axis.title.x = element_blank())
 
-ggsave("./figs/seine_cod_age0_abundance_estimates_all_bays.png", width = 6, height = 4, units = 'in')
+ggsave("./figs/seine_cod_age0_abundance_estimates_resstricted_bays.png", width = 6, height = 4, units = 'in')
 
 # round, rename columns, and save
-plot.cod_test2[,2:5] <- round(plot.cod_test2[,2:5], 2)
-names(plot.cod_test2) <- c("year", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
-write.csv(plot.cod_test2, "./output/seine_cod_age0_abundance_estimates_all_bays.csv", row.names = F)
+plot.cod_test3[,2:5] <- round(plot.cod_test3[,2:5], 2)
+names(plot.cod_test3) <- c("year", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
+write.csv(plot.cod_test3, "./output/seine_cod_age0_abundance_estimates_restricted_bays.csv", row.names = F)
+
+## compare the three models ------
+test2 <- read.csv("./output/seine_cod_age0_abundance_estimates_all_bays.csv") %>%
+  rename(all = cod_per_set,
+         all_LCI = cod_95percent_LCI,
+         all_UCI = cod_95percent_UCI,
+         all_se = cod_se) 
+
+test1 <- read.csv("./output/seine_cod_age0_abundance_estimates_Cook_Anton.csv") %>%
+  rename(ant_cook = cod_per_set,
+         ant_cook_LCI = cod_95percent_LCI,
+         ant_cook_UCI = cod_95percent_UCI,
+         ant_cook_se = cod_se) 
+
+test3 <- read.csv("./output/seine_cod_age0_abundance_estimates_restricted_bays.csv") %>%
+  rename(restricted = cod_per_set,
+         restr_LCI = cod_95percent_LCI,
+         restr_UCI = cod_95percent_UCI,
+         restr_se = cod_se) 
+
+
+
+plot_all <- left_join(test1, test2) %>%
+  left_join(.,test3)
+
+
+plot_ts <- plot_all %>%
+  select(year, ant_cook, all, restricted) %>%
+  pivot_longer(cols = -year)
+
+ggplot(plot_ts, aes(year, value, color = name)) +
+  geom_point() +
+  geom_line() +
+  ylab("Age-0 cod / set") +
+  # scale_y_continuous(breaks=c(1,5,10,50,100,200,300,500), minor_breaks = NULL) +
+  # coord_trans(y = "pseudo_log") +
+  theme(axis.title.x = element_blank()) +
+  scale_color_manual(values = cb[c(2,4,6)])
+
+plot_se <- plot_all %>%
+  select(year, ant_cook_se, all_se, restr_se) %>%
+  pivot_longer(cols = -year)
+
+ggplot(plot_se, aes(year, value, color = name)) +
+  geom_point() +
+  geom_line() +
+  ylab("Standard error") +
+  # scale_y_continuous(breaks=c(1,5,10,50,100,200,300,500), minor_breaks = NULL) +
+  # coord_trans(y = "pseudo_log") +
+  theme(axis.title.x = element_blank()) +
+  scale_color_manual(values = cb[c(2,4,6)])
+
+plot_CI <- plot_all %>%
+  mutate(ant_cook_CI = ant_cook_UCI - ant_cook_LCI,
+         all_CI = all_UCI - all_LCI,
+         restr_CI = restr_UCI - restr_LCI) %>%
+  select(year, ant_cook_CI, all_CI, restr_CI) %>%
+  pivot_longer(cols = -year)
+
+ggplot(plot_CI, aes(year, value, color = name)) +
+  geom_point() +
+  geom_line() +
+  ylab("Credible interval range") +
+  # scale_y_continuous(breaks=c(1,5,10,50,100,200,300,500), minor_breaks = NULL) +
+  # coord_trans(y = "pseudo_log") +
+  theme(axis.title.x = element_blank()) +
+  scale_color_manual(values = cb[c(2,4,6)])
 
