@@ -712,14 +712,14 @@ ggsave("./figs/seine_model_regression_2017_2022.png", width = 4, height = 3, uni
 #year 2024 removed because do not have age-1 from cohort 2024 (not sampled yet)
 ##thus, this is for cohort years 2006 - 2023 only
 
-juv_seine <- read.csv("./output/seine_cod_age01_abundance_estimates_2023.csv") %>%
+juv_seine <- read.csv("./output/seine_cod_age01_abund_estimates_2023.csv") %>%
   mutate(seine = as.vector(scale(log(cod0_per_set)))) %>%
   select(Cohort, seine)
 
 names(juv_seine)[2] <- "age0"
 # View(juv_seine)
 
-juv_seine1 <- read.csv("./output/seine_cod_age01_abundance_estimates_2023.csv") %>%
+juv_seine1 <- read.csv("./output/seine_cod_age01_abund_estimates_2023.csv") %>%
   mutate(seine1 = as.vector(scale(log(cod1_per_set +0.01)))) %>%
   select(Cohort, seine1)
 
@@ -742,9 +742,9 @@ seine_model_brm <- brm(formula,
                        save_pars = save_pars(all = TRUE),
                        control = list(adapt_delta = 0.999, max_treedepth = 10))
 
-saveRDS(seine_model_brm, file = "output/juv_seine_model_brm_2023.rds")
+saveRDS(seine_model_brm, file = "output/juv_seine_mod_brm_2023.rds")
 
-seine_model_brm <- readRDS("./output/juv_seine_model_brm_2023.rds")
+seine_model_brm <- readRDS("./output/juv_seine_mod_brm_2023.rds")
 check_hmc_diagnostics(seine_model_brm$fit)
 neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
