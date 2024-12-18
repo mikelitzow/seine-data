@@ -202,14 +202,22 @@ plot(TL_Loto)
 TL_Roto<-lm(formula = Roto_Len ~ TL, data = cod1)
 summary(TL_Roto)
 
+#try to filter data and then use in LL plot
+codA <- filter(cod1, Era == "A", preserve = TRUE)
+head(codA)
+codB <- filter(cod1, Era == "B", preserve = TRUE)
+head(codB)
+
 LL <- ggplot(data = cod1,
             aes(x = TL,
                 y = Loto_Len)) +
   geom_point(size = 2.5, alpha = 0.8) + 
   theme_bw()+
   labs(y = "Left otolith length", x = "Total Length (mm)") +
-  geom_smooth(method = "lm", data=cod1, aes(x=TL,y=Loto_Len), color = "grey", alpha = 0.3)
-
+  geom_smooth(method = "lm", data=codB, aes(x=TL,y=Loto_Len, color = "blue"), color = "blue", alpha = 0.3, fill = "blue") +
+  geom_point(data = codB, color = "blue", size = 2.5, alpha = 0.8)  +
+  geom_smooth(method = "lm", data=codA, aes(x=TL,y=Loto_Len, color = "red"), color = "red", alpha = 0.3, fill = "red") +
+  geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
 LL
 
 
@@ -219,7 +227,10 @@ RL <- ggplot(data = cod1,
   geom_point(size = 2.5, alpha = 0.8) + 
   theme_bw()+
   labs(y = "Right otolith length", x = "Total Length (mm)") +
-  geom_smooth(method = "lm", data=cod1, aes(x=TL,y=Roto_Len), color = "grey", alpha = 0.3)
+  geom_smooth(method = "lm", data=codB, aes(x=TL,y=Roto_Len, color = "blue"), color = "blue", alpha = 0.3, fill = "blue") +
+  geom_point(data = codB, color = "blue", size = 2.5, alpha = 0.8)  +
+  geom_smooth(method = "lm", data=codA, aes(x=TL,y=Roto_Len, color = "red"), color = "red", alpha = 0.3, fill = "red") +
+  geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
 
 RL
 
@@ -275,12 +286,47 @@ oto_eraR<-lm(Roto_Wgt2 ~ TL + Era, data = cod1, na.omit = T)
 summary(oto_eraR)
 #otolith weights are related to fish length but not to ERA
 
+LW <- ggplot(data = cod1,
+             aes(x = TL,
+                 y = Loto_Wgt2)) +
+  geom_point(size = 2.5, alpha = 0.8) + 
+  theme_bw()+
+  labs(y = "Left otolith weight", x = "Total Length (mm)") +
+  geom_smooth(method = "lm", data=codB, aes(x=TL,y=Loto_Wgt2, color = "blue"), color = "blue", alpha = 0.3, fill = "blue") +
+  geom_point(data = codB, color = "blue", size = 2.5, alpha = 0.8)  +
+  geom_smooth(method = "lm", data=codA, aes(x=TL,y=Loto_Wgt2, color = "red"), color = "red", alpha = 0.3, fill = "red") +
+  geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
+LW
+
+
+RW <- ggplot(data = cod1,
+             aes(x = TL,
+                 y = Roto_Wgt2)) +
+  geom_point(size = 2.5, alpha = 0.8) + 
+  theme_bw()+
+  labs(y = "Right otolith weight", x = "Total Length (mm)") +
+  geom_smooth(method = "lm", data=codB, aes(x=TL,y=Roto_Wgt2, color = "blue"), color = "blue", alpha = 0.3, fill = "blue") +
+  geom_point(data = codB, color = "blue", size = 2.5, alpha = 0.8)  +
+  geom_smooth(method = "lm", data=codA, aes(x=TL,y=Roto_Wgt2, color = "red"), color = "red", alpha = 0.3, fill = "red") +
+  geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
+
+RW
 
 
 #ggsave(filename = "C:/Users/alask/Documents/Git/KDSP_gadids/output/cod_kwet_by_age_year.png", 
 #       width = 8,
 #       height = 6, units = "in")
+head(cod1)
 
+codLW <- ggplot(data = cod1,
+             aes(x = TL,
+                 y = fresh_body_wgt_wet)) +
+  geom_point(size = 2.5, alpha = 0.8) + 
+  theme_bw()+
+  labs(y = "Body Weight (wet)", x = "Total Length (mm)") +
+  geom_smooth(method = "lm", data=codB, aes(x=TL,y=fresh_body_wgt_wet, color = "blue"), color = "blue", alpha = 0.3, fill = "blue") +
+  geom_point(data = codB, color = "blue", size = 2.5, alpha = 0.8)  +
+  geom_smooth(method = "lm", data=codA, aes(x=TL,y=fresh_body_wgt_wet, color = "red"), color = "red", alpha = 0.3, fill = "red") +
+  geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
 
-
-
+codLW
