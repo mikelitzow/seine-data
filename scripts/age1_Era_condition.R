@@ -13,7 +13,7 @@ library(mgcv)
 library(rstan)
 library(brms)
 library(bayesplot)
-
+cb <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 # This is the data import script
 # Read in the data and rename any columns that need renaming
 cod1 <- read_csv("C:/Users/alask/Documents/Git/seine-data/data/cod_esass_data.csv")
@@ -62,11 +62,20 @@ summary(c)
 
 plot_Kwet <- ggplot(data = cod1, aes(x = factor(Era_year), y = Kwet, fill = Era)) +
   geom_boxplot()+
-  theme_minimal()+
+  theme_minimal() +
   labs(x = "Era", y = "Fulton's condition factor, Kwet")+
-  theme(legend.position ="bottom") 
+  theme(legend.position ="null") 
 
 plot(plot_Kwet)
+
+plot_Kwet <- ggplot(data = cod1, aes(x = factor(Era_year), y = Kwet, fill = Era)) +
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
+  theme_minimal() +
+  labs(x = "Era", y = "Fulton's condition factor, Kwet")
+#  theme(legend.position ="bottom") 
+
+plot(plot_Kwet)
+
 
 
 d <- lm(formula = Kwet ~ TL + Era, data = cod1)
@@ -90,8 +99,9 @@ d
 plot_Kdry <- ggplot(data = cod1, aes(x = factor(Era_year), y = Kdry, fill = Era)) +
   geom_boxplot()+
   theme_minimal()+
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
   labs(x = "Era", y = "Fulton's condition factor, Kdry")+
-  theme(legend.position ="bottom") 
+  theme(legend.position ="null") 
 
 plot(plot_Kdry)
 
@@ -117,9 +127,10 @@ e
 
 plot_HSIwet <- ggplot(data = cod1, aes(x = factor(Era_year), y = HSI_wet, fill = Era)) +
   geom_boxplot()+
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
   theme_minimal()+
   labs(x = "Era", y = "Hepatosomatic Index HSI_wet")+
-  theme(legend.position ="bottom") 
+  theme(legend.position ="null") 
 
 plot(plot_HSIwet)
 
@@ -146,9 +157,10 @@ plot(d)
 
 plot_HSIdry <- ggplot(data = cod1, aes(x = factor(Era_year), y = HSI_dry, fill = Era)) +
   geom_boxplot()+
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
   theme_minimal()+
   labs(x = "Era", y = "Hepatosomatic Index HSI_dry")+
-  theme(legend.position ="bottom") 
+  theme(legend.position ="null") 
 
 plot(plot_HSIdry)
 
@@ -172,6 +184,12 @@ MuMIn::AICc(b,c,d,e)
 #again, c and d are same. so use linear model. yes difference w TL and ERA
 summary(d)
 plot(d)
+
+##make plot for AMSS poster 2025
+library(ggplot2)
+library(gridExtra)
+grid.arrange(plot_Kwet, plot_HSIwet, plot_Kdry, plot_HSIdry, ncol = 2, nrow= 2)
+ggsave("./figs/AMSS_poster_fig_condition_era.png", width = 6, height = 4, units = 'in')
 
 
 #################now begin to plot otolith data
