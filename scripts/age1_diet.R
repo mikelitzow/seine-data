@@ -94,10 +94,12 @@ en1 <- as.data.frame(en1)
 en_coord_cont = as.data.frame(scores(en1, "vectors")) * ordiArrowMul(en1)
 
 
+
 #### Plot the NMS with environmental variable overlay in Base R ###
 
 plot(prey_wgtMDS, type = 't', display = c('species'))
 plot(en1)
+
 
 #### Plot the NMS with environmental variable overlay in ggplot #####
 
@@ -145,10 +147,11 @@ head(preywgt_cut)
 en_prey_cut <- envfit(prey_wgtMDS, preywgt_cut, permutations = 999, na.rm = T)
 head(en_prey_cut)
 en_prey_cut <- as.data.frame(en_prey_cut)
-prey_coord = as.data.frame(scores(en_prey, "vectors")) * ordiArrowMul(en_prey)
+prey_coord = as.data.frame(scores(en_prey_cut, "vectors")) * ordiArrowMul(en_prey_cut)
 #stuck because above line will not work
 
 #try below
+plot(prey_wgtMDS, type = 't', display = c('species'))
 prey_coord = as.data.frame(scores(en_prey_cut)$vectors * ordiArrowMul(en_prey_cut))
 #not getting above line to work and need a dataframe
 #going to try fortify method for envfit object
@@ -175,12 +178,37 @@ Wgt_prey <- ggplot(data=codprey, aes(NMDS1, NMDS2))+
   theme(axis.text=element_text(size=15), axis.title=element_text(size=14,face="bold")) 
 
 plot(Wgt_prey)
+#above is great. but also want overlay Try the following
 
-plot(Wgt_prey)
-plot(en_prey, add = TRUE)
+plot(Wgt_prey) +
+  geom_line(data = prey_wgtMDS, aes(x=NMDS1, y = NMDS2, display = c('species')), colour = "black", fontface = "bold", label = row.names(en_prey))
 
+plot(Wgt_prey) + plot(prey_wgtMDS, type = 't', display = c('species'))
+#this sort of works but not to correct scale. not perfect overlap
+#try to get the second plot to print full scale with overlap.
+#START HERE NEXT TIME< WITH ABOVE
 
+plot(gg, aes(NMDS1, NMDS2)) +
+  geom_line()+
+  geom_line(prey_wgtMDS, aes(NMDS1, NMDS2), color = "black")
+#above gives me error in if (newpage) grid.newpage(): the condition has length >1
+#I am going to pivot and try something else.
 
+##tried this but none of it worked:
+library(ggpubr)
+library(cowplot)
+library(grid)
+grid.newpage()
+grid.draw(as_grob(prey_wgtMDS))
+gg
+grid.draw(en_prey)
+
+aligned_plots <- align_plots(Wgt_prey, prey_wgtMDS, align = "hv", axis = "tblr")
+##getting error that it cannot convert object of class envfit into a grob
+#R is expecting a list but i am giving a vector
+ggarrange(plotlist = box_list, labels = c(draw(aligned_plots[[1]]) + draw_plot(aligned_plots[[2]])))
+##above is a mess and did not work at all. says cannot convert object of class envfit into a grob
+                                          
 ##using: jkzorz.github/io/2020/04/04/NMDS-extras.html
 en_coord_cont = as.data.frame(scores(en1, "vectors")) * ordiArrowMul(en1)
 en_coord_cont = as.data.frame(scores(en1, "factors")) * ordiArrowMul(en1)
@@ -203,6 +231,7 @@ gg = ggplot(data = codprey, aes(x = NMDS1, y = NMDS2)) +
 gg
 
 
+p2 <- plot(prey_wgtMDS, type = 't', display = c('species')) 
 plot(prey_wgtMDS, type = 't', display = c('species')) 
 par(new=TRUE)
 plot(en_prey) 
@@ -210,7 +239,10 @@ par(new=TRUE)
 plot(gg, add = TRUE)
 plot(en_prey, add = TRUE)
 
-
+##tried below and it did not work either
+aligned_plots <- align_plots(gg, p2, align = "hv", axis = "tblr")
+print(aligned_plots)
+##not sure where to go with this.
 
 plot(gg) + print(en_prey_cut, add=TRUE) 
 
