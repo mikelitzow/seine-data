@@ -704,3 +704,86 @@ model_16.plot <- ggplot(dat_ce) +
 print(model_16.plot)
 
 ggsave("./figs/seine_model_regression_2017_2022.png", width = 4, height = 3, units = 'in')
+
+##################copy code line 317 to 399 to add age-1 from 2024 which is 2023 cohort
+###what follows is age-0 from seine and age-1 from seine###
+#need to lag the age-1 data so lagged it in excel and made .csv with Cohort column
+#Cohort = cohort year
+#year 2024 removed because do not have age-1 from cohort 2024 (not sampled yet)
+##thus, this is for cohort years 2006 - 2023 only
+
+juv_seine <- read.csv("./output/seine_cod_age01_abund_estimates_2023.csv") %>%
+  mutate(seine = as.vector(scale(log(cod0_per_set)))) %>%
+  select(Cohort, seine)
+
+names(juv_seine)[2] <- "age0"
+# View(juv_seine)
+
+juv_seine1 <- read.csv("./output/seine_cod_age01_abund_estimates_2023.csv") %>%
+  mutate(seine1 = as.vector(scale(log(cod1_per_set +0.01)))) %>%
+  select(Cohort, seine1)
+
+names(juv_seine1)[2] <- "age1"
+# View(juv_seine1)
+
+juv_data = left_join(juv_seine, juv_seine1)
+
+# View(juv_data) #looks good
+
+ggplot(juv_data[juv_data$Cohort <= 2023,], aes(age0, age1)) +
+  geom_text(aes(label = Cohort))
+
+## fit brms model ------------------------
+formula <- bf(age1 ~ s(age0, k = 4))
+
+seine_model_brm <- brm(formula,
+                       data = juv_data[juv_data$Cohort <= 2023,],
+                       cores = 4, chains = 4, iter = 2000,
+                       save_pars = save_pars(all = TRUE),
+                       control = list(adapt_delta = 0.999, max_treedepth = 10))
+
+saveRDS(seine_model_brm, file = "output/juv_seine_mod_brm_2023.rds")
+
+seine_model_brm <- readRDS("./output/juv_seine_mod_brm_2023.rds")
+check_hmc_diagnostics(seine_model_brm$fit)
+neff_lowest(seine_model_brm$fit)
+rhat_highest(seine_model_brm$fit)
+summary(seine_model_brm)
+bayes_R2(seine_model_brm) #R2 is 0.427
+y <- data$model[data$Cohort <= 2023]
+yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
+ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
+  xlim(-6, 6) +
+  ggtitle("seine_model_brm")
+trace_plot(seine_model_brm$fit)
+
+## plot
+ce1s_1 <- conditional_effects(seine_model_brm, effect = "age0", re_formula = NA,
+                              probs = c(0.025, 0.975))
+## 90% CI
+ce1s_2 <- conditional_effects(seine_model_brm, effect = "age0", re_formula = NA,
+                              probs = c(0.05, 0.95))
+## 80% CI
+ce1s_3 <- conditional_effects(seine_model_brm, effect = "age0", re_formula = NA,
+                              probs = c(0.1, 0.9))
+dat_ce <- ce1s_1$age0
+dat_ce[["upper_95"]] <- dat_ce[["upper__"]]
+dat_ce[["lower_95"]] <- dat_ce[["lower__"]]
+dat_ce[["upper_90"]] <- ce1s_2$seine[["upper__"]]
+dat_ce[["lower_90"]] <- ce1s_2$seine[["lower__"]]
+dat_ce[["upper_80"]] <- ce1s_3$seine[["upper__"]]
+dat_ce[["lower_80"]] <- ce1s_3$seine[["lower__"]]
+
+model.plot <- ggplot(dat_ce) +
+  aes(x = effect1__, y = estimate__) +
+  geom_ribbon(aes(ymin = lower_95, ymax = upper_95), fill = "grey90") +
+  #geom_ribbon(aes(ymin = lower_90, ymax = upper_90), fill = "grey85") +
+  #geom_ribbon(aes(ymin = lower_80, ymax = upper_80), fill = "grey80") +
+  geom_line(size = 1, color = "red3") +
+  labs(x = "Seine abundance age-0", y = "Seine abundance age-1") +
+  geom_text(data = juv_data[juv_data$Cohort <= 2023,], aes(age0, age1, label = Cohort), size=3) 
+
+print(model.plot)
+## seems like this plot driven by high 2020 and 2022 years. 
+
+ggsave("./figs/seine_0_1_model_regression2023.png", width = 4, height = 3, units = 'in')

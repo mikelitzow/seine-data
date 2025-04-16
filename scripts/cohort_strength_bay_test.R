@@ -433,6 +433,10 @@ ggplot(plot_ts, aes(year, value, color = name)) +
   theme(axis.title.x = element_blank()) +
   scale_color_manual(values = cb[c(2,4,6)])
 
+ggsave(filename = "C:/Users/alask/Documents/Git/seine-data/output/compare_model_estimates.png", 
+       width = 8,
+       height = 6, units = "in")
+
 plot_se <- plot_all %>%
   select(year, ant_cook_se, all_se, restr_se) %>%
   pivot_longer(cols = -year)
@@ -462,3 +466,6 @@ ggplot(plot_CI, aes(year, value, color = name)) +
   theme(axis.title.x = element_blank()) +
   scale_color_manual(values = cb[c(2,4,6)])
 
+ggsave(filename = "C:/Users/alask/Documents/Git/seine-data/output/compare_model_variability.png", 
+       width = 8,
+       height = 6, units = "in")
