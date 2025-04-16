@@ -300,6 +300,58 @@ ggplot(plot_both, aes(ant_cook_se, all_se)) +
   geom_abline(slope = 1) +
   geom_smooth(method = "gam", se = F)
 
+
+ggplot(filter(plot_both, year %in% 2018:2024), aes(ant_cook, all)) +
+  geom_point() +
+  ylab("All bays cod / set") +
+  xlab("Anton's Cook cod / set") +
+  geom_errorbar(aes(ymin = all_LCI, ymax = all_UCI)) +
+  geom_errorbarh(aes(xmin = ant_cook_LCI, xmax = ant_cook_UCI))
+
+ggplot(filter(plot_both, year %in% 2018:2024), aes(all, ant_cook)) +
+  geom_point() +
+  xlab("All bays cod / set") +
+  ylab("Anton's Cook cod / set") +
+  geom_errorbarh(aes(xmin = all_LCI, xmax = all_UCI)) +
+  geom_errorbar(aes(ymin = ant_cook_LCI, ymax = ant_cook_UCI))
+
+
+
+ggplot(filter(plot_both, year %in% 2018:2024), aes(all, ant_cook)) +
+  geom_point() +
+  xlab("All bays cod / set") +
+  ylab("Anton's Cook cod / set") +
+  geom_errorbarh(aes(xmin = all_LCI, xmax = all_UCI)) +
+  geom_errorbar(aes(ymin = ant_cook_LCI, ymax = ant_cook_UCI))
+
+# side by side
+test2 <- read.csv("./output/seine_cod_age0_abundance_estimates_all_bays.csv") %>%
+  mutate(group = "Full_survey") 
+
+test1 <- read.csv("./output/seine_cod_age0_abundance_estimates_Cook_Anton.csv") %>%
+  mutate(group = "Reduced_survey") 
+
+plot_stack <- rbind(test1, test2) %>%
+  rename(CPUE = cod_per_set,
+         Survey = group,
+         LCI = cod_95percent_LCI,
+         UCI = cod_95percent_UCI)
+
+ggplot(filter(plot_stack, year %in% 2018:2024), aes(year, CPUE, fill = Survey)) +
+  geom_col(position = position_dodge(width = 0.9)) +
+  scale_x_continuous(breaks = 2018:2024) +
+  scale_fill_manual(values = cb[c(2,6)])
+
+ggsave("./figs/full_reduced_survey_point_estimates.png", width = 6, height = 3.5, units = "in")
+
+ggplot(filter(plot_stack, year %in% 2018:2024), aes(year, CPUE, fill = Survey)) +
+  geom_col(position = position_dodge(width = 0.9)) +
+  geom_errorbar(aes(ymin = LCI, ymax = UCI), position = position_dodge(width = 0.9), width = 0.3) +
+  scale_x_continuous(breaks = 2018:2024) +
+  scale_fill_manual(values = cb[c(2,6)])
+
+ggsave("./figs/full_reduced_survey_point_estimates_.png", width = 6, height = 3.5, units = "in")
+
 test1 <- read.csv("./output/seine_cod_age0_abundance_estimates_Cook_Anton.csv") %>%
   mutate(group = "All")
 
@@ -433,10 +485,6 @@ ggplot(plot_ts, aes(year, value, color = name)) +
   theme(axis.title.x = element_blank()) +
   scale_color_manual(values = cb[c(2,4,6)])
 
-ggsave(filename = "C:/Users/alask/Documents/Git/seine-data/output/compare_model_estimates.png", 
-       width = 8,
-       height = 6, units = "in")
-
 plot_se <- plot_all %>%
   select(year, ant_cook_se, all_se, restr_se) %>%
   pivot_longer(cols = -year)
@@ -466,6 +514,3 @@ ggplot(plot_CI, aes(year, value, color = name)) +
   theme(axis.title.x = element_blank()) +
   scale_color_manual(values = cb[c(2,4,6)])
 
-ggsave(filename = "C:/Users/alask/Documents/Git/seine-data/output/compare_model_variability.png", 
-       width = 8,
-       height = 6, units = "in")
