@@ -1,0 +1,418 @@
+month,day,year,date,Station,Site,Bay,species,CPUE
+6,13,2025,6/13/2025,614,Laminaria South,Cook,walleye pollock,138
+6,13,2025,6/13/2025,614,Laminaria South,Cook,tubenose poacher,1
+6,13,2025,6/13/2025,614,Laminaria South,Cook,masked greenling,3
+6,13,2025,6/13/2025,614,Laminaria South,Cook,rock greenling,2
+6,13,2025,6/13/2025,614,Laminaria South,Cook,whitespotted greenling,6
+6,13,2025,6/13/2025,614,Laminaria South,Cook,pink salmon,129
+6,13,2025,6/13/2025,614,Laminaria South,Cook,great sculpin,4
+6,13,2025,6/13/2025,614,Laminaria South,Cook,silverspotted sculpin,4
+6,13,2025,6/13/2025,614,Laminaria South,Cook,capelin,3
+6,13,2025,6/13/2025,614,Laminaria South,Cook,tadpole sculipin,1
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,Pacific cod,60
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,walleye pollock,3137
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,tubesnout,10
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,tubenose poacher,77
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,silverspotted sculpin,145
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,rock greenling,11
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,whitespotted greenling,36
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,crescent gunnel,2
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,red irish lord,1
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,black rockfish,9
+6,13,2025,6/13/2025,615,Eelgrass South,Cook,saffron cod,2
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,capelin,268
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,masked greenling,2
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,rock greenling,5
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,whitespotted greenling,27
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,crescent gunnel,5
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,pink salmon,66
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,silverspotted sculpin,45
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,black rockfish,24
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,tadpole sculpin,1
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,copper rockfish,4
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,walleye pollock,55
+6,13,2025,6/13/2025,616,Eelgrass West,Cook,Pacific cod,7
+6,13,2025,6/13/2025,617,Laminaria East,Cook,masked greenling,3
+6,13,2025,6/13/2025,617,Laminaria East,Cook,rock greenling,2
+6,13,2025,6/13/2025,617,Laminaria East,Cook,whitespotted greenling,2
+6,13,2025,6/13/2025,617,Laminaria East,Cook,crescent gunnel,1
+6,13,2025,6/13/2025,617,Laminaria East,Cook,pink salmon,15
+6,13,2025,6/13/2025,617,Laminaria East,Cook,silverspotted sculpin,2
+6,13,2025,6/13/2025,617,Laminaria East,Cook,Pacific sandlance,510
+6,13,2025,6/13/2025,617,Laminaria East,Cook,black rockfish,5
+6,13,2025,6/13/2025,617,Laminaria East,Cook,copper rockfish,2
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,Pacific cod,219
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,masked greenling,8
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,rock greenling,24
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,whitespotted greenling,119
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,crescent gunnel,9
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,myoxocephalus joak,1
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,great sculpin,6
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,silverspotted sculpin,10
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,tubenose poacher,1
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,walleye pollock,5
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,black rockfish,1
+6,28,2025,6/28/2025,618,Kilu-1,Kiliuda,Pacific tomcod,2
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,Pacific cod,123
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,Pacific herring,174
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,masked greenling,1
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,rock greenling,20
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,whitespotted greenling,50
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,crescent gunnel,3
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,great sculpin,3
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,silverspotted sculpin,7
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,manacled sculpin,1
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,chinook salmon,2
+6,28,2025,6/28/2025,619,Kilu-3,Kiliuda,walleye pollock,18
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,Pacific cod,71
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,masked greenling,2
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,rock greenling,2
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,whitespotted greenling,5
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,Pacific herring,2
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,kelp clingfish,1
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,dolly varden,4
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,capelin,1
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,chinook salmon,1
+6,28,2025,6/28/2025,620,Kilu-4,Kiliuda,copper rockfish,1
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,Pacific cod,96
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,masked greenling,4
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,rock greenling,9
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,whitespotted greenling,18
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,crescent gunnel,1
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,yellow irish lord,2
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,silverspotted sculpin,3
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,penpoint gunnel,1
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,walleye pollock,3
+6,28,2025,6/28/2025,621,Kilu-6,Kiliuda,dolly varden,3
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,Pacific cod,97
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,masked greenling,2
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,rock greenling,5
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,whitespotted greenling,9
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,tubenose poacher,2
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,crescent gunnel,1
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,Pacific herring,14
+6,28,2025,6/28/2025,622,Kilu-5,Kiliuda,silverspotted sculpin,5
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,masked greenling,24
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,rock greenling,13
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,whitespotted greenling,117
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,crescent gunnel,3
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,great sculpin,1
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,Pacific staghorn sculpin,1
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,silverspotted sculpin,10
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,Pacific cod,11
+6,28,2025,6/28/2025,623,Kilu-2,Kiliuda,copper rockfish,1
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,masked greenling,5
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,rock greenling,2
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,whitespotted greenling,1
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,Pacific herring,908
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,walleye pollock,6
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,saffron cod,4
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,chinook salmon,1
+6,30,2025,6/30/2025,624,Kai-3,Kaiugnak,Pacific sandlance,5
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,rock greenling,4
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,whitespotted greenling,15
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,myoxocephalus joak,7
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,great sculpin,1
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,yellow irish lord,1
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,pink salmon,3
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,black rockfish,1
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,Pacific sandlance,359
+6,30,2025,6/30/2025,625,Kai-6,Kaiugnak,Pacific herring,4425
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,masked greenling,13
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,rock greenling,2
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,whitespotted greenling,2
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,Pacific herring,19
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,crescent gunnel,3
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,pink salmon,21
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,silverspotted sculpin,6
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,Pacific sandlance,6
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,black rockfish,10
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,northern rock sole,2
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,starry flounder,1
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,saffron cod,9
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,walleye pollock,1
+6,30,2025,6/30/2025,626,Kai-7,Kaiugnak,Pacific cod,4
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,Pacific cod,42
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,masked greenling,3
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,whitespotted greenling,8
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,great sculpin,3
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,chinook salmon,2
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,pink salmon,1
+6,30,2025,6/30/2025,627,Kai-4,Kaiugnak,black rockfish,21
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,saffron cod,67
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,tadpole sculpin,1
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,dolly varden,20
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,masked greenling,17
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,rock greenling,8
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,whitespotted greenling,8
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,tubenose poacher,1
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,crescent gunnel,2
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,Pacific staghorn sculpin,4
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,silverspotted sculpin,2
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,Pacific cod,11
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,chinook salmon,3
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,black rockfish,19
+6,30,2025,6/30/2025,628,Kai-1,Kaiugnak,copper rockfish,1
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,masked greenling,6
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,rock greenling,2
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,whitespotted greenling,3
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,Pacific herring,1
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,great sculpin,2
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,Pacific sandlance,389
+6,30,2025,6/30/2025,629,Kai-2,Kaiugnak,black rockfish,5
+7,1,2025,7/1/2025,630,Jap-5,Japanese,saffron cod,29
+7,1,2025,7/1/2025,630,Jap-5,Japanese,masked greenling,4
+7,1,2025,7/1/2025,630,Jap-5,Japanese,rock greenling,20
+7,1,2025,7/1/2025,630,Jap-5,Japanese,whitespotted greenling,34
+7,1,2025,7/1/2025,630,Jap-5,Japanese,tadpole sculpin,1
+7,1,2025,7/1/2025,630,Jap-5,Japanese,crescent gunnel,7
+7,1,2025,7/1/2025,630,Jap-5,Japanese,Pacific herring,7
+7,1,2025,7/1/2025,630,Jap-5,Japanese,great sculpin,3
+7,1,2025,7/1/2025,630,Jap-5,Japanese,red irish lord,1
+7,1,2025,7/1/2025,630,Jap-5,Japanese,silverspotted sculpin,14
+7,1,2025,7/1/2025,630,Jap-5,Japanese,snake prickleback,10
+7,1,2025,7/1/2025,630,Jap-5,Japanese,tubenose poacher,8
+7,1,2025,7/1/2025,630,Jap-5,Japanese,Pacific cod,23
+7,1,2025,7/1/2025,631,Jap-1,Japanese,Pacific cod,22
+7,1,2025,7/1/2025,631,Jap-1,Japanese,masked greenling,8
+7,1,2025,7/1/2025,631,Jap-1,Japanese,rock greenling,29
+7,1,2025,7/1/2025,631,Jap-1,Japanese,whitespotted greenling,23
+7,1,2025,7/1/2025,631,Jap-1,Japanese,tadpole sculpin,12
+7,1,2025,7/1/2025,631,Jap-1,Japanese,red irish lord,2
+7,1,2025,7/1/2025,631,Jap-1,Japanese,copper rockfish,17
+7,1,2025,7/1/2025,631,Jap-1,Japanese,black rockfish,4
+7,1,2025,7/1/2025,632,Jap-6,Japanese,Pacific cod,30
+7,1,2025,7/1/2025,632,Jap-6,Japanese,saffron cod,26
+7,1,2025,7/1/2025,632,Jap-6,Japanese,masked greenling,8
+7,1,2025,7/1/2025,632,Jap-6,Japanese,rock greenling,12
+7,1,2025,7/1/2025,632,Jap-6,Japanese,whitespotted greenling,22
+7,1,2025,7/1/2025,632,Jap-6,Japanese,crescent gunnel,8
+7,1,2025,7/1/2025,632,Jap-6,Japanese,red irish lord,1
+7,1,2025,7/1/2025,632,Jap-6,Japanese,yellow irish lord,2
+7,1,2025,7/1/2025,632,Jap-6,Japanese,silverspotted sculpin,7
+7,1,2025,7/1/2025,632,Jap-6,Japanese,black rockfish,9
+7,1,2025,7/1/2025,632,Jap-6,Japanese,copper rockfish,3
+7,1,2025,7/1/2025,632,Jap-6,Japanese,Pacific herring,7
+7,1,2025,7/1/2025,633,Jap-2,Japanese,rock greenling,16
+7,1,2025,7/1/2025,633,Jap-2,Japanese,whitespotted greenling,13
+7,1,2025,7/1/2025,633,Jap-2,Japanese,Pacific sandfish,1
+7,1,2025,7/1/2025,633,Jap-2,Japanese,crescent gunnel,1
+7,1,2025,7/1/2025,633,Jap-2,Japanese,red irish lord,2
+7,1,2025,7/1/2025,633,Jap-2,Japanese,silverspotted sculpin,2
+7,1,2025,7/1/2025,633,Jap-2,Japanese,penpoint gunnel,2
+7,1,2025,7/1/2025,633,Jap-2,Japanese,tubenose poacher,2
+7,1,2025,7/1/2025,633,Jap-2,Japanese,kelp clingfish,1
+7,1,2025,7/1/2025,633,Jap-2,Japanese,Pacific cod,15
+7,1,2025,7/1/2025,633,Jap-2,Japanese,UNID rockfish,1
+7,1,2025,7/1/2025,633,Jap-2,Japanese,black rockfish,1
+7,1,2025,7/1/2025,633,Jap-2,Japanese,copper rockfish,1
+7,1,2025,7/1/2025,634,Jap-7,Japanese,Pacific cod,88
+7,1,2025,7/1/2025,634,Jap-7,Japanese,masked greenling,8
+7,1,2025,7/1/2025,634,Jap-7,Japanese,rock greenling,3
+7,1,2025,7/1/2025,634,Jap-7,Japanese,whitespotted greenling,6
+7,1,2025,7/1/2025,634,Jap-7,Japanese,crescent gunnel,1
+7,1,2025,7/1/2025,634,Jap-7,Japanese,tubenose poacher,1
+7,1,2025,7/1/2025,634,Jap-7,Japanese,copper rockfish,2
+7,1,2025,7/1/2025,634,Jap-7,Japanese,black rockfish,4
+7,1,2025,7/1/2025,635,Jap-3,Japanese,Pacific cod,61
+7,1,2025,7/1/2025,635,Jap-3,Japanese,masked greenling,7
+7,1,2025,7/1/2025,635,Jap-3,Japanese,rock greenling,13
+7,1,2025,7/1/2025,635,Jap-3,Japanese,whitespotted greenling,17
+7,1,2025,7/1/2025,635,Jap-3,Japanese,dolly varden,5
+7,1,2025,7/1/2025,635,Jap-3,Japanese,Pacific staghorn sculpin,1
+7,1,2025,7/1/2025,635,Jap-3,Japanese,red irish lord,2
+7,1,2025,7/1/2025,635,Jap-3,Japanese,Pacific sandlance,248
+7,1,2025,7/1/2025,635,Jap-3,Japanese,Pacific herring,1
+7,1,2025,7/1/2025,635,Jap-3,Japanese,copper rockfish,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,Pacific cod,50
+7,1,2025,7/1/2025,636,Jap-4,Japanese,masked greenling,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,rock greenling,11
+7,1,2025,7/1/2025,636,Jap-4,Japanese,whitespotted greenling,7
+7,1,2025,7/1/2025,636,Jap-4,Japanese,dolly varden,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,great sculpin,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,tadpole sculpin,8
+7,1,2025,7/1/2025,636,Jap-4,Japanese,silverspotted sculpin,4
+7,1,2025,7/1/2025,636,Jap-4,Japanese,tubenose poacher,2
+7,1,2025,7/1/2025,636,Jap-4,Japanese,snake prickleback,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,buffalo sculpin,1
+7,1,2025,7/1/2025,636,Jap-4,Japanese,saffron cod,1
+7,6,2025,7/6/2025,637,Bar-4,Baralof,walleye pollock,85
+7,6,2025,7/6/2025,637,Bar-4,Baralof,starry flounder,2
+7,6,2025,7/6/2025,637,Bar-4,Baralof,kelp greenling,2
+7,6,2025,7/6/2025,637,Bar-4,Baralof,masked greenling,22
+7,6,2025,7/6/2025,637,Bar-4,Baralof,rock greenling,11
+7,6,2025,7/6/2025,637,Bar-4,Baralof,whitespotted greenling,16
+7,6,2025,7/6/2025,637,Bar-4,Baralof,crescent gunnel,4
+7,6,2025,7/6/2025,637,Bar-4,Baralof,great sculpin,6
+7,6,2025,7/6/2025,637,Bar-4,Baralof,yellow irish lord,9
+7,6,2025,7/6/2025,637,Bar-4,Baralof,silverspotted sculpin,5
+7,6,2025,7/6/2025,637,Bar-4,Baralof,tubenose poacher,8
+7,6,2025,7/6/2025,637,Bar-4,Baralof,Pacific cod,43
+7,6,2025,7/6/2025,637,Bar-4,Baralof,copper rockfish,1
+7,6,2025,7/6/2025,637,Bar-4,Baralof,Pacific halibut,2
+7,6,2025,7/6/2025,637,Bar-4,Baralof,chum salmon,6
+7,6,2025,7/6/2025,637,Bar-4,Baralof,chinook salmon,4
+7,6,2025,7/6/2025,637,Bar-4,Baralof,pink salmon,1
+7,6,2025,7/6/2025,637,Bar-4,Baralof,Pacific herring,1
+7,6,2025,7/6/2025,637,Bar-4,Baralof,black rockfish,12
+7,6,2025,7/6/2025,637,Bar-4,Baralof,coho salmon,1
+7,6,2025,7/6/2025,638,Bar-5,Baralof,northern rock sole,2
+7,6,2025,7/6/2025,638,Bar-5,Baralof,English sole,1
+7,6,2025,7/6/2025,638,Bar-5,Baralof,starry flounder,4
+7,6,2025,7/6/2025,638,Bar-5,Baralof,masked greenling,3
+7,6,2025,7/6/2025,638,Bar-5,Baralof,rock greenling,3
+7,6,2025,7/6/2025,638,Bar-5,Baralof,crescent gunnel,2
+7,6,2025,7/6/2025,638,Bar-5,Baralof,sturgeon poacher,1
+7,6,2025,7/6/2025,638,Bar-5,Baralof,Pacific sandlance,1
+7,6,2025,7/6/2025,638,Bar-5,Baralof,chum salmon,2
+7,6,2025,7/6/2025,639,Bar-3,Baralof,masked greenling,3
+7,6,2025,7/6/2025,639,Bar-3,Baralof,rock greenling,3
+7,6,2025,7/6/2025,639,Bar-3,Baralof,whitespotted greenling,2
+7,6,2025,7/6/2025,639,Bar-3,Baralof,great sculpin,2
+7,6,2025,7/6/2025,639,Bar-3,Baralof,yellow irish lord,1
+7,6,2025,7/6/2025,639,Bar-3,Baralof,silverspotted sculpin,1
+7,6,2025,7/6/2025,639,Bar-3,Baralof,Pacific sandlance,160
+7,6,2025,7/6/2025,639,Bar-3,Baralof,Pacific cod,2
+7,6,2025,7/6/2025,639,Bar-3,Baralof,Pacific tomcod,1
+7,6,2025,7/6/2025,639,Bar-3,Baralof,Pacific herring,1
+7,6,2025,7/6/2025,639,Bar-3,Baralof,chum salmon,2
+7,6,2025,7/6/2025,640,Bar-2,Baralof,northern rock sole,12
+7,6,2025,7/6/2025,640,Bar-2,Baralof,kelp greenling,4
+7,6,2025,7/6/2025,640,Bar-2,Baralof,masked greenling,2
+7,6,2025,7/6/2025,640,Bar-2,Baralof,rock greenling,4
+7,6,2025,7/6/2025,640,Bar-2,Baralof,whitespotted greenling,26
+7,6,2025,7/6/2025,640,Bar-2,Baralof,crescent gunnel,3
+7,6,2025,7/6/2025,640,Bar-2,Baralof,sturgeon poacher,5
+7,6,2025,7/6/2025,640,Bar-2,Baralof,great sculpin,2
+7,6,2025,7/6/2025,640,Bar-2,Baralof,yellow irish lord,3
+7,6,2025,7/6/2025,640,Bar-2,Baralof,silverspotted sculpin,5
+7,6,2025,7/6/2025,640,Bar-2,Baralof,penpoint gunnel,1
+7,6,2025,7/6/2025,640,Bar-2,Baralof,Pacific sandlance,1
+7,6,2025,7/6/2025,640,Bar-2,Baralof,Pacific cod,3
+7,6,2025,7/6/2025,640,Bar-2,Baralof,coho salmon,1
+7,6,2025,7/6/2025,640,Bar-2,Baralof,pink salmon,3
+7,6,2025,7/6/2025,640,Bar-2,Baralof,chum salmon,25
+7,6,2025,7/6/2025,641,Bar-1,Baralof,northern rock sole,12
+7,6,2025,7/6/2025,641,Bar-1,Baralof,starry flounder,2
+7,6,2025,7/6/2025,641,Bar-1,Baralof,chum salmon,4
+7,6,2025,7/6/2025,641,Bar-1,Baralof,buffalo sculpin,1
+7,6,2025,7/6/2025,641,Bar-1,Baralof,great sculpin,12
+7,6,2025,7/6/2025,641,Bar-1,Baralof,armorhead sculpin,5
+7,6,2025,7/6/2025,641,Bar-1,Baralof,Pacific sandlance,1
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,northern rock sole,3
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,dolly varden,1
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,kelp greenling,1
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,masked greenling,2
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,rock greenling,3
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,whitespotted greenling,5
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,great sculpin,1
+7,7,2025,7/7/2025,642,Sand-2,Sand Point,silverspotted sculpin,2
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,northern rock sole,29
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,starry flounder,1
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,rock greenling,1
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,whitespotted greenling,7
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,sturgeon poacher,1
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,great sculpin,3
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,yellow irish lord,2
+7,7,2025,7/7/2025,643,Sand-3,Sand Point,Pacific sandlance,1082
+7,8,2025,7/8/2025,644,BB-2,Balboa,snake prickleback,1
+7,8,2025,7/8/2025,644,BB-2,Balboa,masked greenling,1
+7,8,2025,7/8/2025,644,BB-2,Balboa,rock greenling,5
+7,8,2025,7/8/2025,644,BB-2,Balboa,whitespotted greenling,12
+7,8,2025,7/8/2025,644,BB-2,Balboa,crescent gunnel,7
+7,8,2025,7/8/2025,644,BB-2,Balboa,buffalo sculpin,1
+7,8,2025,7/8/2025,644,BB-2,Balboa,great sculpin,7
+7,8,2025,7/8/2025,644,BB-2,Balboa,yellow irish lord,5
+7,8,2025,7/8/2025,644,BB-2,Balboa,silverspotted sculpin,1
+7,8,2025,7/8/2025,644,BB-2,Balboa,Pacific cod,18
+7,8,2025,7/8/2025,645,BB-3,Balboa,northern rock sole,3
+7,8,2025,7/8/2025,645,BB-3,Balboa,crescent gunnel,1
+7,8,2025,7/8/2025,645,BB-3,Balboa,great sculpin,9
+7,8,2025,7/8/2025,645,BB-3,Balboa,Pacific sandlance,1122
+7,8,2025,7/8/2025,645,BB-3,Balboa,Pacific cod,1
+7,8,2025,7/8/2025,645,BB-3,Balboa,Pacific herring,4
+7,8,2025,7/8/2025,646,BB-4,Balboa,northern rock sole,21
+7,8,2025,7/8/2025,646,BB-4,Balboa,English sole,2
+7,8,2025,7/8/2025,646,BB-4,Balboa,masked greenling,1
+7,8,2025,7/8/2025,646,BB-4,Balboa,whitespotted greenling,3
+7,8,2025,7/8/2025,646,BB-4,Balboa,crescent gunnel,4
+7,8,2025,7/8/2025,646,BB-4,Balboa,dolly varden,1
+7,8,2025,7/8/2025,646,BB-4,Balboa,great sculpin,3
+7,8,2025,7/8/2025,646,BB-4,Balboa,Pacific cod,2
+7,8,2025,7/8/2025,646,BB-4,Balboa,chum salmon,3
+7,8,2025,7/8/2025,647,BB-7,Balboa,rock greenling,2
+7,8,2025,7/8/2025,647,BB-7,Balboa,whitespotted greenling,23
+7,8,2025,7/8/2025,647,BB-7,Balboa,crescent gunnel,9
+7,8,2025,7/8/2025,647,BB-7,Balboa,snake prickleback,3
+7,8,2025,7/8/2025,647,BB-7,Balboa,great sculpin,28
+7,8,2025,7/8/2025,647,BB-7,Balboa,yellow irish lord,1
+7,8,2025,7/8/2025,647,BB-7,Balboa,silverspotted sculpin,3
+7,8,2025,7/8/2025,647,BB-7,Balboa,tubenose poacher,1
+7,8,2025,7/8/2025,647,BB-7,Balboa,chum salmon,2
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,masked greenling,2
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,rock greenling,6
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,whitespotted greenling,3
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,penpoint gunnel,3
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,great sculpin,1
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,silverspotted sculpin,1
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,Pacific cod,8
+7,10,2025,7/10/2025,648,Fal-5,Falmouth,copper rockfish,1
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,masked greenling,6
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,rock greenling,1
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,whitespotted greenling,3
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,armorhead sculpin,1
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,silverspotted sculpin,2
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,copper rockfish,6
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,pink salmon,5
+7,10,2025,7/10/2025,649,Fal-1,Falmouth,black rockfish,1
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,masked greenling,2
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,rock greenling,7
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,whitespotted greenling,5
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,crescent gunnel,1
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,great sculpin,1
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,silverspotted sculpin,1
+7,10,2025,7/10/2025,650,Fal-3,Falmouth,Pacific cod,5
+7,10,2025,7/10/2025,651,Fal-4,Falmouth,masked greenling,5
+7,10,2025,7/10/2025,651,Fal-4,Falmouth,rock greenling,5
+7,10,2025,7/10/2025,651,Fal-4,Falmouth,whitespotted greenling,1
+7,10,2025,7/10/2025,651,Fal-4,Falmouth,silverspotted sculpin,1
+7,10,2025,7/10/2025,651,Fal-4,Falmouth,chinook salmon,2
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,northern rock sole,6
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,English sole,24
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,dolly varden,1
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,buffalo sculpin,1
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,great sculpin,4
+7,10,2025,7/10/2025,652,Fal-2,Falmouth,Pacific halibut,2
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,rock greenling,1
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,whitespotted greenling,3
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,crescent gunnel,3
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,dolly varden,2
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,great sculpin,4
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,Pacific herring,15
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,Pacific sandlance,1441
+7,13,2025,7/13/2025,653,RR-4,Rodman Reach,Pacific cod,2
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,masked greenling,9
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,rock greenling,5
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,whitespotted greenling,77
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,Pacific herring,3
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,crescent gunnel,15
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,snake prickleback,3
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,great sculpin,13
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,silverspotted sculpin,11
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,tubenose poacher,6
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,Pacific cod,8
+7,13,2025,7/13/2025,654,RR-3,Rodman Reach,black rockfish,10
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,northern rock sole,3
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,sturgeon poacher,1
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,masked greenling,10
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,rock greenling,3
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,whitespotted greenling,10
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,three spine stickleback,1
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,crescent gunnel,9
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,tubenose poacher,8
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,great sculpin,5
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,yellow irish lord,1
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,silverspotted sculpin,8
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,snake prickleback,1
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,pink salmon,1
+7,13,2025,7/13/2025,655,RR-1,Rodman Reach,Pacific cod,28

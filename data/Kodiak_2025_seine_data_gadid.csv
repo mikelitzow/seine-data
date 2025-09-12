@@ -1,0 +1,65 @@
+﻿year,Date,bay,site,Time,Temperature,Salinity,Oxygen,Habitat,total.gadid.cpue,saffron.age.0,cod.age.0,pollock.age.0,cod.age.1,cod.age.2,saffron.age.1,saffron.age.2,pollock.age.1
+2025,7/11/2025,Anton Larsen,Back Bay eelgrass,1252,10.8,24.2,10.2,Eelgrass,0,0,0,0,0,0,0,0,0
+2025,7/14/2025,Anton Larsen,Back Bay eelgrass,1406,14.2,26.8,13.2,Eelgrass,0,0,0,0,0,0,0,0,0
+2025,8/21/2025,Anton Larsen,Back Bay eelgrass,1150,12.6,32.6,10.2,Eelgrass,1,0,1,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Back Bay eelgrass,1235,13.6,32.7,10.2,Eelgrass,0,0,0,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,Cobble point,1502,10.6,11.3,10.8,Bare,0,0,0,0,1,0,0,0,0
+2025,7/14/2025,Anton Larsen,Cobble point,1528,11.1,29.2,12.5,Bare,2,0,2,0,2,0,0,0,0
+2025,8/21/2025,Anton Larsen,Cobble point,1353,13.1,31.5,10.9,Bare,0,0,0,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Cobble point,1411,14.1,31.6,9.9,Bare,0,0,0,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,Eelgrass patches,801,10.2,9.5,11.6,Eelgrass,54,0,53,1,8,0,1,0,7
+2025,7/14/2025,Anton Larsen,Eelgrass patches,1028,11.1,25.9,11.8,Eelgrass,15,0,15,0,3,0,0,0,8
+2025,8/21/2025,Anton Larsen,Eelgrass patches,745,12.6,30.8,11,Eelgrass,10,0,10,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Eelgrass patches,822,12.9,32.4,11.7,Eelgrass,3,0,3,0,0,0,0,0,2
+2025,7/11/2025,Anton Larsen,Eelgrass point,911,11.2,26.7,10.2,Eelgrass,53,0,53,0,1,0,0,0,79
+2025,7/14/2025,Anton Larsen,Eelgrass point,1111,10.4,30,10.6,Eelgrass,27,0,27,0,0,0,0,0,2
+2025,8/21/2025,Anton Larsen,Eelgrass point,839,12.9,31.6,9.9,Eelgrass,32,0,32,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Eelgrass point,905,12.7,32,10.3,Eelgrass,37,0,37,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,Laminaria #2,1027,12.3,24.8,8.3,Laminaria,1,0,1,0,0,0,0,0,0
+2025,7/14/2025,Anton Larsen,Laminaria #2,1218,11.5,28.1,11.1,Laminaria,0,0,0,0,0,0,0,0,0
+2025,8/22/2025,Anton Larsen,Laminaria #2,923,12.5,32.5,10.1,Laminaria,3,0,3,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Laminaria #2,1021,13.6,32.9,10,Laminaria,0,0,0,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,Laminaria Point,846,10.7,11.7,10.6,Laminaria,8,0,8,0,0,0,0,0,5
+2025,7/14/2025,Anton Larsen,Laminaria Point,1051,10.5,28.5,10.7,Laminaria,27,0,27,0,1,0,0,0,5
+2025,8/21/2025,Anton Larsen,Laminaria Point,820,12.9,31.5,10.2,Laminaria,14,0,14,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Laminaria Point,842,13.1,31.4,9.8,Laminaria,13,0,13,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,White rock,1533,11.3,4.7,11.4,Bare,4,0,3,1,0,0,0,0,0
+2025,7/14/2025,Anton Larsen,White rock,1546,11.1,29.5,11.5,Bare,1,0,1,0,0,0,0,0,0
+2025,8/21/2025,Anton Larsen,White rock,1420,13.7,31.7,10.3,Bare,0,0,0,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,White rock,1445,13.3,32.8,10.4,Bare,0,0,0,0,0,0,0,0,0
+2025,7/11/2025,Anton Larsen,Wooden boat,1002,12,27.1,8,Laminaria,0,0,0,0,0,0,0,0,0
+2025,7/14/2025,Anton Larsen,Wooden boat,1158,11.2,29.5,11.4,Laminaria,1,0,1,0,0,0,0,0,0
+2025,8/22/2025,Anton Larsen,Wooden boat,841,12.6,32.2,10.3,Laminaria,80,0,80,0,0,0,0,0,0
+2025,8/25/2025,Anton Larsen,Wooden boat,951,12.9,33,9.6,Laminaria,2,0,2,0,0,0,0,0,0
+2025,7/12/2025,Cook,Bare North,1410,11.2,33,10.7,Bare,0,0,0,0,0,0,0,0,0
+2025,7/13/2025,Cook,Bare North,1603,11.3,33.3,10.2,Bare,0,0,0,0,0,0,0,0,0
+2025,8/23/2025,Cook,Bare North,1455,12.1,33.5,10.7,Bare,0,0,0,0,0,0,0,0,0
+2025,8/24/2025,Cook,Bare North,1330,13.1,33.4,10.3,Bare,0,0,0,0,0,0,0,0,0
+2025,7/12/2025,Cook,Eelgrass North,1106,10.5,33.1,10,Eelgrass,49,0,49,0,0,0,0,0,0
+2025,7/13/2025,Cook,Eelgrass North,1157,11.3,33.5,10.4,Eelgrass,1,0,1,0,0,0,0,0,0
+2025,8/23/2025,Cook,Eelgrass North,1027,12.4,33.1,9,Eelgrass,3,0,3,0,0,0,0,0,0
+2025,8/24/2025,Cook,Eelgrass North,1104,12.7,33.3,9.5,Eelgrass,17,0,17,0,0,0,0,0,0
+2025,7/12/2025,Cook,Eelgrass South,852,10.1,32.9,9.4,Eelgrass,164,0,122,42,0,0,5,0,0
+2025,7/13/2025,Cook,Eelgrass South,922,10.7,30.8,10.6,Eelgrass,251,0,191,60,0,0,0,0,0
+2025,8/23/2025,Cook,Eelgrass South,738,11.5,33.2,9.5,Eelgrass,149,0,148,1,1,0,0,0,0
+2025,8/24/2025,Cook,Eelgrass South,738,11.4,33,9.1,Eelgrass,72,0,72,0,0,0,0,0,0
+2025,7/12/2025,Cook,Eelgrass West,1204,10.7,33.1,9.5,Eelgrass,49,0,49,0,2,0,0,0,0
+2025,7/13/2025,Cook,Eelgrass West,1122,11.3,33.1,9.7,Eelgrass,17,0,17,0,0,0,0,0,0
+2025,8/23/2025,Cook,Eelgrass West,915,12.3,33.5,10.1,Eelgrass,283,0,283,0,9,0,1,0,0
+2025,8/24/2025,Cook,Eelgrass West,905,12.4,33.3,9.9,Eelgrass,407,0,407,0,9,0,0,0,0
+2025,7/12/2025,Cook,Laminaria East,945,10.2,32.9,9.6,Laminaria,38,0,38,0,0,0,0,0,0
+2025,7/13/2025,Cook,Laminaria East,1037,10.5,33.4,9.2,Laminaria,34,0,29,5,1,0,0,0,0
+2025,8/23/2025,Cook,Laminaria East,852,12.1,33.2,10.2,Laminaria,8,0,8,0,0,0,0,0,0
+2025,8/24/2025,Cook,Laminaria East,836,11.8,33.3,9.2,Laminaria,48,0,48,0,0,0,0,0,0
+2025,7/12/2025,Cook,Laminaria North,1138,10.5,33.2,9.3,Laminaria,0,0,0,0,0,0,0,0,0
+2025,7/13/2025,Cook,Laminaria North,1226,11.2,33.6,9.8,Laminaria,0,0,0,0,0,0,0,0,0
+2025,8/23/2025,Cook,Laminaria North,1058,12.1,33.2,10.8,Laminaria,10,0,10,0,0,0,0,0,0
+2025,8/24/2025,Cook,Laminaria North,1133,12.6,33.3,10,Laminaria,9,0,9,0,0,0,0,0,0
+2025,7/12/2025,Cook,Laminaria South,818,10.2,32.8,9.5,Laminaria,27,0,26,1,0,0,0,0,0
+2025,7/13/2025,Cook,Laminaria South,1006,10.7,32.6,9.9,Laminaria,3,0,3,0,2,0,0,0,0
+2025,8/23/2025,Cook,Laminaria South,812,11.6,33.1,9.7,Laminaria,124,0,124,0,0,0,2,0,0
+2025,8/24/2025,Cook,Laminaria South,806,11.7,32.5,9,Laminaria,48,0,48,0,0,0,0,0,0
+2025,7/12/2025,Cook,Middle Cove,1429,10.5,33.2,10.4,Bare,258,0,257,1,1,0,0,0,0
+2025,7/13/2025,Cook,Middle Cove,1619,10.6,33.5,10.2,Bare,1,0,1,0,2,0,0,0,0
+2025,8/23/2025,Cook,Middle Cove,1515,12.3,33.3,10.2,Bare,3,0,3,0,1,0,0,0,0
+2025,8/24/2025,Cook,Middle Cove,1357,12.5,33.2,11.2,Bare,1,0,1,0,0,0,0,0,0
