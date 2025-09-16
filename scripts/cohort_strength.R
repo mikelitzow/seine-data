@@ -20,7 +20,7 @@ dat$site_fac <- as.factor(dat$site)
 # summarize
 summ <- dat %>%
   group_by(year) %>%
-  summarise(n_bays = length(unique(bay_fac)),
+  dplyr::summarise(n_bays = length(unique(bay_fac)),
             n_sets = n())
 
 summ
@@ -92,7 +92,7 @@ ggplot(plot.cod, aes(year_fac, estimate__)) +
   coord_trans(y = "pseudo_log") +
   theme(axis.title.x = element_blank())
 
-ggsave("./figs/seine_cod_age0_abundance_estimates.png", width = 6, height = 4, units = 'in')
+ggsave("./figs/seine_cod_age0_abundance_estimates.png", width = 7, height = 4, units = 'in')
 
 # round, rename columns, and save
 plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
@@ -189,7 +189,7 @@ ggplot(plot.pollock, aes(year_fac, estimate__)) +
   coord_trans(y = "pseudo_log") +
   theme(axis.title.x = element_blank())
 
-ggsave("./figs/seine_pollock_age0_abundance_estimates.png", width = 6, height = 4, units = 'in')
+ggsave("./figs/seine_pollock_age0_abundance_estimates.png", width = 7, height = 4, units = 'in')
 
 # round, rename columns, and save
 plot.pollock[,2:5] <- round(plot.pollock[,2:5], 2)

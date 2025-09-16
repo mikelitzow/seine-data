@@ -3,7 +3,7 @@
 # updated at the end of the script to update with 2022 data
 # updated at the end of the script to update with 2023 data
 # updated at end of script (around line 580) with 2024 data
-
+# updated at end of script with 2025 data
 library(tidyverse)
 
 # load cod/pollock data for 2006-2020
@@ -606,10 +606,6 @@ cod24len <- filter(d15, species == "Pacific cod")
 head(cod24len)
 count(cod24len)
 
-library(patchwork)
-library(tidyverse)
-library(lubridate)
-library(ggplot2)
 
 ggplot(cod24len, aes(length, fill =(species))) +
   geom_histogram(binwidth = 10) +
@@ -790,3 +786,412 @@ print(g)
 
 # save
 write.csv(dat, "./data/age.0_cod_pollock_seine_cpue.csv")
+
+###
+
+### add 2024 data ----------------------------
+
+# load 2024 wGOA cpue data
+d14 <- read.csv("./data/cpue2024.csv")
+
+# change date to julian
+d14$julian <- lubridate::yday(as.POSIXct(d14$date, format = "%m/%d/%Y"))
+
+# examine spp. names 
+unique(d14$species)
+
+# need to check for age-1 cod
+d15 <- read.csv("./data/length2024.csv")
+head(d15)
+unique(d15$species)
+hist(filter(d15, species == "Pacific cod")$length)
+
+#make this into a nice histogram 
+cod24len <- filter(d15, species == "Pacific cod")
+head(cod24len)
+count(cod24len)
+
+
+ggplot(cod24len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,250) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Pacific cod from beach seines in 2024 (n = 910)")
+
+
+# clear break with age 1 >= 139mm
+#now isolate age-1
+
+age.1 <- d15 %>%
+  filter(species == "Pacific cod", length > 120) %>%
+  group_by(Site) %>%
+  summarize(cod.age.1 = n())
+age.1
+
+# clean up column names to match d1
+names(d15)[3:4] <- c("site", "bay")
+names(d14)[6:7] <- c("site", "bay")
+
+# restrict cpue file, d14, to cod and pollock
+d14 <- d14 %>%
+  filter(species %in% c("Pacific cod", "walleye pollock")) %>%
+  select(Station, year, bay, site, julian, species, CPUE) %>%
+  pivot_wider(names_from = species, values_from = CPUE)
+
+# remove age-1 cod
+names(age.1)[1] <- "site"
+
+unique(d14$site)
+unique(age.1$site)
+
+d14 <- left_join(d14, age.1)
+
+# replace NAs with 0
+change <- is.na(d14)
+d14[change] <- 0
+
+##check if age-1 pollock
+hist(filter(d15, species == "walleye pollock")$length)
+
+poll24len <- filter(d15, species == "walleye pollock")
+head(poll24len)
+count(poll24len)
+ggplot(poll24len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,300) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Walleye pollock from beach seines in 2024 (n = 243)")
+
+#need to remove pollock > 100mm
+#first isolate age-1 pollock
+
+age.1p <- d15 %>%
+  filter(species == "walleye pollock", length > 100) %>%
+  group_by(site) %>%
+  summarize(pollock.age.1 = n())
+age.1p
+
+# remove age-1 pollock
+names(age.1p)[1] <- "site"
+
+unique(d14$site)
+unique(age.1p$site)
+
+d14 <- left_join(d14, age.1p)
+
+# replace NAs with 0
+change <- is.na(d14)
+d14[change] <- 0
+
+# clean up again
+d14 <- d14 %>%
+  mutate(cod.age.0 = `Pacific cod` - cod.age.1) %>%
+  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) 
+head(d14)
+
+# now we need to join to site data to account for sets with no cod or pollock caught
+d16 <- read.csv("./data/site2024.csv")
+
+# change date to julian
+d16$julian <- lubridate::yday(as.POSIXct(d16$Date, format = "%m/%d/%Y"))
+
+# clean up 
+d16 <- d16 %>%
+  mutate(year = 2024) %>%
+  filter(use.for.CPUE == "yes") %>%
+  select(Station, year, Bay, Site, julian) %>%
+  mutate(Station = as.integer(as.character(Station)))
+
+d16 <- left_join(d16, d14)
+
+# replace NA with 0
+change <- is.na(d16)
+d16[change] <- 0
+
+# remove Chief Cove and May samples
+d16 <- d16 %>%
+  filter(Bay != "Chief Cove",
+         julian > 151)
+
+# clean up 
+d16 <- d16 %>%
+  select(-Station)
+head(d16)
+
+#there are 2 columns with name bay and 2 columns with name site
+#need to rename columns 5 and 6
+names(d16)[5:6]<- c("BAY", "Site")
+head(d16)
+
+names(d16)[2:3] <- c("bay", "site")
+unique(d16$bay)
+unique(d16$site)
+head(d16)
+
+#want to make d16 have only 6 columns so matches 'dat'
+d16a <- d16 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d16a)
+unique(d16$site)
+
+dat <- rbind(dat, d16a)
+head(dat)
+#hot dog!
+
+## add 2024 Cook / Anton's data-------------------
+d17 <- read.csv("./data/Kodiak_2024_seine_data_gadid.csv")
+
+head(d17)
+
+# clean up to combine with dat
+# change to julian day
+d17$julian <- lubridate::yday(as.POSIXct(d17$Date, format = "%m/%d/%Y"))
+
+d17 <- d17 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d17)
+
+# reset names
+names(d17) <- names(dat)
+
+#check for repeat names that are misspelled or dissimmilar
+unique(d17$bay)
+unique(dat$bay)
+unique(d17$site)
+unique(dat$site)
+
+#none found, so don't need anything like next 2 lines
+#change <- d9$bay == "Cook Bay"
+#d9$bay[change] <- "Cook"
+
+# check that worked
+site.dat <- unique(filter(dat, bay %in% c("Cook", "Anton Larsen"))$site)
+site.d17 <-  unique(d17$site)
+check.sites <- data.frame(dat = str_sort(site.dat),
+                          d17 = str_sort(site.d17))
+
+# combine
+dat <- rbind(dat, d17)
+View(dat)
+#data look awesome!
+
+# check
+g <- ggplot(dat) +
+  aes(x = year, y = cod.age.0, color = site) +
+  geom_point() +
+  facet_wrap( ~ bay) +
+  theme(legend.position = "none")
+print(g)
+
+# save
+write.csv(dat, "./data/age.0_cod_pollock_seine_cpue.csv")
+
+#### add 2025 data -------------
+
+
+# load 2024 wGOA cpue data
+d18 <- read.csv("./data/cpue2025.csv")
+
+# change date to julian
+d18$julian <- lubridate::yday(as.POSIXct(d18$date, format = "%m/%d/%Y"))
+
+# examine spp. names 
+unique(d18$species)
+
+# need to check for age-1 cod
+d19 <- read.csv("./data/length2025.csv")
+head(d19)
+unique(d19$species)
+hist(filter(d19, species == "Pacific cod")$length)
+
+#make this into a nice histogram 
+cod25len <- filter(d19, species == "Pacific cod")
+head(cod25len)
+count(cod25len)
+
+
+ggplot(cod24len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,250) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Pacific cod from beach seines in 2024 (n = 910)")
+
+
+# clear break with age 1 >= 139mm
+#now isolate age-1
+
+age.1 <- d19 %>%
+  filter(species == "Pacific cod", length > 120) %>%
+  group_by(Site) %>%
+  summarize(cod.age.1 = n())
+age.1
+
+# clean up column names to match d1
+names(d19)[3:4] <- c("site", "bay")
+names(d18)[6:7] <- c("site", "bay")
+
+# restrict cpue file, d18, to cod and pollock
+d18 <- d18 %>%
+  filter(species %in% c("Pacific cod", "walleye pollock")) %>%
+  select(Station, year, bay, site, julian, species, CPUE) %>%
+  pivot_wider(names_from = species, values_from = CPUE)
+
+# remove age-1 cod
+names(age.1)[1] <- "site"
+
+unique(d18$site)
+unique(age.1$site)
+
+d18 <- left_join(d18, age.1)
+
+# replace NAs with 0
+change <- is.na(d18)
+d18[change] <- 0
+
+##check if age-1 pollock
+hist(filter(d19, species == "walleye pollock")$length)
+
+poll25len <- filter(d19, species == "walleye pollock")
+head(poll25len)
+count(poll25len)
+ggplot(poll25len, aes(length, fill =(species))) +
+  geom_histogram(binwidth = 10) +
+  xlab("Total Length (mm)")+
+  xlim(0,300) +
+  ylab("Count") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  labs(title = "Walleye pollock from beach seines in 2025 (n = 253)")
+
+#need to remove pollock > 100mm
+#first isolate age-1 pollock
+
+age.1p <- d19 %>%
+  filter(species == "walleye pollock", length > 100) %>%
+  group_by(site) %>%
+  summarize(pollock.age.1 = n())
+age.1p
+
+# remove age-1 pollock
+names(age.1p)[1] <- "site"
+
+unique(d18$site)
+unique(age.1p$site)
+
+d18 <- left_join(d18, age.1p)
+
+# replace NAs with 0
+change <- is.na(d18)
+d18[change] <- 0
+
+# clean up again
+d18 <- d18 %>%
+  mutate(cod.age.0 = `Pacific cod` - cod.age.1) %>%
+  mutate(pollock.age.0 = `walleye pollock` - pollock.age.1) 
+head(d18)
+
+# now we need to join to site data to account for sets with no cod or pollock caught
+d20 <- read.csv("./data/site2025.csv")
+
+# change date to julian
+d20$julian <- lubridate::yday(as.POSIXct(d20$Date, format = "%m/%d/%Y"))
+
+# clean up 
+d20 <- d20 %>%
+  mutate(year = 2025) %>%
+  filter(use.for.CPUE == "yes") %>%
+  select(Station, year, Bay, Site, julian) %>%
+  mutate(Station = as.integer(as.character(Station)))
+
+d20 <- left_join(d20, d18)
+
+# replace NA with 0
+change <- is.na(d20)
+d20[change] <- 0
+
+# check for May samples
+range(d20$julian) # none!
+
+# clean up 
+d20 <- d20 %>%
+  select(-Station)
+head(d20)
+
+#there are 2 columns with name bay and 2 columns with name site
+#need to rename columns 5 and 6
+names(d20)[5:6]<- c("BAY", "Site")
+head(d20)
+
+names(d20)[2:3] <- c("bay", "site")
+unique(d20$bay)
+unique(d20$site)
+head(d20)
+
+#want to make d20 have only 6 columns so matches 'dat'
+d20a <- d20 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d20a)
+unique(d20$site)
+
+dat <- rbind(dat, d20a)
+head(dat)
+
+#hot dog!
+
+## add 2025 Cook / Anton's data-------------------
+d21 <- read.csv("./data/Kodiak_2025_seine_data_gadid.csv")
+
+head(d21)
+
+# clean up to combine with dat
+# change to julian day
+d21$julian <- lubridate::yday(as.POSIXct(d21$Date, format = "%m/%d/%Y"))
+
+d21 <- d21 %>%
+  select(year, bay, site, julian, cod.age.0, pollock.age.0)
+head(d21)
+
+# reset names
+names(d21) <- names(dat)
+
+#check for repeat names that are misspelled or dissimmilar
+unique(d21$bay)
+unique(dat$bay)
+unique(d21$site)
+unique(dat$site)
+
+#none found, so don't need anything like next 2 lines
+#change <- d9$bay == "Cook Bay"
+#d9$bay[change] <- "Cook"
+
+# check that worked
+site.dat <- unique(filter(dat, bay %in% c("Cook", "Anton Larsen"))$site)
+site.d21 <-  unique(d21$site)
+check.sites <- data.frame(dat = str_sort(site.dat),
+                          d21 = str_sort(site.d21))
+
+# combine
+dat <- rbind(dat, d21)
+View(dat)
+#data look awesome!
+
+# check
+g <- ggplot(dat) +
+  aes(x = year, y = cod.age.0, color = site) +
+  geom_point() +
+  facet_wrap( ~ bay) +
+  theme(legend.position = "none")
+print(g)
+
+# save
+write.csv(dat, "./data/age.0_cod_pollock_seine_cpue.csv")
+
