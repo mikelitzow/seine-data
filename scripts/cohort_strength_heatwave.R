@@ -178,27 +178,34 @@ ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
 ggsave("./figs/seine_cod_age0_abundance_heatwave_global_model.png", width = 4, height = 6, units = 'in')
 
 
+# 
+# 
+# # round, rename columns, and save
+# plot.cod <- plot.cod[,1:5]
+# plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
+# names(plot.cod) <- c("heatwave status", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
+# write.csv(plot.cod, "./output/seine_cod_age0_abundance_heatwave_restricted_bays.csv", row.names = F)
+
+### model heatwave effects for Eastern Kodiak only
+
+## limit data to Cook and Anton Larsen
+
+dat_temp <- dat_reduced %>%
+  filter(region_fac == "Eastern Kodiak")
 
 
-# round, rename columns, and save
-plot.cod <- plot.cod[,1:5]
-plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
-names(plot.cod) <- c("heatwave status", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
-write.csv(plot.cod, "./output/seine_cod_age0_abundance_heatwave_restricted_bays.csv", row.names = F)
-
-### model heatwave effects for reduced set of bays with year nested within heatwave group
 ## Define model formula
-time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 | heatwave_fac/year_fac),
-                           zi ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac)+ (1 | heatwave_fac/year_fac))
+time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
+                           zi ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac))
 
 ## cod fit: zero-inflated --------------------------------------
-cod_time.series_zinb <- brm(time.series_formula,
+mhw_zinb <- brm(time.series_formula,
                             data = dat_reduced,
                             prior = priors_zinb,
                             family = zinb,
-                            cores = 4, chains = 4, iter = 4000,
+                            cores = 4, chains = 4, iter = 3000,
                             save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.999, max_treedepth = 11))
+                            control = list(adapt_delta = 0.99, max_treedepth = 11))
 #cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
 saveRDS(cod_time.series_zinb, file = "output/cod_heatwave_zinb_restricted_bays_nested_year_heatwave.rds")
 
