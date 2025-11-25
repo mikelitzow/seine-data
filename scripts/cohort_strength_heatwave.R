@@ -104,29 +104,55 @@ global_mhw_region_zinb <- brm(time.series_formula,
                             control = list(adapt_delta = 0.999, max_treedepth = 11))
 
 #cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-saveRDS(cod_time.series_zinb, file = "output/cod_heatwave_zinb.rds")
+saveRDS(global_mhw_region_zinb, file = "output/global_mhw_region_zinb.rds")
 
-cod_time.series_zinb <- readRDS("./output/cod_heatwave_zinb.rds")
-check_hmc_diagnostics(cod_time.series_zinb$fit)
-neff_lowest(cod_time.series_zinb$fit)
-rhat_highest(cod_time.series_zinb$fit)
-summary(cod_time.series_zinb)
-bayes_R2(cod_time.series_zinb)
+global_mhw_region_zinb <- readRDS("./output/global_mhw_region_zinb.rds")
+check_hmc_diagnostics(global_mhw_region_zinb$fit)
+neff_lowest(global_mhw_region_zinb$fit)
+rhat_highest(global_mhw_region_zinb$fit)
+summary(global_mhw_region_zinb)
+bayes_R2(global_mhw_region_zinb)
 
 
 y <- dat_reduced$cod
-yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_time.series_zinb), 25), ]) +
+yrep_global_mhw_region_zinb  <- fitted(global_mhw_region_zinb, scale = "response", summary = FALSE)
+ppc_dens_overlay(y = y, yrep = yrep_global_mhw_region_zinb[sample(nrow(yrep_global_mhw_region_zinb), 25), ]) +
   xlim(0, 500) +
-  ggtitle("cod_time.series_zinb")
+  ggtitle("global_mhw_region_zinb")
 
-trace_plot(cod_time.series_zinb$fit)
+trace_plot(global_mhw_region_zinb$fit)
 
 
 ## Cod predicted effects ---------------------------------------
+## region estimates
+## 95% CI
+ce1s_1 <- conditional_effects(global_mhw_region_zinb, effect = "region_fac", re_formula = NA,
+                              probs = c(0.025, 0.975))  
+
+plot.cod <- ce1s_1$region_fac %>%
+  select(region_fac, estimate__, se__, lower__, upper__)
+
+# reorder heatwave status for plotting
+plot.cod <- plot.cod %>%
+  mutate(order = case_when(
+  region_fac == "Shumagin Islands" ~ 1,
+  region_fac == "Agripina" ~ 2,
+  region_fac == "Kaiugnak" ~ 3,
+  region_fac == "Eastern Kodiak" ~ 4),
+  region_fac = reorder(region_fac, order))
+
+ggplot(plot.cod, aes(region_fac, estimate__)) +
+  geom_col(color = "black", fill = "grey") +
+  geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
+  ylab("Age-0 cod / set") +
+  scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
+  coord_trans(y = "pseudo_log") +
+  xlab("Heatwave status")
+
+ggsave("./figs/seine_cod_age0_abundance_region_global_model.png", width = 4, height = 6, units = 'in')
 
 ## 95% CI
-ce1s_1 <- conditional_effects(cod_time.series_zinb, effect = "heatwave_fac", re_formula = NA,
+ce1s_1 <- conditional_effects(global_mhw_region_zinb, effect = "heatwave_fac", re_formula = NA,
                               probs = c(0.025, 0.975))  
 
 plot.cod <- ce1s_1$heatwave_fac %>%
@@ -135,11 +161,11 @@ plot.cod <- ce1s_1$heatwave_fac %>%
 # reorder heatwave status for plotting
 plot.cod <- plot.cod %>%
   mutate(order = case_when(
-  heatwave_fac == "before" ~ 1,
-  heatwave_fac == "during" ~ 2,
-  heatwave_fac == "adjacent" ~ 3,
-  heatwave_fac == "after" ~ 4),
-  heatwave_fac = reorder(heatwave_fac, order))
+    heatwave_fac == "before" ~ 1,
+    heatwave_fac == "during" ~ 2,
+    heatwave_fac == "adjacent" ~ 3,
+    heatwave_fac == "after" ~ 4),
+    heatwave_fac = reorder(heatwave_fac, order))
 
 ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
   geom_col(color = "black", fill = "grey") +
@@ -149,7 +175,10 @@ ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
   coord_trans(y = "pseudo_log") +
   xlab("Heatwave status")
 
-ggsave("./figs/seine_cod_age0_abundance_heatwave_restricted_bays.png", width = 4, height = 6, units = 'in')
+ggsave("./figs/seine_cod_age0_abundance_heatwave_global_model.png", width = 4, height = 6, units = 'in')
+
+
+
 
 # round, rename columns, and save
 plot.cod <- plot.cod[,1:5]
