@@ -6,7 +6,9 @@ library(mgcv)
 library(rstan)
 library(brms)
 library(bayesplot)
+
 source("./scripts/stan_utils.R")
+
 theme_set(theme_bw())
 
 dat <- read.csv("./data/age.0_cod_pollock_seine_cpue.csv", row.names = 1)
@@ -44,12 +46,38 @@ dat_reduced <- dat %>%
 # check
 unique(dat_reduced$bay_fac)
 
+# check for site-bay-year combinations
+check <- dat_reduced %>%
+  group_by(year_fac, bay_fac, site_fac) %>%
+  summarise(n = n())
+
+View(check)
+
+# and define region codes used in manuscript
+dat_reduced <- dat_reduced %>%
+  mutate(region_fac = 
+           as.factor(case_when(
+             bay_fac == "Agripina" ~ "Agripina",
+             bay_fac %in% c("Anton Larsen", "Cook") ~ "Eastern Kodiak",
+             bay_fac == "Kaiugnak" ~ "Kaiugnak", 
+             bay_fac %in% c("Falmouth", "Baralof", "Sand Point") ~ "Shumagin Islands"
+           )))
+
+# check for bay-region-year combinations
+check <- dat_reduced %>%
+  group_by(year_fac, region_fac, bay_fac) %>%
+  summarise(n = n())
+
+View(check) # looks good
 
 ## cod brms: setup ---------------------------------------------
 
+## Begin with a global model including heatwave status and region
+## Excluding year as a group-level effect because it is conflated with heatwave status
+
 ## Define model formula
-time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 | year_fac),
-                           zi ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac)+ (1 | year_fac))
+time.series_formula <-  bf(cod ~ heatwave_fac + region_fac + s(julian, k = 4) + (1 | bay_fac/site_fac),
+                           zi ~ heatwave_fac + region_fac + s(julian, k = 4) + (1 | bay_fac/site_fac))
 
 ## Set model distributions
 zinb <- zero_inflated_negbinomial(link = "log", link_shape = "log", link_zi = "logit")
@@ -67,13 +95,14 @@ priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
 
 
 ## cod fit: zero-inflated --------------------------------------
-cod_time.series_zinb <- brm(time.series_formula,
+global_mhw_region_zinb <- brm(time.series_formula,
                             data = dat_reduced,
                             prior = priors_zinb,
                             family = zinb,
                             cores = 4, chains = 4, iter = 4000,
                             save_pars = save_pars(all = TRUE),
                             control = list(adapt_delta = 0.999, max_treedepth = 11))
+
 #cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
 saveRDS(cod_time.series_zinb, file = "output/cod_heatwave_zinb.rds")
 
