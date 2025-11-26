@@ -200,35 +200,36 @@ time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/
 
 ## cod fit: zero-inflated --------------------------------------
 mhw_zinb <- brm(time.series_formula,
-                            data = dat_reduced,
+                            data = dat_temp,
                             prior = priors_zinb,
                             family = zinb,
-                            cores = 4, chains = 4, iter = 3000,
+                            cores = 4, chains = 4, iter = 2500,
                             save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.99, max_treedepth = 11))
+                            control = list(adapt_delta = 0.9999, max_treedepth = 14))
 #cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-saveRDS(cod_time.series_zinb, file = "output/cod_heatwave_zinb_restricted_bays_nested_year_heatwave.rds")
+saveRDS(mhw_zinb, file = "output/cod_heatwave_zinb_cook_anton.rds")
 
-cod_time.series_zinb <- readRDS("./output/cod_heatwave_zinb_restricted_bays_nested_year_heatwave.rds")
-check_hmc_diagnostics(cod_time.series_zinb$fit)
-neff_lowest(cod_time.series_zinb$fit)
-rhat_highest(cod_time.series_zinb$fit)
-summary(cod_time.series_zinb)
-bayes_R2(cod_time.series_zinb)
+mhw_zinb <- readRDS("./output/cod_heatwave_zinb_cook_anton.rds")
+check_hmc_diagnostics(mhw_zinb$fit)
+neff_lowest(mhw_zinb$fit)
+rhat_highest(mhw_zinb$fit)
+summary(mhw_zinb)
+bayes_R2(mhw_zinb)
 
 
-y <- dat$cod
-yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_time.series_zinb), 25), ]) +
+y <- dat_temp$cod
+yrep_mhw_zinb  <- fitted(mhw_zinb, scale = "response", summary = FALSE)
+ppc_dens_overlay(y = y, yrep = yrep_mhw_zinb[sample(nrow(yrep_mhw_zinb), 25), ]) +
   xlim(0, 500) +
-  ggtitle("cod_time.series_zinb")
+  ggtitle("mhw_zinb")
 
-trace_plot(cod_time.series_zinb$fit)
+
+trace_plot(mhw_zinb$fit)
 
 ## Cod predicted effects ---------------------------------------
 
 ## 95% CI
-ce1s_1 <- conditional_effects(cod_time.series_zinb, effect = "heatwave_fac", re_formula = NA,
+ce1s_1 <- conditional_effects(mhw_zinb, effect = "heatwave_fac", re_formula = NA,
                               probs = c(0.025, 0.975))  
 
 plot.cod <- ce1s_1$heatwave_fac %>%
