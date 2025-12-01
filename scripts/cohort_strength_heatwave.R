@@ -312,8 +312,94 @@ ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
 
 ggsave("./figs/seine_cod_age0_abundance_heatwave_all_bays.png", width = 4, height = 6, units = 'in')
 
+## cod brms: setup ---------------------------------------------
+
+## And now regional model for 2018-2023 - including year as a group-level effect
+
+## Limit data to desired years
+dat_temp <- dat_reduced %>%
+  filter(year %in% 2018:2023)
+
+
+## Define model formula
+time.series_formula <-  bf(cod ~ region_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 | year_fac),
+                           zi ~ region_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 | year_fac))
+
+## Set model distributions
+zinb <- zero_inflated_negbinomial(link = "log", link_shape = "log", link_zi = "logit")
+
+## Set priors
+priors_zinb <- c(set_prior("normal(0, 3)", class = "b"),
+                 set_prior("normal(0, 3)", class = "Intercept"),
+                 set_prior("student_t(3, 0, 3)", class = "sd"),
+                 set_prior("student_t(3, 0, 3)", class = "sds"),
+                 set_prior("gamma(0.01, 0.01)", class = "shape"),
+                 set_prior("normal(0, 3)", class = "b", dpar = "zi"),
+                 set_prior("logistic(0, 1)", class = "Intercept", dpar = "zi"),
+                 set_prior("student_t(3, 0, 3)", class = "sd", dpar = "zi"),
+                 set_prior("student_t(3, 0, 3)", class = "sds", dpar = "zi"))
+
+
+## cod fit: zero-inflated --------------------------------------
+region_zinb <- brm(time.series_formula,
+                              data = dat_temp,
+                              prior = priors_zinb,
+                              family = zinb,
+                              cores = 4, chains = 4, iter = 2500,
+                              save_pars = save_pars(all = TRUE),
+                              control = list(adapt_delta = 0.9999, max_treedepth = 11))
+
+#cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
+saveRDS(region_zinb, file = "output/region_zinb.rds")
+
+region_zinb <- readRDS("./output/region_zinb.rds")
+check_hmc_diagnostics(region_zinb$fit)
+neff_lowest(region_zinb$fit)
+rhat_highest(region_zinb$fit)
+summary(region_zinb)
+bayes_R2(region_zinb)
+
+
+y <- dat_temp$cod
+yrep_region_zinb  <- fitted(region_zinb, scale = "response", summary = FALSE)
+ppc_dens_overlay(y = y, yrep = region_zinb[sample(nrow(region_zinb), 25), ]) +
+  xlim(0, 500) +
+  ggtitle("region_zinb")
+
+trace_plot(region_zinb$fit)
+
+
+## Cod predicted effects ---------------------------------------
+## region estimates
+## 95% CI
+ce1s_1 <- conditional_effects(region_zinb, effect = "region_fac", re_formula = NA,
+                              probs = c(0.025, 0.975))  
+
+plot.cod <- ce1s_1$region_fac %>%
+  select(region_fac, estimate__, se__, lower__, upper__)
+
+# reorder heatwave status for plotting
+plot.cod <- plot.cod %>%
+  mutate(order = case_when(
+    region_fac == "Shumagin Islands" ~ 1,
+    region_fac == "Agripina" ~ 2,
+    region_fac == "Kaiugnak" ~ 3,
+    region_fac == "Eastern Kodiak" ~ 4),
+    region_fac = reorder(region_fac, order))
+
+ggplot(plot.cod, aes(region_fac, estimate__)) +
+  geom_col(color = "black", fill = "grey") +
+  geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
+  ylab("Age-0 cod / set") +
+  scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
+  coord_trans(y = "pseudo_log") +
+  xlab("Heatwave status")
+
+ggsave("./figs/seine_cod_age0_abundance_region_model.png", width = 4, height = 6, units = 'in')
+
+
 # round, rename columns, and save
 plot.cod <- plot.cod[,1:5]
 plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
-names(plot.cod) <- c("heatwave status", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
-write.csv(plot.cod, "./output/seine_cod_age0_abundance_heatwave_all_bays.csv", row.names = F)
+names(plot.cod) <- c("region", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
+write.csv(plot.cod, "./output/seine_cod_age0_abundance_region.csv", row.names = F)
