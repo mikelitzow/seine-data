@@ -254,6 +254,16 @@ ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
   xlab("Heatwave status")
 ## does not reduce uncertainty of estimates
 
+ggsave("./figs/seine_cod_age0_abundance_heatwave_Kodiak_bays.png", width = 4, height = 6, units = 'in')
+
+# round, rename columns, and save
+plot.cod <- plot.cod[,1:5]
+plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
+names(plot.cod) <- c("heatwave_status", "cod_per_set", "cod_se", "cod_95percent_LCI", "cod_95percent_UCI")
+write.csv(plot.cod, "./output/seine_cod_age0_abundance_heatwave_kodiak_bays.csv", row.names = F)
+
+
+
 ### model heatwave effects for entire set of bays to see if we get more precision in estimates!
 ## Define model formula
 time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 year_fac),
