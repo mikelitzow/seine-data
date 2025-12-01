@@ -263,66 +263,6 @@ names(plot.cod) <- c("heatwave_status", "cod_per_set", "cod_se", "cod_95percent_
 write.csv(plot.cod, "./output/seine_cod_age0_abundance_heatwave_kodiak_bays.csv", row.names = F)
 
 
-
-### model heatwave effects for entire set of bays to see if we get more precision in estimates!
-## Define model formula
-time.series_formula <-  bf(cod ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac) + (1 year_fac),
-                           zi ~ heatwave_fac + s(julian, k = 4) + (1 | bay_fac/site_fac)+ (1 year_fac))
-## cod fit: zero-inflated --------------------------------------
-cod_time.series_zinb <- brm(time.series_formula,
-                            data = dat,
-                            prior = priors_zinb,
-                            family = zinb,
-                            cores = 4, chains = 4, iter = 4000,
-                            save_pars = save_pars(all = TRUE),
-                            control = list(adapt_delta = 0.999, max_treedepth = 11))
-#cod_time.series_zinb  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-saveRDS(cod_time.series_zinb, file = "output/cod_heatwave_zinb_all_bays.rds")
-
-cod_time.series_zinb <- readRDS("./output/cod_heatwave_zinb_all_bays.rds")
-check_hmc_diagnostics(cod_time.series_zinb$fit)
-neff_lowest(cod_time.series_zinb$fit)
-rhat_highest(cod_time.series_zinb$fit)
-summary(cod_time.series_zinb)
-bayes_R2(cod_time.series_zinb)
-
-
-y <- dat$cod
-yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_cod_time.series_zinb[sample(nrow(yrep_cod_time.series_zinb), 25), ]) +
-  xlim(0, 500) +
-  ggtitle("cod_time.series_zinb")
-
-trace_plot(cod_time.series_zinb$fit)
-
-## Cod predicted effects ---------------------------------------
-
-## 95% CI
-ce1s_1 <- conditional_effects(cod_time.series_zinb, effect = "heatwave_fac", re_formula = NA,
-                              probs = c(0.025, 0.975))  
-
-plot.cod <- ce1s_1$heatwave_fac %>%
-  select(heatwave_fac, estimate__, se__, lower__, upper__)
-
-# reorder heatwave status for plotting
-plot.cod <- plot.cod %>%
-  mutate(order = case_when(
-    heatwave_fac == "before" ~ 1,
-    heatwave_fac == "during" ~ 2,
-    heatwave_fac == "adjacent" ~ 3,
-    heatwave_fac == "after" ~ 4),
-    heatwave_fac = reorder(heatwave_fac, order))
-
-ggplot(plot.cod, aes(heatwave_fac, estimate__)) +
-  geom_col(color = "black", fill = "grey") +
-  geom_errorbar(aes(ymin=lower__, ymax=upper__), width=0.3, size=0.5) +
-  ylab("Age-0 cod / set") +
-  scale_y_continuous(breaks=c(1,5,10,50,100,200,300), minor_breaks = NULL) +
-  coord_trans(y = "pseudo_log") +
-  xlab("Heatwave status")
-
-ggsave("./figs/seine_cod_age0_abundance_heatwave_all_bays.png", width = 4, height = 6, units = 'in')
-
 ## cod brms: setup ---------------------------------------------
 
 ## And now regional model for 2018-2023 - including year as a group-level effect
