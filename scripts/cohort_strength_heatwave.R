@@ -188,10 +188,11 @@ ggsave("./figs/seine_cod_age0_abundance_heatwave_global_model.png", width = 4, h
 
 ### model heatwave effects for Eastern Kodiak only
 
-## limit data to Cook and Anton Larsen
+## limit data to Cook and Anton Larsen and 2007-2023 to match manuscript
 
 dat_temp <- dat_reduced %>%
-  filter(region_fac == "Eastern Kodiak")
+  filter(region_fac == "Eastern Kodiak",
+         year %in% 2007:2023)
 
 
 ## Define model formula
