@@ -13,10 +13,10 @@ seine <- read.csv("./output/seine_cod_age0_abundance_estimates.csv") %>%
   select(year, seine)
 
 model <- read.csv("./data/2023_Pcod_SAFE_recruitment.csv") %>%
-  mutate(model = as.vector(scale(log(age0)))) %>%
+  filter(year <= 2025) %>%
+  mutate(model = as.vector(scale(log(age0))),
+         year = as.integer(year)) %>%
   select(-age0)
-
-names(model)[1] <- "year"
 
 data = left_join(seine, model)
 
