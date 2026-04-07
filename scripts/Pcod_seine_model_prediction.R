@@ -27,6 +27,8 @@ ggplot(data, aes(seine, model)) +
   geom_text(aes(label = year))
 
 # limit to year <= 2023 to avoid uncertainty in more recent data
+data <- data %>%
+  filter(year <= 2023)
 
 ## fit brms model ------------------------
 
@@ -46,12 +48,12 @@ neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
 summary(seine_model_brm)
 bayes_R2(seine_model_brm)
-y <- data$model[data$year <= 2023]
-yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
-  xlim(-6, 6) +
-  ggtitle("seine_model_brm")
-trace_plot(seine_model_brm$fit)
+# y <- data$model[data$year <= 2023]
+# yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm")
+# trace_plot(seine_model_brm$fit)
 
 ## plot
 ce1s_1 <- conditional_effects(seine_model_brm, effect = "seine", re_formula = NA,
@@ -122,12 +124,12 @@ neff_lowest(seine_model_brm_2$fit)
 rhat_highest(seine_model_brm_2$fit)
 summary(seine_model_brm_2)
 bayes_R2(seine_model_brm_2)
-y <- data$model[data$year <= 2016]
-yrep_seine_model_brm_2  <- fitted(seine_model_brm_2, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_2[sample(nrow(yrep_seine_model_brm_2), 25), ]) +
-  xlim(-6, 6) +
-  ggtitle("seine_model_brm_2")
-trace_plot(seine_model_brm_2$fit)
+# y <- data$model[data$year <= 2016]
+# yrep_seine_model_brm_2  <- fitted(seine_model_brm_2, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_2[sample(nrow(yrep_seine_model_brm_2), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm_2")
+# trace_plot(seine_model_brm_2$fit)
 
 ## plot
 ce1s_1 <- conditional_effects(seine_model_brm_2, effect = "seine", re_formula = NA,
@@ -167,7 +169,7 @@ data <- data %>%
 formula <- bf(model ~ seine*era)
 
 seine_model_brm_3 <- brm(formula,
-                         data = data[data$year <= 2023,],
+                         data = data,
                          cores = 4, chains = 4, iter = 2000,
                          save_pars = save_pars(all = TRUE),
                          control = list(adapt_delta = 0.999, max_treedepth = 10))
@@ -180,12 +182,12 @@ neff_lowest(seine_model_brm_3$fit)
 rhat_highest(seine_model_brm_3$fit)
 summary(seine_model_brm_3)
 bayes_R2(seine_model_brm_3)
-y <- data$model[data$year <= 2023]
-yrep_seine_model_brm_3  <- fitted(seine_model_brm_3, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_3[sample(nrow(yrep_seine_model_brm_3), 25), ]) +
-  xlim(-6, 6) +
-  ggtitle("seine_model_brm_3")
-trace_plot(seine_model_brm_3$fit)
+# y <- data$model[data$year <= 2023]
+# yrep_seine_model_brm_3  <- fitted(seine_model_brm_3, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_3[sample(nrow(yrep_seine_model_brm_3), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm_3")
+# trace_plot(seine_model_brm_3$fit)
 
 ## plot
 
@@ -199,7 +201,7 @@ ggplot(seine_effect$`seine:era`, aes(effect1__, estimate__, color = era, fill = 
   geom_ribbon(aes(ymin = lower__, ymax = upper__), alpha = 0.2, color = NA) +
   scale_color_manual(values = cb[c(2,6)]) +
   scale_fill_manual(values = cb[c(2,6)]) + 
-  geom_text(data = data[data$year <= 2020,], aes( x = seine, y = model, label = year)) +
+  geom_text(data = data[data$year <= 2023,], aes( x = seine, y = model, label = year)) +
   labs(x = "Seine estimate",
        y = "Assessment model estimate")
   
@@ -224,12 +226,12 @@ neff_lowest(seine_model_brm_4$fit)
 rhat_highest(seine_model_brm_4$fit)
 summary(seine_model_brm_4)
 bayes_R2(seine_model_brm_4)
-y <- data$model[data$year <= 2023]
-yrep_seine_model_brm_4  <- fitted(seine_model_brm_4, scale = "response", summary = FALSE)
-ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_4[sample(nrow(yrep_seine_model_brm_4), 25), ]) +
-  xlim(-6, 6) +
-  ggtitle("seine_model_brm_4")
-trace_plot(seine_model_brm_3$fit)
+# y <- data$model[data$year <= 2023]
+# yrep_seine_model_brm_4  <- fitted(seine_model_brm_4, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_4[sample(nrow(yrep_seine_model_brm_4), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm_4")
+# trace_plot(seine_model_brm_3$fit)
 
 compare <- loo(seine_model_brm_3, seine_model_brm_4, moment_match = T)
 
@@ -238,19 +240,165 @@ conditions <- make_conditions(seine_model_brm_4, vars = "era")
 era_effect <- conditional_effects(seine_model_brm_4, effect = "seine", re_formula = NA, conditions = conditions,
                                     probs = c(0.025, 0.975)) 
 
-data$era <- if_else(data$year <= 2016, "2006-2016", "2017-2020")
+data$era <- if_else(data$year <= 2016, "2006-2016", "2017-2023")
 
 ggplot(era_effect$seine, aes(effect1__, estimate__, color = era, fill = era)) +
   geom_line() + 
   geom_ribbon(aes(ymin = lower__, ymax = upper__), alpha = 0.2, color = NA) +
   scale_color_manual(values = cb[c(2,6)]) +
   scale_fill_manual(values = cb[c(2,6)]) + 
-  geom_text(data = data[data$year <= 2020,], aes( x = seine, y = model, label = year)) +
+  geom_text(data = data[data$year <= 2023,], aes( x = seine, y = model, label = year)) +
   labs(x = "Seine estimate",
        y = "Assessment model estimate")
 
 
 ggsave("./figs/seine_model_regression_era_intercepts_one_slope.png", width = 6.25, height = 3.5, units = 'in')
+
+### add breakpoint analysis--------------
+
+# loop through each breakpoint that maintains at least 5 years in each window (2010:2018, with )
+
+breakpoint <- seq(from = 2010.5, to = 2018.5, by = 1)
+
+data <- data %>%
+  mutate(era = NA) # clear era
+
+formula <- bf(model ~ seine*era)
+
+output <- data.frame()
+
+for(i in 1:length(breakpoint)){
+
+data$era <- if_else(data$year < breakpoint[i], "Era_1", "Era_2")  
+  
+  
+break_brm <- brm(formula,
+                         data = data,
+                         cores = 4, chains = 4, iter = 2000,
+                         save_pars = save_pars(all = TRUE),
+                         control = list(adapt_delta = 0.999, max_treedepth = 10))
+
+keep <- loo(break_brm, moment_match = T)
+str(keep)
+
+output <- rbind(output,
+                data_frame(breakpoint = breakpoint[i],
+                           elpd_loo = keep$elpd_loo,
+                           se_elpd_loo = keep$se_elpd_loo))
+}
+
+write.csv(output, "./output/breakpoint_output.csv")
+
+
+output <- read.csv("./output/breakpoint_output.csv", row.names = 1)
+
+output <- output %>%
+  mutate(ymin = elpd_loo - 1.96*se_elpd_loo,
+         ymax = elpd_loo + 1.96*se_elpd_loo)
+
+ggplot(output, aes(breakpoint, elpd_loo)) +
+  geom_point() +
+  geom_line() +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax))
+
+ggsave("./figs/breakpoint_variable_slope_intercept.png", width = 6.25, height = 3.5, units = 'in')
+
+
+# fit best model - 2013.5 breakpoint
+
+data <- data %>%
+  mutate(era = if_else(year <= 2013, "2006-2013", "2014-2023"))
+
+formula <- bf(model ~ seine*era)
+
+best_brm_3 <- brm(formula,
+                         data = data,
+                         cores = 4, chains = 4, iter = 2000,
+                         save_pars = save_pars(all = TRUE),
+                         control = list(adapt_delta = 0.999, max_treedepth = 10))
+
+saveRDS(best_brm_3, file = "output/best_brm_3.rds")
+
+best_brm_3 <- readRDS("./output/best_brm_3.rds")
+check_hmc_diagnostics(best_brm_3$fit)
+neff_lowest(best_brm_3$fit)
+rhat_highest(best_brm_3$fit)
+summary(best_brm_3)
+bayes_R2(best_brm_3)
+# y <- data$model[data$year <= 2023]
+# yrep_seine_model_brm_3  <- fitted(seine_model_brm_3, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_3[sample(nrow(yrep_seine_model_brm_3), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm_3")
+# trace_plot(seine_model_brm_3$fit)
+
+## plot
+
+
+seine_effect <- conditional_effects(best_brm_3, effect = "seine:era", re_formula = NA,
+                                    probs = c(0.025, 0.975)) 
+
+
+ggplot(seine_effect$`seine:era`, aes(effect1__, estimate__, color = era, fill = era)) +
+  geom_line() + 
+  geom_ribbon(aes(ymin = lower__, ymax = upper__), alpha = 0.2, color = NA) +
+  scale_color_manual(values = cb[c(2,6)]) +
+  scale_fill_manual(values = cb[c(2,6)]) + 
+  geom_text(data = data[data$year <= 2023,], aes( x = seine, y = model, label = year)) +
+  labs(x = "Seine estimate",
+       y = "Assessment model estimate")
+
+
+ggsave("./figs/era_slope_intercept_2013.5.png", width = 6.25, height = 3.5, units = 'in')
+
+## breakpoint analysis for model 4 (one slope, era-specific intercepts)
+
+# loop through each breakpoint that maintains at least 5 years in each window (2010:2018, with )
+
+breakpoint <- seq(from = 2010.5, to = 2018.5, by = 1)
+
+data <- data %>%
+  mutate(era = NA) # clear era
+
+formula <- bf(model ~ seine + era)
+
+output_int <- data.frame()
+
+for(i in 1:length(breakpoint)){
+  
+  data$era <- if_else(data$year < breakpoint[i], "Era_1", "Era_2")  
+  
+  
+  break_brm <- brm(formula,
+                   data = data,
+                   cores = 4, chains = 4, iter = 2000,
+                   save_pars = save_pars(all = TRUE),
+                   control = list(adapt_delta = 0.999, max_treedepth = 10))
+  
+  keep <- loo(break_brm, moment_match = T)
+  
+  output_int <- rbind(output_int,
+                  data_frame(breakpoint = breakpoint[i],
+                             elpd_loo = keep$elpd_loo,
+                             se_elpd_loo = keep$se_elpd_loo))
+}
+
+write.csv(output_int, "./output/breakpoint_output_variable_intercept.csv")
+
+
+output_int <- read.csv("./output/breakpoint_output_variable_intercept.csv", row.names = 1)
+
+output_int <- output_int %>%
+  mutate(ymin = elpd_loo - 1.96*se_elpd_loo,
+         ymax = elpd_loo + 1.96*se_elpd_loo)
+
+ggplot(output_int, aes(breakpoint, elpd_loo)) +
+  geom_point() +
+  geom_line() +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax))
+
+ggsave("./figs/breakpoint_variable_intercept.png", width = 6.25, height = 3.5, units = 'in')
+
 
 # ## just for kicks, fit through 2022
 # ## fit model with one seine slope, different era intercepts
