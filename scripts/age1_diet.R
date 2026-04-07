@@ -180,19 +180,40 @@ Wgt_prey <- ggplot(data=codprey, aes(NMDS1, NMDS2))+
 plot(Wgt_prey)
 #above is great. but also want overlay Try the following
 
-plot(Wgt_prey) +
-  geom_line(data = prey_wgtMDS, aes(x=NMDS1, y = NMDS2, display = c('species')), colour = "black", fontface = "bold", label = row.names(en_prey))
+align_plots(
+  plotlist = gg, en_prey,
+  align = c("none", "h", "v", "hv"),
+  axis = "rlbt",
+  greedy = TRUE)
+#above did not work either
+
 
 plot(Wgt_prey) + plot(prey_wgtMDS, type = 't', display = c('species'))
 #this sort of works but not to correct scale. not perfect overlap
 #try to get the second plot to print full scale with overlap.
-#START HERE NEXT TIME< WITH ABOVE
+###########START HERE NEXT TIME< WITH ABOVE
+plot(Wgt_prey) 
+par(new = TRUE)
+plot(prey_wgtMDS, type = 't', display = c('species'))
+#above 3 lines do the same. maybe try layout.show
+
+plot(Wgt_prey) 
+par(new = TRUE)
+plot(en_prey)
 
 plot(gg, aes(NMDS1, NMDS2)) +
-  geom_line()+
-  geom_line(prey_wgtMDS, aes(NMDS1, NMDS2), color = "black")
+  plot(en_prey)
+
+plot(Wgt_prey) + 
+  plot(en_prey)           
+
+gg
+  
+
+geom_line(prey_wgtMDS, aes(NMDS1, NMDS2), color = "black")
 #above gives me error in if (newpage) grid.newpage(): the condition has length >1
-#I am going to pivot and try something else.
+#I am going to pivot and try something else.(
+
 
 ##tried this but none of it worked:
 library(ggpubr)
