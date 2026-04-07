@@ -296,10 +296,29 @@ output <- output %>%
   mutate(ymin = elpd_loo - 1.96*se_elpd_loo,
          ymax = elpd_loo + 1.96*se_elpd_loo)
 
+# get elpd for stationary model to compare on plot
+seine_model_brm <- readRDS("./output/seine_model_brm.rds")
+stationary_loo <- loo(seine_model_brm, moment_match = T)
+
+stationary_loo$elpd_loo
+stationary_loo$elpd_loo
+
 ggplot(output, aes(breakpoint, elpd_loo)) +
+  geom_rect(
+    aes(
+      xmin = -Inf, xmax = Inf,
+      ymin = stationary_loo$elpd_loo - 1.96 * stationary_loo$se_elpd_loo,
+      ymax = stationary_loo$elpd_loo + 1.96 * stationary_loo$se_elpd_loo
+    ),
+    fill = "grey",
+    alpha = 0.05,   # transparency
+    color = NA     # removes border
+  ) +
   geom_point() +
   geom_line() +
-  geom_errorbar(aes(ymin = ymin, ymax = ymax))
+  geom_errorbar(aes(ymin = ymin, ymax = ymax)) +
+  ggtitle("Era-specific slopes and intercepts") +
+  geom_hline(yintercept = stationary_loo$elpd_loo, lty = 2)
 
 ggsave("./figs/breakpoint_variable_slope_intercept.png", width = 6.25, height = 3.5, units = 'in')
 
@@ -353,7 +372,7 @@ ggsave("./figs/era_slope_intercept_2013.5.png", width = 6.25, height = 3.5, unit
 
 ## breakpoint analysis for model 4 (one slope, era-specific intercepts)
 
-# loop through each breakpoint that maintains at least 5 years in each window (2010:2018, with )
+# loop through each breakpoint that maintains at least 5 years in each window (2010:2018)
 
 breakpoint <- seq(from = 2010.5, to = 2018.5, by = 1)
 
@@ -392,13 +411,84 @@ output_int <- output_int %>%
   mutate(ymin = elpd_loo - 1.96*se_elpd_loo,
          ymax = elpd_loo + 1.96*se_elpd_loo)
 
+# get elpd for stationary model to compare on plot
+seine_model_brm <- readRDS("./output/seine_model_brm.rds")
+stationary_loo <- loo(seine_model_brm, moment_match = T)
+
+stationary_loo$elpd_loo
+stationary_loo$elpd_loo
+
 ggplot(output_int, aes(breakpoint, elpd_loo)) +
+  geom_rect(
+    aes(
+      xmin = -Inf, xmax = Inf,
+      ymin = stationary_loo$elpd_loo - 1.96 * stationary_loo$se_elpd_loo,
+      ymax = stationary_loo$elpd_loo + 1.96 * stationary_loo$se_elpd_loo
+    ),
+    fill = "grey",
+    alpha = 0.05,   # transparency
+    color = NA     # removes border
+  ) +
   geom_point() +
   geom_line() +
-  geom_errorbar(aes(ymin = ymin, ymax = ymax))
+  geom_errorbar(aes(ymin = ymin, ymax = ymax)) +
+  ggtitle("One slope, era-specific intercepts") +
+  geom_hline(yintercept = stationary_loo$elpd_loo, lty = 2)
+
 
 ggsave("./figs/breakpoint_variable_intercept.png", width = 6.25, height = 3.5, units = 'in')
 
+# fit best variable-intercept model - 2013.5 breakpoint
+
+data <- data %>%
+  mutate(era = if_else(year <= 2013, "2006-2013", "2014-2023"))
+
+formula <- bf(model ~ seine + era)
+
+best_brm_4 <- brm(formula,
+                  data = data,
+                  cores = 4, chains = 4, iter = 2000,
+                  save_pars = save_pars(all = TRUE),
+                  control = list(adapt_delta = 0.999, max_treedepth = 10))
+
+saveRDS(best_brm_4, file = "output/best_brm_4.rds")
+
+best_brm_4 <- readRDS("./output/best_brm_4.rds")
+check_hmc_diagnostics(best_brm_4$fit)
+neff_lowest(best_brm_4$fit)
+rhat_highest(best_brm_4$fit)
+summary(best_brm_4)
+bayes_R2(best_brm_4)
+# y <- data$model[data$year <= 2023]
+# yrep_seine_model_brm_4  <- fitted(seine_model_brm_4, scale = "response", summary = FALSE)
+# ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_4[sample(nrow(yrep_seine_model_brm_4), 25), ]) +
+#   xlim(-6, 6) +
+#   ggtitle("seine_model_brm_4")
+# trace_plot(seine_model_brm_4$fit)
+
+## plot
+
+
+conditions <- make_conditions(best_brm_4, vars = "era")
+
+era_effect <- conditional_effects(best_brm_4, effect = "seine", re_formula = NA, conditions = conditions,
+                                  probs = c(0.025, 0.975)) 
+
+data$era <- if_else(data$year <= 2013, "2006-2013", "2014-2023")
+
+ggplot(era_effect$seine, aes(effect1__, estimate__, color = era, fill = era)) +
+  geom_line() + 
+  geom_ribbon(aes(ymin = lower__, ymax = upper__), alpha = 0.2, color = NA) +
+  scale_color_manual(values = cb[c(2,6)]) +
+  scale_fill_manual(values = cb[c(2,6)]) + 
+  geom_text(data = data[data$year <= 2023,], aes( x = seine, y = model, label = year)) +
+  labs(x = "Seine estimate",
+       y = "Assessment model estimate")
+
+
+ggsave("./figs/era_intercept_2013.5.png", width = 6.25, height = 3.5, units = 'in')
+
+loo(best_brm_3, best_brm_4, moment_match = T) # again, model 3 is the best (variable intercepts and slopes), but the difference is slight / not meaningful!
 
 # ## just for kicks, fit through 2022
 # ## fit model with one seine slope, different era intercepts
