@@ -300,8 +300,6 @@ output <- output %>%
 seine_model_brm <- readRDS("./output/seine_model_brm.rds")
 stationary_loo <- loo(seine_model_brm, moment_match = T)
 
-stationary_loo$elpd_loo
-stationary_loo$elpd_loo
 
 ggplot(output, aes(breakpoint, elpd_loo)) +
   geom_rect(
