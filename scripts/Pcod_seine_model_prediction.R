@@ -17,7 +17,7 @@ model <- read.csv("./data/2023_Pcod_SAFE_recruitment.csv") %>%
   mutate(model = as.vector(scale(log(age0))),
          year = as.integer(year)) %>%
   select(-age0)
-
+#this is table from most recent SAFE document
 data = left_join(seine, model)
 
 ggplot(data[data$year <= 2020,], aes(seine, model)) +
@@ -79,7 +79,7 @@ model.plot <- ggplot(dat_ce) +
   geom_ribbon(aes(ymin = lower_80, ymax = upper_80), fill = "grey80") +
   geom_line(size = 1, color = "red3") +
   labs(x = "Seine abundance", y = "Model recruitment") +
-  geom_text(data = data[data$year <= 2019,], aes(seine, model, label = year), size=3) 
+  geom_text(data = data[data$year <= 2023,], aes(seine, model, label = year), size=3) 
 
 print(model.plot)
 
