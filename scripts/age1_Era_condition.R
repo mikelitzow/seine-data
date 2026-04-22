@@ -370,16 +370,26 @@ MuMIn::AICc(b,c,d)
 summary(d)
 plot(d)
 
-
-plot_HSIdry <- ggplot(data = cod1, aes(x = factor(Era_year), y = HSI_dry, fill = Era)) +
+plot_A1 <- ggplot(data = cod1, aes(x = factor(Era_year), y = A1, fill = Era)) +
   geom_boxplot()+
   geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
   theme_minimal()+
-  labs(x = "Era", y = "Hepatosomatic Index HSI_dry")+
+  labs(x = "Era", y = "Otolith First Annulus Width")+
   theme(legend.position ="null") 
 
-plot(plot_HSIdry)
+plot(plot_A1)
+##not diff in A1 by Era
+#What about A1toEdge?
 
+plot_A1Edge <- ggplot(data = cod1, aes(x = factor(Era_year), y = A1_edge, fill = Era)) +
+  geom_boxplot()+
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
+  theme_minimal()+
+  labs(x = "Era", y = "Distance First Annulus to Edge")+
+  theme(legend.position ="null") 
+
+plot(plot_A1Edge)
+#Again, no difference in distance to edge (growth on otolith)
 
 #ggsave(filename = "C:/Users/alask/Documents/Git/KDSP_gadids/output/cod_kwet_by_age_year.png", 
 #       width = 8,
