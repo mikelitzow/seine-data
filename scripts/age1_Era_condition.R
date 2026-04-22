@@ -348,3 +348,39 @@ codLW <- ggplot(data = cod1,
   geom_point(data = codA, color = "red", size = 2.5, alpha = 0.8)  
 
 codLW
+
+###Now test is there a relationship between A1 and ERa? 
+##A1 only measured on Right otolith
+head(cod1)
+
+A1_era <- lm(A1 ~ TL + Era, data = cod1, na.omit = T)
+summary(A1_era)
+
+#doesn't appear that A1 varies by Era
+
+b <- lm(formula = A1 ~ Era_year, data = cod1)
+summary(b)
+c <- gam(A1 ~ s(TL, k=4) + Era, data = cod1)
+summary(c)
+#we already know that fish length greater in Era A
+
+d <- lm(formula = A1 ~ TL + Era, data = cod1)
+MuMIn::AICc(b,c,d)
+#again, c and d are same. so use linear model. yes difference w A1 and TL, but not ERA
+summary(d)
+plot(d)
+
+
+plot_HSIdry <- ggplot(data = cod1, aes(x = factor(Era_year), y = HSI_dry, fill = Era)) +
+  geom_boxplot()+
+  geom_boxplot(fill = ifelse(levels(cod1$Era)=="A", "#FFCC66", "#99CCFF"))+
+  theme_minimal()+
+  labs(x = "Era", y = "Hepatosomatic Index HSI_dry")+
+  theme(legend.position ="null") 
+
+plot(plot_HSIdry)
+
+
+#ggsave(filename = "C:/Users/alask/Documents/Git/KDSP_gadids/output/cod_kwet_by_age_year.png", 
+#       width = 8,
+#       height = 6, units = "in")
