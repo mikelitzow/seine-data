@@ -110,8 +110,8 @@ cod_time.series_zinb <- brm(time.series_formula,
                             save_pars = save_pars(all = TRUE),
                             control = list(adapt_delta = 0.999, max_treedepth = 11))
 
-cod_time.series_zinb24  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-saveRDS(cod_time.series_zinb24, file = "output/age1_cod_time.series_zinb24.rds")
+cod_time.series_zinb25  <- add_criterion(cod_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
+saveRDS(cod_time.series_zinb25, file = "output/age1_cod_time.series_zinb25.rds")
 #got error message that bulk effective sample size too low, indicating posterior means and medians may be unreliable
 #suggested running chains for more iterations may help. I ran initially with 4000 iterations
 #try again with iter = 5000 (below, called cod1_time....)
@@ -126,14 +126,9 @@ cod1_time.series_zinb <- brm(time.series_formula,
 
 #no errors. good sign
 
-#cod1_time.series_zinb2024  <- add_criterion(cod1_time.series_zinb, c("loo", "bayes_R2"), moment_match = TRUE)
-#moment match error. will run again wtihout moment_match
-#cod1_time.series_zinb2024  <- add_criterion(cod1_time.series_zinb, c("loo", "bayes_R2"))
-#that quickly didn't work either. Mike said we can skip it
+saveRDS(cod1_time.series_zinb, file = "output/age1_cod_time.series_zinb2025.rds")
 
-saveRDS(cod1_time.series_zinb, file = "output/age1_cod_time.series_zinb2024.rds")
-
-cod_time.series_zinb <- readRDS("./output/age1_cod_time.series_zinb2024.rds")
+cod_time.series_zinb <- readRDS("./output/age1_cod_time.series_zinb2025.rds")
 check_hmc_diagnostics(cod_time.series_zinb$fit)
 #good, no pathological behaviour, no saturation or divergence
 
@@ -142,7 +137,7 @@ rhat_highest(cod_time.series_zinb$fit)
 #good, all over 1
 summary(cod_time.series_zinb)
 bayes_R2(cod_time.series_zinb)
-# R2 is 0.25
+# R2 is 0.24
 
 #plot(cod_time.series_zinb$criteria$loo, "k")
 plot(conditional_smooths(cod_time.series_zinb), ask = FALSE)
@@ -174,7 +169,7 @@ ggplot(plot.cod, aes(year_fac, estimate__)) +
   coord_trans(y = "pseudo_log") +
   theme(axis.title.x = element_blank())
 
-ggsave("./figs/seine_cod_age1_abundance_estimates.png", width = 6, height = 4, units = 'in')
+ggsave("./figs/seine_cod_age1_abundance_estimates_2025.png", width = 6, height = 4, units = 'in')
 
 # round, rename columns, and save
 plot.cod[,2:5] <- round(plot.cod[,2:5], 2)
