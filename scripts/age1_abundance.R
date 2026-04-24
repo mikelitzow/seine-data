@@ -40,13 +40,13 @@ check <- dat %>%
   dplyr::summarise(prop_0 = 1-sum(cod>0)/n())
 
 check
-View(check) ##95 sites combos with age-1 present
+View(check) ##95 sites combos with age-1 present, regardless of year.
 
 # restrict to positive sites (at least one age-1 cod caught over time)
 keep <- check %>%
   filter(prop_0 < 1)
 
-nrow(keep) # 35 sites kept
+nrow(keep) # 40 sites kept
 View(keep)
 # restrict dat to these sites 
 dat <- dat %>%
@@ -66,7 +66,7 @@ check2 <- dat %>%
 
 check2
 
-# limit to 11 bays with > 1 site catching age 1 cod
+# limit to 13 bays with > 1 site catching age 1 cod
 
 dat <- dat %>%
   filter(bay %in% check2$bay[check2$n_sites > 1])
