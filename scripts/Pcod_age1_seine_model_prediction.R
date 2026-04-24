@@ -10,6 +10,7 @@ theme_set(theme_bw())
 ###what follows is age-0 from seine and model age-3###
 
 seine <- read.csv("./output/seine_cod_age0_abundance_estimates.csv") %>%
+  mutate(year= as.character(year)) %>%
   mutate(seine = as.vector(scale(log(cod_per_set)))) %>%
   select(year, seine)
 
@@ -24,7 +25,8 @@ data = left_join(seine, model)
 ggplot(data, aes(seine, model)) +
   geom_text(aes(label = year))
 
-## fit brms model ------------------------
+ggsave("./figs/seine_model_scatter_estimates.png", width = 4, height = 3, units = 'in')
+## fit brms model for YC up to 2020------------------------
 
 formula <- bf(model ~ s(seine, k = 4))
 
@@ -315,17 +317,17 @@ ggsave("./figs/seine_model_regression_era_intercepts_one_slope_through_2022.png"
 
 ##################
 ###what follows is age-0 from seine and age-1 from seine###
-#need to lag the age-1 data so lagged it in excel and made .csv with Cohort column
-#Cohort = cohort year
-#year 2023 removed because do not have age-1 from cohort 2023 (not sampled yet)
-##thus, this is for years 2006 - 2022 only
+#need to lag the age-1 data so lagged it in excel and made .csv with Cohort column for year class
+#Cohort = cohort year or year class
+#year 2025 removed because do not have age-1 from cohort 2025 (not sampled yet, will be captured in 2026)
+##thus, this is for age-0 in years 2006 - 2024 only and the age-1 cod in 2025 (2024 YC)
 
 juv_seine <- read.csv("./output/seine_cod_age01_abundance_estimates.csv") %>%
   mutate(seine = as.vector(scale(log(cod0_per_set)))) %>%
   select(Cohort, seine)
 
 names(juv_seine)[2] <- "age0"
-# View(juv_seine)
+#View(juv_seine)
 
 juv_seine1 <- read.csv("./output/seine_cod_age01_abundance_estimates.csv") %>%
   mutate(seine1 = as.vector(scale(log(cod1_per_set +0.01)))) %>%
@@ -338,8 +340,12 @@ juv_data = left_join(juv_seine, juv_seine1)
 
 # View(juv_data) #looks good
 
-ggplot(juv_data[juv_data$Cohort <= 2022,], aes(age0, age1)) +
-  geom_text(aes(label = Cohort))
+ggplot(juv_data[juv_data$Cohort <= 2024,], aes(age0, age1)) +
+  geom_text(aes(label = Cohort))+
+  labs(x = "Age-0 Pacific cod seine estimate",
+       y = "Age-1 Pacific cod seine estimate")
+
+ggsave("./figs/seine_0_1_model_OWscatter2024.png", width = 4, height = 3, units = 'in')
 
 ## fit brms model ------------------------
 
