@@ -20,7 +20,7 @@ model <- read.csv("./data/2023_Pcod_SAFE_recruitment.csv") %>%
 #this is table from most recent SAFE document
 data = left_join(seine, model)
 
-ggplot(data[data$year <= 2020,], aes(seine, model)) +
+ggplot(data[data$year <= 2023,], aes(seine, model)) +
   geom_text(aes(label = year))
 
 ggplot(data, aes(seine, model)) +
@@ -47,7 +47,7 @@ check_hmc_diagnostics(seine_model_brm$fit)
 neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
 summary(seine_model_brm)
-bayes_R2(seine_model_brm)
+bayes_R2(seine_model_brm) #very poor fit. R2 = 0.108
 # y <- data$model[data$year <= 2023]
 # yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
 # ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
@@ -108,22 +108,23 @@ ggsave("./figs/seine_model_residuals.png", width = 6, height = 4, units = 'in')
 
 ## fit brms model to restricted set of years ------------------------
 
+#this 2016 breakpoint is old, us 2013
 formula <- bf(model ~ s(seine, k = 4))
 
 seine_model_brm_2 <- brm(formula,
-                       data = data[data$year <= 2016,],
+                       data = data[data$year <= 2013,],
                        cores = 4, chains = 4, iter = 2000,
                        save_pars = save_pars(all = TRUE),
                        control = list(adapt_delta = 0.999, max_treedepth = 10))
 
-saveRDS(seine_model_brm_2, file = "output/seine_model_brm_2006_2016.rds")
+saveRDS(seine_model_brm_2, file = "output/seine_model_brm_2006_2013.rds")
 
-seine_model_brm_2 <- readRDS("./output/seine_model_brm_2006_2016.rds")
+seine_model_brm_2 <- readRDS("./output/seine_model_brm_2006_2013.rds")
 check_hmc_diagnostics(seine_model_brm_2$fit)
 neff_lowest(seine_model_brm_2$fit)
 rhat_highest(seine_model_brm_2$fit)
 summary(seine_model_brm_2)
-bayes_R2(seine_model_brm_2)
+bayes_R2(seine_model_brm_2) #Bayes R2 for 2006 - 2013 = 0.38
 # y <- data$model[data$year <= 2016]
 # yrep_seine_model_brm_2  <- fitted(seine_model_brm_2, scale = "response", summary = FALSE)
 # ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_2[sample(nrow(yrep_seine_model_brm_2), 25), ]) +
@@ -155,16 +156,16 @@ model.plot <- ggplot(dat_ce) +
   geom_ribbon(aes(ymin = lower_80, ymax = upper_80), fill = "grey80") +
   geom_line(size = 1, color = "red3") +
   labs(x = "Seine abundance", y = "Model recruitment") +
-  geom_text(data = data[data$year <= 2016,], aes(seine, model, label = year), size=3) 
+  geom_text(data = data[data$year <= 2013,], aes(seine, model, label = year), size=3) 
 
 print(model.plot)
 
-ggsave("./figs/seine_model_regression_2006_2016.png", width = 4, height = 3, units = 'in')
+ggsave("./figs/seine_model_regression_2006_2013.png", width = 4, height = 3, units = 'in')
 
 ## fit brms model with era effect ------------------------
 
 data <- data %>%
-  mutate(era = if_else(year <= 2016, "2006-2016", "2017-2023"))
+  mutate(era = if_else(year <= 2013, "2006-2013", "2014-2023"))
 
 formula <- bf(model ~ seine*era)
 
@@ -181,7 +182,7 @@ check_hmc_diagnostics(seine_model_brm_3$fit)
 neff_lowest(seine_model_brm_3$fit)
 rhat_highest(seine_model_brm_3$fit)
 summary(seine_model_brm_3)
-bayes_R2(seine_model_brm_3)
+bayes_R2(seine_model_brm_3) #Bayes R2 = 0.854
 # y <- data$model[data$year <= 2023]
 # yrep_seine_model_brm_3  <- fitted(seine_model_brm_3, scale = "response", summary = FALSE)
 # ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_3[sample(nrow(yrep_seine_model_brm_3), 25), ]) +
@@ -225,7 +226,7 @@ check_hmc_diagnostics(seine_model_brm_4$fit)
 neff_lowest(seine_model_brm_4$fit)
 rhat_highest(seine_model_brm_4$fit)
 summary(seine_model_brm_4)
-bayes_R2(seine_model_brm_4)
+bayes_R2(seine_model_brm_4) #Bayes R2 = 0.82
 # y <- data$model[data$year <= 2023]
 # yrep_seine_model_brm_4  <- fitted(seine_model_brm_4, scale = "response", summary = FALSE)
 # ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_4[sample(nrow(yrep_seine_model_brm_4), 25), ]) +
@@ -240,7 +241,7 @@ conditions <- make_conditions(seine_model_brm_4, vars = "era")
 era_effect <- conditional_effects(seine_model_brm_4, effect = "seine", re_formula = NA, conditions = conditions,
                                     probs = c(0.025, 0.975)) 
 
-data$era <- if_else(data$year <= 2016, "2006-2016", "2017-2023")
+data$era <- if_else(data$year <= 2013, "2006-2013", "2014-2023")
 
 ggplot(era_effect$seine, aes(effect1__, estimate__, color = era, fill = era)) +
   geom_line() + 
