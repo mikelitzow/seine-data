@@ -364,7 +364,7 @@ check_hmc_diagnostics(seine_model_brm$fit)
 neff_lowest(seine_model_brm$fit)
 rhat_highest(seine_model_brm$fit)
 summary(seine_model_brm)
-bayes_R2(seine_model_brm)
+bayes_R2(seine_model_brm) # Bayes R2 = 0.40
 y <- data$model[data$Cohort <= 2024]
 yrep_seine_model_brm  <- fitted(seine_model_brm, scale = "response", summary = FALSE)
 ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm[sample(nrow(yrep_seine_model_brm), 25), ]) +
@@ -463,8 +463,7 @@ ggsave("./figs/seine_0_1_bayesmodel_regression2023.png", width = 4, height = 3, 
 ###########################################
 ###plot age-1 vs model output
 ###what follows is age-1 from seine and model. 
-###But I am confused and need help here: the model is age-0 and not age-3
-###need to ask Mike to help me lag model output
+###Not clear how getting age-1
 
 seine <- read.csv("./output/seine_cod_age1_abundance_estimates.csv") %>%
   mutate(seine = as.vector(scale(log(cod_per_set + 0.01)))) %>%
