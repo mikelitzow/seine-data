@@ -319,6 +319,25 @@ ggplot(output, aes(breakpoint, elpd_loo)) +
   ggtitle("Era-specific slopes and intercepts") +
   geom_hline(yintercept = stationary_loo$elpd_loo, lty = 2)
 
+#try to fix x-axis so breakpoint is a whole number for plotting
+ggplot(output, aes(breakpoint-0.5, elpd_loo)) +
+  geom_rect(
+    aes(
+      xmin = -Inf, xmax = Inf,
+      ymin = stationary_loo$elpd_loo - 1.96 * stationary_loo$se_elpd_loo,
+      ymax = stationary_loo$elpd_loo + 1.96 * stationary_loo$se_elpd_loo
+    ),
+    fill = "grey",
+    alpha = 0.05,   # transparency
+    color = NA     # removes border
+  ) +
+  geom_point() +
+  geom_line() +
+  geom_errorbar(aes(ymin = ymin, ymax = ymax)) +
+  labs(x = "Breakpoint Year", y = "ELDP-Loo") +
+  ggtitle("Era-specific slopes and intercepts") +
+  geom_hline(yintercept = stationary_loo$elpd_loo, lty = 2)
+
 ggsave("./figs/breakpoint_variable_slope_intercept.png", width = 6.25, height = 3.5, units = 'in')
 
 
@@ -342,7 +361,7 @@ check_hmc_diagnostics(best_brm_3$fit)
 neff_lowest(best_brm_3$fit)
 rhat_highest(best_brm_3$fit)
 summary(best_brm_3)
-bayes_R2(best_brm_3)
+bayes_R2(best_brm_3) #Bayes R2 = 0.854
 # y <- data$model[data$year <= 2023]
 # yrep_seine_model_brm_3  <- fitted(seine_model_brm_3, scale = "response", summary = FALSE)
 # ppc_dens_overlay(y = y, yrep = yrep_seine_model_brm_3[sample(nrow(yrep_seine_model_brm_3), 25), ]) +
