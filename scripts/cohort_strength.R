@@ -63,7 +63,13 @@ neff_lowest(cod_time.series_zinb$fit)
 rhat_highest(cod_time.series_zinb$fit)
 summary(cod_time.series_zinb)
 bayes_R2(cod_time.series_zinb)
-plot(cod_time.series_zinb$criteria$loo, "k")
+# add_criterion is commented out above, so $criteria$loo is NULL and this line
+# errored out ("'x' and 'y' lengths differ") right after the cod fit was saved
+# but before the cod estimates were written. Guarded so the run completes; it
+# still draws the k plot if loo is ever added back.
+if (!is.null(cod_time.series_zinb$criteria$loo)) {
+  plot(cod_time.series_zinb$criteria$loo, "k")
+}
 plot(conditional_smooths(cod_time.series_zinb), ask = FALSE)
 y <- dat$cod
 yrep_cod_time.series_zinb  <- fitted(cod_time.series_zinb, scale = "response", summary = FALSE)
